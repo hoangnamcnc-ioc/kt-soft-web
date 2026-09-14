@@ -13,7 +13,7 @@ require_once __DIR__ . '/inc_header.php';
       KT-SOFT xây từng phần mềm bám sát nghiệp vụ thực tế, không rườm rà, dùng được ngay.
     </p>
     <div class="cta-row">
-      <a href="https://app.kt-soft.vn" class="btn" target="_blank" rel="noopener">Dùng thử QLBH2 miễn phí</a>
+      <a href="https://app.kt-soft.vn/dang-ky.php" class="btn" target="_blank" rel="noopener">Dùng thử QLBH2 miễn phí</a>
       <a href="#san-pham" class="btn btn-ghost">Xem tất cả sản phẩm</a>
     </div>
     <div class="stats">

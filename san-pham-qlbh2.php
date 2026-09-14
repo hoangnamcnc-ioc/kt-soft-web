@@ -13,7 +13,7 @@ require_once __DIR__ . '/inc_header.php';
       dòng tiền — tất cả trong một phần mềm chạy trực tiếp trên web, không cần cài đặt.
     </p>
     <div class="cta-row">
-      <a href="https://app.kt-soft.vn" class="btn" target="_blank" rel="noopener">Dùng thử ngay →</a>
+      <a href="https://app.kt-soft.vn/dang-ky.php" class="btn" target="_blank" rel="noopener">Dùng thử ngay →</a>
       <a href="lien-he.php" class="btn btn-ghost">Yêu cầu tư vấn</a>
     </div>
   </div>
@@ -91,7 +91,7 @@ require_once __DIR__ . '/inc_header.php';
           <li>Sao lưu dữ liệu 1-click, tự động giữ 20 bản gần nhất</li>
         </ul>
         <div class="cta-row">
-          <a href="https://app.kt-soft.vn" class="btn" target="_blank" rel="noopener">Trải nghiệm QLBH2 →</a>
+          <a href="https://app.kt-soft.vn/dang-ky.php" class="btn" target="_blank" rel="noopener">Trải nghiệm QLBH2 →</a>
         </div>
       </div>
       <div class="mock" style="--card-bg: var(--qlbh2-bg); --card-accent: var(--qlbh2);">
@@ -111,7 +111,7 @@ require_once __DIR__ . '/inc_header.php';
         <h2>Sẵn sàng dùng thử QLBH2?</h2>
         <p>Truy cập trực tiếp, không cần cài đặt — hoặc liên hệ để được tư vấn cấu hình chi nhánh phù hợp.</p>
       </div>
-      <a href="https://app.kt-soft.vn" class="btn" target="_blank" rel="noopener">Vào app.kt-soft.vn →</a>
+      <a href="https://app.kt-soft.vn/dang-ky.php" class="btn" target="_blank" rel="noopener">Đăng ký dùng thử →</a>
     </div>
   </div>
 </section>

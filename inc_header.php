@@ -30,6 +30,6 @@ $pageDesc = $pageDesc ?? 'KT-SOFT phát triển phần mềm quản lý bán hà
       <a href="san-pham-ke-toan.php">Kế toán</a>
       <a href="lien-he.php">Liên hệ</a>
     </nav>
-    <a href="https://app.kt-soft.vn" class="btn btn-sm" target="_blank" rel="noopener">Dùng thử QLBH2</a>
+    <a href="https://app.kt-soft.vn/dang-ky.php" class="btn btn-sm" target="_blank" rel="noopener">Dùng thử QLBH2</a>
   </div>
 </header>
