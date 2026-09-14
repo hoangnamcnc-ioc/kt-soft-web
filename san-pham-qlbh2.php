@@ -1,12 +1,12 @@
 <?php
-$pageTitle = 'QLBH2 — Phần mềm quản lý bán hàng đa chi nhánh | KT-SOFT';
-$pageDesc = 'QLBH2 là phần mềm quản lý bán hàng chạy trên trình duyệt: POS, kho, khách hàng, khuyến mại, bảo hành, sổ quỹ và ước tính thuế hộ kinh doanh, quản lý được nhiều chi nhánh.';
+$pageTitle = 'QLBH-CLOUD — Phần mềm quản lý bán hàng đa chi nhánh | KT-SOFT';
+$pageDesc = 'QLBH-CLOUD là phần mềm quản lý bán hàng chạy trên trình duyệt: POS, kho, khách hàng, khuyến mại, bảo hành, sổ quỹ và ước tính thuế hộ kinh doanh, quản lý được nhiều chi nhánh.';
 require_once __DIR__ . '/inc_header.php';
 ?>
 
 <section class="hero" style="padding-bottom:0;">
   <div class="container">
-    <span class="eyebrow" style="background:var(--qlbh2-bg);color:var(--qlbh2);">☁️ QLBH2 · Đang vận hành tại app.kt-soft.vn</span>
+    <span class="eyebrow" style="background:var(--qlbh2-bg);color:var(--qlbh2);">☁️ QLBH-CLOUD · Đang vận hành tại app.kt-soft.vn</span>
     <h1>Quản lý bán hàng đa chi nhánh, gọn trong 1 trình duyệt</h1>
     <p class="lead">
       Bán hàng tại quầy, theo dõi tồn kho từng chi nhánh, chăm sóc khách hàng thân thiết và quản lý
@@ -91,7 +91,7 @@ require_once __DIR__ . '/inc_header.php';
           <li>Sao lưu dữ liệu 1-click, tự động giữ 20 bản gần nhất</li>
         </ul>
         <div class="cta-row">
-          <a href="https://app.kt-soft.vn/dang-ky.php" class="btn" target="_blank" rel="noopener">Trải nghiệm QLBH2 →</a>
+          <a href="https://app.kt-soft.vn/dang-ky.php" class="btn" target="_blank" rel="noopener">Trải nghiệm QLBH-CLOUD →</a>
         </div>
       </div>
       <div class="mock" style="--card-bg: var(--qlbh2-bg); --card-accent: var(--qlbh2);">
@@ -108,7 +108,7 @@ require_once __DIR__ . '/inc_header.php';
   <div class="container">
     <div class="cta-band">
       <div>
-        <h2>Sẵn sàng dùng thử QLBH2?</h2>
+        <h2>Sẵn sàng dùng thử QLBH-CLOUD?</h2>
         <p>Truy cập trực tiếp, không cần cài đặt — hoặc liên hệ để được tư vấn cấu hình chi nhánh phù hợp.</p>
       </div>
       <a href="https://app.kt-soft.vn/dang-ky.php" class="btn" target="_blank" rel="noopener">Đăng ký dùng thử →</a>

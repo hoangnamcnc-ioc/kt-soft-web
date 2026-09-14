@@ -62,7 +62,7 @@ require_once __DIR__ . '/inc_header.php';
             <div class="form-field">
               <label>Bạn quan tâm sản phẩm nào?</label>
               <select name="product">
-                <option value="QLBH2">QLBH2 — Quản lý bán hàng đa chi nhánh</option>
+                <option value="QLBH-CLOUD">QLBH-CLOUD — Quản lý bán hàng đa chi nhánh</option>
                 <option value="QLBH-SOFT">QLBH-SOFT — Bán hàng tạp hóa</option>
                 <option value="QLCV">QLCV — Quản lý công việc</option>
                 <option value="Kế toán">KT-SOFT Kế toán</option>
@@ -87,7 +87,7 @@ require_once __DIR__ . '/inc_header.php';
           </li>
           <li>
             <span class="icon">☁️</span>
-            <div><b>QLBH2</b><br><a href="https://app.kt-soft.vn" target="_blank" rel="noopener">app.kt-soft.vn</a></div>
+            <div><b>QLBH-CLOUD</b><br><a href="https://app.kt-soft.vn" target="_blank" rel="noopener">app.kt-soft.vn</a></div>
           </li>
           <li>
             <span class="icon">🧾</span>

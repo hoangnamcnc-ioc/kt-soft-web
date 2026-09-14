@@ -13,7 +13,7 @@
       <div>
         <h4>Sản phẩm</h4>
         <ul>
-          <li><a href="san-pham-qlbh2.php">QLBH2 — Quản lý bán hàng đa chi nhánh</a></li>
+          <li><a href="san-pham-qlbh2.php">QLBH-CLOUD — Quản lý bán hàng đa chi nhánh</a></li>
           <li><a href="san-pham-qlbh-soft.php">QLBH-SOFT — Tạp hóa, siêu thị mini</a></li>
           <li><a href="san-pham-qlcv.php">QLCV — Quản lý công việc</a></li>
           <li><a href="san-pham-ke-toan.php">KT-SOFT Kế toán</a></li>

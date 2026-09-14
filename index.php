@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'KT-SOFT — Phần mềm quản lý cho cửa hàng và doanh nghiệp nhỏ';
-$pageDesc = 'Bộ phần mềm quản lý bán hàng đa chi nhánh (QLBH2), bán hàng tạp hóa (QLBH-SOFT), quản lý công việc (QLCV) và kế toán (KT-SOFT) — do đội ngũ KT-SOFT phát triển.';
+$pageDesc = 'Bộ phần mềm quản lý bán hàng đa chi nhánh (QLBH-CLOUD), bán hàng tạp hóa (QLBH-SOFT), quản lý công việc (QLCV) và kế toán (KT-SOFT) — do đội ngũ KT-SOFT phát triển.';
 require_once __DIR__ . '/inc_header.php';
 ?>
 
@@ -13,11 +13,11 @@ require_once __DIR__ . '/inc_header.php';
       KT-SOFT xây từng phần mềm bám sát nghiệp vụ thực tế, không rườm rà, dùng được ngay.
     </p>
     <div class="cta-row">
-      <a href="https://app.kt-soft.vn/dang-ky.php" class="btn" target="_blank" rel="noopener">Dùng thử QLBH2 miễn phí 12 tháng</a>
+      <a href="https://app.kt-soft.vn/dang-ky.php" class="btn" target="_blank" rel="noopener">Dùng thử QLBH-CLOUD miễn phí 12 tháng</a>
       <a href="#san-pham" class="btn btn-ghost">Xem tất cả sản phẩm</a>
     </div>
     <div class="pill-tabs">
-      <a href="san-pham-qlbh2.php" class="pill-tab" style="--pill-accent:#93c5fd;"><span class="ico">🛒</span>QLBH2</a>
+      <a href="san-pham-qlbh2.php" class="pill-tab" style="--pill-accent:#93c5fd;"><span class="ico">🛒</span>QLBH-CLOUD</a>
       <a href="san-pham-qlbh-soft.php" class="pill-tab" style="--pill-accent:#6ee7b7;"><span class="ico">💻</span>QLBH-SOFT</a>
       <a href="san-pham-qlcv.php" class="pill-tab" style="--pill-accent:#d8b4fe;"><span class="ico">📋</span>QLCV</a>
       <a href="san-pham-ke-toan.php" class="pill-tab" style="--pill-accent:#fcd34d;"><span class="ico">🧾</span>Kế toán</a>
@@ -42,7 +42,7 @@ require_once __DIR__ . '/inc_header.php';
       <div class="product-card" style="--card-accent: var(--qlbh2); --card-bg: var(--qlbh2-bg);">
         <div class="icon-blob">🛒</div>
         <span class="tag">☁️ Cloud · Đa chi nhánh</span>
-        <h3>QLBH2 — Quản lý bán hàng</h3>
+        <h3>QLBH-CLOUD — Quản lý bán hàng</h3>
         <p>
           Bán hàng POS, quản lý kho, khách hàng, khuyến mại, bảo hành, sổ quỹ và ước tính thuế hộ
           kinh doanh — chạy trên trình duyệt, quản lý được nhiều chi nhánh cùng lúc.
@@ -130,7 +130,7 @@ require_once __DIR__ . '/inc_header.php';
       </div>
       <div class="cta-row" style="margin-top:0;">
         <a href="lien-he.php" class="btn">Liên hệ tư vấn →</a>
-        <a href="https://app.kt-soft.vn/dang-ky.php" class="btn btn-ghost" target="_blank" rel="noopener" style="color:#fff;border-color:rgba(255,255,255,.4);">Dùng thử QLBH2 12 tháng</a>
+        <a href="https://app.kt-soft.vn/dang-ky.php" class="btn btn-ghost" target="_blank" rel="noopener" style="color:#fff;border-color:rgba(255,255,255,.4);">Dùng thử QLBH-CLOUD 12 tháng</a>
       </div>
     </div>
   </div>

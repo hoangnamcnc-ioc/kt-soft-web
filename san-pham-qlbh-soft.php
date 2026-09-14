@@ -82,7 +82,7 @@ require_once __DIR__ . '/inc_header.php';
     <div class="cta-band">
       <div>
         <h2>Cửa hàng của bạn có phù hợp với QLBH-SOFT?</h2>
-        <p>Phù hợp nhất với 1 cửa hàng, 1 máy tính bán hàng. Nếu cần quản lý nhiều chi nhánh, tham khảo thêm QLBH2.</p>
+        <p>Phù hợp nhất với 1 cửa hàng, 1 máy tính bán hàng. Nếu cần quản lý nhiều chi nhánh, tham khảo thêm QLBH-CLOUD.</p>
       </div>
       <a href="lien-he.php" class="btn">Liên hệ tư vấn →</a>
     </div>
