@@ -6,15 +6,21 @@ require_once __DIR__ . '/inc_header.php';
 
 <section class="hero">
   <div class="container">
-    <span class="eyebrow">Bộ phần mềm KT-SOFT</span>
-    <h1>Phần mềm quản lý đúng việc thật, cho cửa hàng và doanh nghiệp nhỏ Việt Nam</h1>
+    <span class="eyebrow">🚀 Bộ phần mềm KT-SOFT</span>
+    <h1>Phần mềm quản lý <span class="hl">đúng việc thật</span>, cho cửa hàng và doanh nghiệp nhỏ Việt Nam</h1>
     <p class="lead">
       Từ bán hàng tại quầy, quản lý đa chi nhánh, giao việc nội bộ đến sổ sách kế toán —
       KT-SOFT xây từng phần mềm bám sát nghiệp vụ thực tế, không rườm rà, dùng được ngay.
     </p>
     <div class="cta-row">
-      <a href="https://app.kt-soft.vn/dang-ky.php" class="btn" target="_blank" rel="noopener">Dùng thử QLBH2 miễn phí</a>
+      <a href="https://app.kt-soft.vn/dang-ky.php" class="btn" target="_blank" rel="noopener">Dùng thử QLBH2 miễn phí 12 tháng</a>
       <a href="#san-pham" class="btn btn-ghost">Xem tất cả sản phẩm</a>
+    </div>
+    <div class="pill-tabs">
+      <a href="san-pham-qlbh2.php" class="pill-tab" style="--pill-accent:#93c5fd;"><span class="ico">🛒</span>QLBH2</a>
+      <a href="san-pham-qlbh-soft.php" class="pill-tab" style="--pill-accent:#6ee7b7;"><span class="ico">💻</span>QLBH-SOFT</a>
+      <a href="san-pham-qlcv.php" class="pill-tab" style="--pill-accent:#d8b4fe;"><span class="ico">📋</span>QLCV</a>
+      <a href="san-pham-ke-toan.php" class="pill-tab" style="--pill-accent:#fcd34d;"><span class="ico">🧾</span>Kế toán</a>
     </div>
     <div class="stats">
       <div class="stat"><b>4</b><span>phần mềm đang vận hành</span></div>
@@ -34,6 +40,7 @@ require_once __DIR__ . '/inc_header.php';
 
     <div class="product-grid">
       <div class="product-card" style="--card-accent: var(--qlbh2); --card-bg: var(--qlbh2-bg);">
+        <div class="icon-blob">🛒</div>
         <span class="tag">☁️ Cloud · Đa chi nhánh</span>
         <h3>QLBH2 — Quản lý bán hàng</h3>
         <p>
@@ -45,6 +52,7 @@ require_once __DIR__ . '/inc_header.php';
       </div>
 
       <div class="product-card" style="--card-accent: var(--qlbhsoft); --card-bg: var(--qlbhsoft-bg);">
+        <div class="icon-blob">💻</div>
         <span class="tag">💻 Cài trên máy · Offline</span>
         <h3>QLBH-SOFT — Bán hàng tạp hóa</h3>
         <p>
@@ -56,6 +64,7 @@ require_once __DIR__ . '/inc_header.php';
       </div>
 
       <div class="product-card" style="--card-accent: var(--qlcv); --card-bg: var(--qlcv-bg);">
+        <div class="icon-blob">📋</div>
         <span class="tag">📋 Nội bộ · Phân quyền theo phòng ban</span>
         <h3>QLCV — Quản lý công việc</h3>
         <p>
@@ -67,6 +76,7 @@ require_once __DIR__ . '/inc_header.php';
       </div>
 
       <div class="product-card" style="--card-accent: var(--ketoan); --card-bg: var(--ketoan-bg);">
+        <div class="icon-blob">🧾</div>
         <span class="tag">🧾 Desktop · Thông tư 133/2016/TT-BTC</span>
         <h3>KT-SOFT — Phần mềm kế toán</h3>
         <p>
@@ -88,22 +98,22 @@ require_once __DIR__ . '/inc_header.php';
     </div>
     <div class="trust-grid">
       <div class="trust-item">
-        <div class="num">01</div>
+        <div class="num">🎯</div>
         <h4>Bám sát nghiệp vụ thật</h4>
         <p>Mỗi tính năng đối chiếu với quy trình thực tế của cửa hàng, không thêm chức năng thừa.</p>
       </div>
       <div class="trust-item">
-        <div class="num">02</div>
+        <div class="num">⚖️</div>
         <h4>Cập nhật theo luật hiện hành</h4>
         <p>Tính năng thuế, kế toán luôn theo đúng văn bản pháp luật mới nhất của Việt Nam.</p>
       </div>
       <div class="trust-item">
-        <div class="num">03</div>
+        <div class="num">💬</div>
         <h4>Hỗ trợ trực tiếp</h4>
         <p>Không qua tổng đài nhiều tầng — trao đổi trực tiếp với người phát triển phần mềm.</p>
       </div>
       <div class="trust-item">
-        <div class="num">04</div>
+        <div class="num">🔀</div>
         <h4>Linh hoạt triển khai</h4>
         <p>Chọn chạy trên cloud (nhiều chi nhánh, nhiều máy) hoặc cài local trên 1 máy tùy nhu cầu.</p>
       </div>
@@ -118,7 +128,10 @@ require_once __DIR__ . '/inc_header.php';
         <h2>Cần tư vấn phần mềm phù hợp với cửa hàng của bạn?</h2>
         <p>Cho chúng tôi biết quy mô và nghiệp vụ hiện tại — KT-SOFT tư vấn miễn phí sản phẩm phù hợp nhất.</p>
       </div>
-      <a href="lien-he.php" class="btn">Liên hệ tư vấn →</a>
+      <div class="cta-row" style="margin-top:0;">
+        <a href="lien-he.php" class="btn">Liên hệ tư vấn →</a>
+        <a href="https://app.kt-soft.vn/dang-ky.php" class="btn btn-ghost" target="_blank" rel="noopener" style="color:#fff;border-color:rgba(255,255,255,.4);">Dùng thử QLBH2 12 tháng</a>
+      </div>
     </div>
   </div>
 </section>
