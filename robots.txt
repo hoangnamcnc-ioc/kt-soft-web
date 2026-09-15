@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /downloads/
+Disallow: /data/
+
+Sitemap: https://kt-soft.vn/sitemap.xml
