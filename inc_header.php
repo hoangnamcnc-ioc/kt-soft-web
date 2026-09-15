@@ -1,4 +1,7 @@
 <?php
+require_once __DIR__ . '/inc_track.php';
+ghi_luot_xem();
+
 $currentPage = basename($_SERVER['SCRIPT_NAME']);
 $pageTitle = $pageTitle ?? 'KT-SOFT — Phần mềm quản lý cho cửa hàng và doanh nghiệp nhỏ';
 $pageDesc = $pageDesc ?? 'KT-SOFT phát triển phần mềm quản lý bán hàng, kế toán và công việc cho cửa hàng, hộ kinh doanh và doanh nghiệp nhỏ tại Việt Nam.';

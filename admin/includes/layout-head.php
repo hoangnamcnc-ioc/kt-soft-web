@@ -86,6 +86,10 @@
         <?php if ($chuaDoc > 0): ?><span class="badge-count"><?= $chuaDoc ?></span><?php endif; ?>
       </a>
 
+      <div class="nav-section">Hệ thống</div>
+      <a href="nguoi-dung.php" class="<?= $curFile === 'nguoi-dung.php' ? 'active' : '' ?>"><span class="ico">👥</span> Người dùng</a>
+      <a href="doi-mat-khau.php" class="<?= $curFile === 'doi-mat-khau.php' ? 'active' : '' ?>"><span class="ico">🔒</span> Đổi mật khẩu</a>
+
       <div class="foot-links">
         <a href="../index.php" target="_blank"><span class="ico">🌐</span> Xem trang web</a>
         <a href="logout.php"><span class="ico">🚪</span> Đăng xuất</a>

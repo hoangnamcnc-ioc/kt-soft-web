@@ -19,12 +19,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $conLai = ceil(($_SESSION['dn_khoa_den'] - time()) / 60);
         $loi = "Bạn đã nhập sai quá nhiều lần. Vui lòng thử lại sau khoảng $conLai phút.";
     } else {
-        $user = trim($_POST['username'] ?? '');
+        $username = trim($_POST['username'] ?? '');
         $pass = $_POST['password'] ?? '';
-        if ($user === ADMIN_USERNAME && password_verify($pass, ADMIN_PASSWORD_HASH)) {
+        $found = nguoi_dung_tim_theo_username($username);
+        if ($found && password_verify($pass, $found['password_hash'])) {
             $_SESSION['dn_so_lan'] = 0;
             $_SESSION['dn_khoa_den'] = 0;
             $_SESSION['admin_logged_in'] = true;
+            $_SESSION['admin_user_id'] = $found['id'];
             session_regenerate_id(true);
             admin_redirect('index.php');
         }
