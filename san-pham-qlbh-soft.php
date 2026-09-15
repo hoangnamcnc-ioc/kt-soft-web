@@ -1,7 +1,13 @@
 <?php
+require_once __DIR__ . '/inc_download.php';
+
 $pageTitle = 'QLBH-SOFT — Phần mềm bán hàng tạp hóa, siêu thị mini | KT-SOFT';
 $pageDesc = 'QLBH-SOFT là phần mềm quản lý bán hàng dành cho tạp hóa, siêu thị mini, chạy trực tiếp trên máy tính Windows, không cần Internet.';
 require_once __DIR__ . '/inc_header.php';
+
+$luotTai = doc_luot_tai('qlbh-soft');
+$danhGia = doc_danh_gia('qlbh-soft');
+$daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 ?>
 
 <section class="hero" style="padding-bottom:0;">
@@ -13,8 +19,33 @@ require_once __DIR__ . '/inc_header.php';
       cho quầy tạp hóa và siêu thị mini: bán nhanh, dễ dùng, không rườm rà.
     </p>
     <div class="cta-row">
-      <a href="lien-he.php" class="btn">Yêu cầu bản cài đặt</a>
-      <a href="index.php#san-pham" class="btn btn-ghost">Xem các sản phẩm khác</a>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải về dùng miễn phí</a>
+      <a href="lien-he.php" class="btn btn-ghost">Yêu cầu tư vấn</a>
+    </div>
+
+    <div class="rating-block">
+      <div class="download-count">⬇️ <b><?= number_format($luotTai, 0, ',', '.') ?></b> lượt tải</div>
+      <div class="rating-summary">
+        <span class="stars"><?= str_repeat('★', (int) round($danhGia['trung_binh'])) . str_repeat('☆', 5 - (int) round($danhGia['trung_binh'])) ?></span>
+        <?php if ($danhGia['so_luot'] > 0): ?>
+          <span><?= $danhGia['trung_binh'] ?>/5</span>
+          <span class="muted">(<?= $danhGia['so_luot'] ?> đánh giá)</span>
+        <?php else: ?>
+          <span class="muted">Chưa có đánh giá</span>
+        <?php endif; ?>
+      </div>
+      <?php if (isset($_GET['danhgia'])): ?>
+        <span class="rated-thanks">Cảm ơn bạn đã đánh giá!</span>
+      <?php elseif (!$daDanhGia): ?>
+        <form method="post" action="danh-gia.php" class="rate-form">
+          <input type="hidden" name="p" value="qlbh-soft">
+          <input type="hidden" name="back" value="san-pham-qlbh-soft.php">
+          <span class="rate-label">Bạn thấy phần mềm thế nào?</span>
+          <?php for ($i = 1; $i <= 5; $i++): ?>
+            <button type="submit" name="diem" value="<?= $i ?>" title="<?= $i ?> sao"><?= str_repeat('★', $i) ?></button>
+          <?php endfor; ?>
+        </form>
+      <?php endif; ?>
     </div>
   </div>
 </section>
@@ -70,7 +101,7 @@ require_once __DIR__ . '/inc_header.php';
           <li>Toàn bộ dữ liệu lưu trên máy của bạn, không phụ thuộc bên thứ ba</li>
         </ul>
         <div class="cta-row">
-          <a href="lien-he.php" class="btn">Liên hệ nhận bản cài đặt →</a>
+          <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải về dùng miễn phí</a>
         </div>
       </div>
     </div>
@@ -84,7 +115,7 @@ require_once __DIR__ . '/inc_header.php';
         <h2>Cửa hàng của bạn có phù hợp với QLBH-SOFT?</h2>
         <p>Phù hợp nhất với 1 cửa hàng, 1 máy tính bán hàng. Nếu cần quản lý nhiều chi nhánh, tham khảo thêm QLBH-CLOUD.</p>
       </div>
-      <a href="lien-he.php" class="btn">Liên hệ tư vấn →</a>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải về dùng miễn phí</a>
     </div>
   </div>
 </section>

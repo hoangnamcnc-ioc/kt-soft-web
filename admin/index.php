@@ -1,7 +1,11 @@
 <?php
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/../inc_track.php';
+require_once __DIR__ . '/../inc_download.php';
 admin_yeu_cau_dang_nhap();
+
+$luotTaiQlbhSoft = doc_luot_tai('qlbh-soft');
+$danhGiaQlbhSoft = doc_danh_gia('qlbh-soft');
 
 $items = lien_he_doc_tat_ca();
 $tongSo = count($items);
@@ -52,6 +56,22 @@ require __DIR__ . '/includes/layout-head.php';
     <?php else: ?>
       <p style="color:#64748b;font-size:13.5px;margin:0;">Chưa có dữ liệu lượt xem.</p>
     <?php endif; ?>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header"><h3>💻 QLBH-SOFT — Tải về &amp; đánh giá</h3></div>
+  <div style="padding:20px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+    <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
+      <div style="font-size:26px;font-weight:800;color:#1d4ed8;">⬇️ <?= (int) $luotTaiQlbhSoft ?></div>
+      <div style="font-size:13px;color:#64748b;">Lượt tải bản cài đặt</div>
+    </div>
+    <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
+      <div style="font-size:26px;font-weight:800;color:#d97706;">
+        <?= $danhGiaQlbhSoft['so_luot'] > 0 ? $danhGiaQlbhSoft['trung_binh'] . '/5 ⭐' : '—' ?>
+      </div>
+      <div style="font-size:13px;color:#64748b;"><?= $danhGiaQlbhSoft['so_luot'] ?> lượt đánh giá</div>
+    </div>
   </div>
 </div>
 

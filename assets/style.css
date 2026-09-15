@@ -242,6 +242,21 @@ img { max-width: 100%; display: block; }
 .alert-success { background: #f0fdf4; border: 1px solid #bbf7d0; color: #15803d; }
 .alert-error { background: #fef2f2; border: 1px solid #fecaca; color: #b91c1c; }
 
+/* Danh gia sao + luot tai */
+.rating-block { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--border); }
+.rating-summary { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--ink-soft); }
+.rating-summary .stars { color: var(--accent); font-size: 17px; letter-spacing: 1px; }
+.rating-summary .muted { font-size: 13px; }
+.download-count { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+.rate-form { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.rate-form .rate-label { font-size: 13px; color: var(--muted); margin-right: 4px; }
+.rate-form button {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 6px 10px; font-size: 14px; color: var(--accent); cursor: pointer; letter-spacing: 1px;
+}
+.rate-form button:hover { background: var(--ketoan-bg); border-color: var(--accent); }
+.rated-thanks { font-size: 13.5px; color: #059669; font-weight: 600; }
+
 /* Footer */
 .site-footer { position: relative; border-top: 1px solid var(--border); background: var(--surface); padding: 48px 0 28px; margin-top: 40px; }
 .site-footer::before { content: ''; position: absolute; top: -1px; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--teal-light), var(--brand), var(--qlcv)); }
