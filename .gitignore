@@ -2,5 +2,6 @@ lien_he_log.jsonl
 data/lien_he.json
 data/admin_users.json
 data/luot_xem.log
+data/login_attempts.json
 *.log
 .DS_Store

@@ -5,39 +5,29 @@ if (admin_dang_nhap()) {
     admin_redirect('index.php');
 }
 
-const DANG_NHAP_TOI_DA = 5;
-const DANG_NHAP_KHOA = 300;
-
-if (!isset($_SESSION['dn_so_lan'])) $_SESSION['dn_so_lan'] = 0;
-if (!isset($_SESSION['dn_khoa_den'])) $_SESSION['dn_khoa_den'] = 0;
-
-$dangBiKhoa = time() < $_SESSION['dn_khoa_den'];
+$giayConKhoa = dang_nhap_dang_bi_khoa();
 $loi = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if ($dangBiKhoa) {
-        $conLai = ceil(($_SESSION['dn_khoa_den'] - time()) / 60);
-        $loi = "Bạn đã nhập sai quá nhiều lần. Vui lòng thử lại sau khoảng $conLai phút.";
+    if ($giayConKhoa > 0) {
+        $conLai = ceil($giayConKhoa / 60);
+        $loi = "Địa chỉ IP này đã nhập sai quá nhiều lần. Vui lòng thử lại sau khoảng $conLai phút.";
     } else {
         $username = trim($_POST['username'] ?? '');
         $pass = $_POST['password'] ?? '';
         $found = nguoi_dung_tim_theo_username($username);
         if ($found && password_verify($pass, $found['password_hash'])) {
-            $_SESSION['dn_so_lan'] = 0;
-            $_SESSION['dn_khoa_den'] = 0;
+            dang_nhap_reset_that_bai();
             $_SESSION['admin_logged_in'] = true;
             $_SESSION['admin_user_id'] = $found['id'];
             session_regenerate_id(true);
             admin_redirect('index.php');
         }
-        $_SESSION['dn_so_lan']++;
-        if ($_SESSION['dn_so_lan'] >= DANG_NHAP_TOI_DA) {
-            $_SESSION['dn_khoa_den'] = time() + DANG_NHAP_KHOA;
-            $_SESSION['dn_so_lan'] = 0;
-            $loi = 'Bạn đã nhập sai quá nhiều lần. Tài khoản đăng nhập tạm khóa 5 phút.';
+        $conLaiLan = dang_nhap_ghi_that_bai();
+        if ($conLaiLan <= 0) {
+            $loi = 'Địa chỉ IP này đã nhập sai quá nhiều lần, tạm khóa 5 phút.';
         } else {
-            $con = DANG_NHAP_TOI_DA - $_SESSION['dn_so_lan'];
-            $loi = "Tên đăng nhập hoặc mật khẩu không đúng. (Còn $con lần thử)";
+            $loi = "Tên đăng nhập hoặc mật khẩu không đúng. (Còn $conLaiLan lần thử)";
         }
     }
 }

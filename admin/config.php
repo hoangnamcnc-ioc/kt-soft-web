@@ -3,6 +3,47 @@ session_start();
 
 const DATA_FILE = __DIR__ . '/../data/lien_he.json';
 const USERS_FILE = __DIR__ . '/../data/admin_users.json';
+const LOGIN_ATTEMPTS_FILE = __DIR__ . '/../data/login_attempts.json';
+const DANG_NHAP_TOI_DA = 5;
+const DANG_NHAP_KHOA_GIAY = 300;
+
+function dang_nhap_ip(): string
+{
+    return $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+}
+
+/**
+ * Khoa dang nhap sai qua nhieu lan THEO IP, luu vao file (khong chi session) - luu trong session
+ * de ke tan cong tu xoa cookie roi thu lai vo han lan, mat het tac dung chong brute-force.
+ */
+function dang_nhap_dang_bi_khoa(): int
+{
+    $data = doc_json_file(LOGIN_ATTEMPTS_FILE);
+    $ip = dang_nhap_ip();
+    $khoaDen = (int) ($data[$ip]['khoa_den'] ?? 0);
+    return $khoaDen > time() ? $khoaDen - time() : 0;
+}
+
+function dang_nhap_ghi_that_bai(): int
+{
+    $data = doc_json_file(LOGIN_ATTEMPTS_FILE);
+    $ip = dang_nhap_ip();
+    $soLan = (int) ($data[$ip]['so_lan'] ?? 0) + 1;
+    if ($soLan >= DANG_NHAP_TOI_DA) {
+        $data[$ip] = ['so_lan' => 0, 'khoa_den' => time() + DANG_NHAP_KHOA_GIAY];
+    } else {
+        $data[$ip] = ['so_lan' => $soLan, 'khoa_den' => 0];
+    }
+    ghi_json_file(LOGIN_ATTEMPTS_FILE, $data);
+    return DANG_NHAP_TOI_DA - $soLan;
+}
+
+function dang_nhap_reset_that_bai(): void
+{
+    $data = doc_json_file(LOGIN_ATTEMPTS_FILE);
+    unset($data[dang_nhap_ip()]);
+    ghi_json_file(LOGIN_ATTEMPTS_FILE, $data);
+}
 
 function e(?string $value): string
 {
@@ -16,7 +57,11 @@ function admin_dang_nhap(): bool
 
 function admin_yeu_cau_dang_nhap(): void
 {
-    if (!admin_dang_nhap()) {
+    // Kiem tra ca ban ghi nguoi dung con ton tai that (khong chi co flag session) - tranh truong
+    // hop 1 tai khoan bi xoa nhung phien dang nhap cu van tiep tuc dung duoc cho toi khi tu dang xuat.
+    if (!admin_dang_nhap() || admin_hien_tai() === null) {
+        $_SESSION = [];
+        session_destroy();
         header('Location: login.php');
         exit;
     }
@@ -116,22 +161,16 @@ function lien_he_them(array $fields): void
     lien_he_ghi_tat_ca($items);
 }
 
-/** Đọc toàn bộ tài khoản quản trị. Tự seed 1 tài khoản admin/admin nếu file chưa tồn tại (lần đầu deploy). */
+/**
+ * Đọc toàn bộ tài khoản quản trị.
+ *
+ * KHÔNG tự tạo lại tài khoản với mật khẩu cố định nếu file bị mất - làm vậy sẽ nhúng 1 "cửa sau"
+ * vĩnh viễn vào source code (repo này là repo PUBLIC trên GitHub). Nếu file dữ liệu thực sự mất,
+ * phải tạo tài khoản mới thủ công qua 1 script tạm (đúng quy trình fix_*.php), không phải tự động
+ * phục hồi 1 mật khẩu đã biết trước.
+ */
 function nguoi_dung_doc_tat_ca(): array
 {
-    if (!is_file(USERS_FILE)) {
-        // Giu nguyen hash cua mat khau da cap cho chu he thong luc tao admin lan dau
-        // (wiFuZmMlH1fCN8) de khong lam mat quyen truy cap khi file nguoi dung duoc tao lan dau.
-        $seed = [[
-            'id' => 1,
-            'username' => 'admin',
-            'name' => 'Quản trị viên',
-            'password_hash' => '$2y$10$Nrjgh.1Bm4WgmpGSHgj2redtZ8EA9ksf7F5/CwYaGrGC6WJKUd4ku',
-            'created_at' => date('c'),
-        ]];
-        ghi_json_file(USERS_FILE, $seed);
-        return $seed;
-    }
     return doc_json_file(USERS_FILE);
 }
 
