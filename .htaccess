@@ -1,0 +1,9 @@
+## ONEPANEL Force HTTPS by SSL installation
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+## ONEPANEL Force HTTPS by SSL installation end
+
+# Cho phep truy cap /admin (khong dau / cuoi) di thang vao thu muc admin/
+RewriteRule ^admin$ admin/ [R=301,L]

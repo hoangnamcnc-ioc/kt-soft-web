@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/admin/config.php';
+
 $pageTitle = 'Liên hệ tư vấn | KT-SOFT';
 $pageDesc = 'Liên hệ KT-SOFT để được tư vấn phần mềm quản lý bán hàng, kế toán hoặc công việc phù hợp với cửa hàng, doanh nghiệp của bạn.';
 
@@ -14,14 +16,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($name === '' || $phone === '') {
         $error = 'Vui lòng nhập tên và số điện thoại để chúng tôi liên hệ lại.';
     } else {
-        $line = json_encode([
+        lien_he_them([
             'time' => date('c'),
             'name' => $name,
             'phone' => $phone,
             'product' => $product,
             'message' => $message,
-        ], JSON_UNESCAPED_UNICODE);
-        @file_put_contents(__DIR__ . '/lien_he_log.jsonl', $line . "\n", FILE_APPEND | LOCK_EX);
+        ]);
         $success = true;
     }
 }
