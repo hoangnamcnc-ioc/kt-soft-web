@@ -42,6 +42,7 @@ $pageDesc = $pageDesc ?? 'KT-SOFT phát triển phần mềm quản lý bán hà
       <a href="san-pham-qlbh-soft.php">QLBH-SOFT</a>
       <a href="san-pham-qlcv.php">QLCV</a>
       <a href="san-pham-ke-toan.php">Kế toán</a>
+      <a href="bang-gia.php">Bảng giá</a>
       <a href="lien-he.php">Liên hệ</a>
       <a href="https://app.kt-soft.vn/dang-ky.php" class="btn btn-sm nav-cta-mobile" target="_blank" rel="noopener">Dùng thử QLBH-CLOUD</a>
     </nav>

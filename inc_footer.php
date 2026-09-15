@@ -24,6 +24,7 @@
         <ul>
           <li><a href="https://app.kt-soft.vn" target="_blank" rel="noopener">app.kt-soft.vn ↗</a></li>
           <li><a href="https://hocketoanthue.vn" target="_blank" rel="noopener">hocketoanthue.vn ↗</a></li>
+          <li><a href="bang-gia.php">Bảng giá</a></li>
           <li><a href="lien-he.php">Liên hệ tư vấn</a></li>
         </ul>
       </div>
