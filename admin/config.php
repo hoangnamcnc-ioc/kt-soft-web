@@ -97,7 +97,12 @@ function admin_csrf_token(): string
 
 function admin_check_csrf(): void
 {
-    if (!hash_equals($_SESSION['admin_csrf'] ?? '', $_POST['csrf'] ?? '')) {
+    // hash_equals('', '') tra ve true - neu chua tung co session nao goi admin_csrf_token()
+    // (vd request POST truc tiep khong qua GET truoc, khong gui cookie) va request cung khong
+    // gui csrf, ca 2 deu la chuoi rong va "khop" sai lech. Phai bat buoc session da co token
+    // that truoc khi so sanh - anh huong ro nhat o forgot-password.php/reset-password.php vi
+    // day la trang cong khai khong bat buoc dang nhap truoc.
+    if (empty($_SESSION['admin_csrf']) || !hash_equals($_SESSION['admin_csrf'], $_POST['csrf'] ?? '')) {
         http_response_code(403);
         exit('Phiên làm việc không hợp lệ, vui lòng tải lại trang và thử lại.');
     }
