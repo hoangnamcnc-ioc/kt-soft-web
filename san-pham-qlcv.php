@@ -1,7 +1,13 @@
 <?php
+require_once __DIR__ . '/inc_download.php';
+
 $pageTitle = 'QLCV — Phần mềm quản lý công việc theo phòng ban | KT-SOFT';
 $pageDesc = 'QLCV giúp đội nhóm giao việc, theo dõi tiến độ, chấm điểm KPI theo phòng ban và xếp lịch trực — chạy local hoặc trên máy chủ nội bộ.';
 require_once __DIR__ . '/inc_header.php';
+
+$luotTai = doc_luot_tai('qlcv');
+$danhGia = doc_danh_gia('qlcv');
+$daDanhGia = !empty($_COOKIE['danhgia_qlcv']);
 ?>
 
 <section class="hero" style="padding-bottom:0;">
@@ -13,8 +19,33 @@ require_once __DIR__ . '/inc_header.php';
       dõi hiệu suất từng phòng ban — không cần trao đổi qua nhiều nhóm chat rời rạc.
     </p>
     <div class="cta-row">
-      <a href="lien-he.php" class="btn" style="background:var(--qlcv);">Yêu cầu triển khai</a>
-      <a href="index.php#san-pham" class="btn btn-ghost">Xem các sản phẩm khác</a>
+      <a href="download.php?p=qlcv" class="btn" style="background:var(--qlcv);">⬇️ Tải về dùng thử</a>
+      <a href="lien-he.php" class="btn btn-ghost">Yêu cầu triển khai</a>
+    </div>
+
+    <div class="rating-block">
+      <div class="download-count">⬇️ <b><?= number_format($luotTai, 0, ',', '.') ?></b> lượt tải</div>
+      <div class="rating-summary">
+        <span class="stars"><?= str_repeat('★', (int) round($danhGia['trung_binh'])) . str_repeat('☆', 5 - (int) round($danhGia['trung_binh'])) ?></span>
+        <?php if ($danhGia['so_luot'] > 0): ?>
+          <span><?= $danhGia['trung_binh'] ?>/5</span>
+          <span class="muted">(<?= $danhGia['so_luot'] ?> đánh giá)</span>
+        <?php else: ?>
+          <span class="muted">Chưa có đánh giá</span>
+        <?php endif; ?>
+      </div>
+      <?php if (isset($_GET['danhgia'])): ?>
+        <span class="rated-thanks">Cảm ơn bạn đã đánh giá!</span>
+      <?php elseif (!$daDanhGia): ?>
+        <form method="post" action="danh-gia.php" class="rate-form">
+          <input type="hidden" name="p" value="qlcv">
+          <input type="hidden" name="back" value="san-pham-qlcv.php">
+          <span class="rate-label">Bạn thấy phần mềm thế nào?</span>
+          <?php for ($i = 1; $i <= 5; $i++): ?>
+            <button type="submit" name="diem" value="<?= $i ?>" title="<?= $i ?> sao"><?= str_repeat('★', $i) ?></button>
+          <?php endfor; ?>
+        </form>
+      <?php endif; ?>
     </div>
   </div>
 </section>

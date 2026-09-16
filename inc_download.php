@@ -7,6 +7,10 @@ const DOWNLOAD_MAP = [
         'file' => 'downloads/QLBH-SOFT-Setup.exe',
         'ten' => 'QLBH-SOFT-Setup.exe',
     ],
+    'qlcv' => [
+        'file' => 'downloads/QLCV-Setup.exe',
+        'ten' => 'QLCV-Setup.exe',
+    ],
 ];
 
 const LUOT_TAI_FILE = __DIR__ . '/data/luot_tai.json';

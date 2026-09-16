@@ -7,5 +7,6 @@ data/luot_tai.json
 data/danh_gia.json
 data/password_resets.json
 downloads/*.exe
+admin/qlbh_db_config.php
 *.log
 .DS_Store

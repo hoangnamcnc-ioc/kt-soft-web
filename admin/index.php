@@ -2,7 +2,10 @@
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/../inc_track.php';
 require_once __DIR__ . '/../inc_download.php';
+require_once __DIR__ . '/qlbh_db.php';
 admin_yeu_cau_dang_nhap();
+
+$khachHang = qlbh_thong_ke_khach_hang();
 
 $luotTaiQlbhSoft = doc_luot_tai('qlbh-soft');
 $danhGiaQlbhSoft = doc_danh_gia('qlbh-soft');
@@ -22,6 +25,48 @@ require __DIR__ . '/includes/layout-head.php';
   <div class="stat-card"><div class="icon">📨</div><div class="num"><?= $tongSo ?></div><div class="label">Tổng số liên hệ đã nhận</div></div>
   <div class="stat-card"><div class="icon">🔴</div><div class="num" style="color:#dc2626;"><?= $chuaDoc ?></div><div class="label">Liên hệ chưa đọc</div></div>
   <div class="stat-card"><div class="icon">🌐</div><div class="num">4</div><div class="label">Sản phẩm đang giới thiệu</div></div>
+</div>
+
+<div class="card">
+  <div class="card-header"><h3>☁️ Khách hàng QLBH-CLOUD</h3></div>
+  <div style="padding:20px;">
+    <?php if ($khachHang === null): ?>
+      <p style="color:#64748b;font-size:13.5px;margin:0;">Không kết nối được tới dữ liệu QLBH-CLOUD lúc này.</p>
+    <?php else: ?>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:20px;">
+        <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
+          <div style="font-size:26px;font-weight:800;color:#1d4ed8;"><?= (int) $khachHang['tong'] ?></div>
+          <div style="font-size:13px;color:#64748b;">Tổng đã đăng ký</div>
+        </div>
+        <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
+          <div style="font-size:26px;font-weight:800;color:#d97706;"><?= (int) $khachHang['dung_thu'] ?></div>
+          <div style="font-size:13px;color:#64748b;">Đang dùng thử</div>
+        </div>
+        <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
+          <div style="font-size:26px;font-weight:800;color:#059669;"><?= (int) $khachHang['tra_phi'] ?></div>
+          <div style="font-size:13px;color:#64748b;">Đã trả phí</div>
+        </div>
+        <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
+          <div style="font-size:26px;font-weight:800;color:#1d4ed8;"><?= (int) $khachHang['hoat_dong_7_ngay'] ?></div>
+          <div style="font-size:13px;color:#64748b;">Hoạt động 7 ngày qua</div>
+        </div>
+      </div>
+      <?php if ($khachHang['moi_nhat']): ?>
+        <div style="font-size:13px;font-weight:700;color:#475569;margin-bottom:10px;text-transform:uppercase;letter-spacing:.04em;">Đăng ký gần nhất</div>
+        <table class="data-table">
+          <tbody>
+            <?php foreach ($khachHang['moi_nhat'] as $t): ?>
+              <tr>
+                <td><?= e($t['name']) ?></td>
+                <td><?= $t['plan'] === 'PAID' ? '<span class="pill-read" style="background:#d1fae5;color:#065f46;">Trả phí</span>' : '<span class="pill-unread">Dùng thử</span>' ?></td>
+                <td style="text-align:right;color:#64748b;font-size:13px;"><?= date('d/m/Y', strtotime($t['created_at'])) ?></td>
+              </tr>
+            <?php endforeach; ?>
+          </tbody>
+        </table>
+      <?php endif; ?>
+    <?php endif; ?>
+  </div>
 </div>
 
 <div class="card">
