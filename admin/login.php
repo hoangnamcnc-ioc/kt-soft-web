@@ -80,6 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="password" name="password" required>
       </div>
       <button type="submit">Đăng nhập</button>
+      <a href="forgot-password.php" style="display:block;text-align:center;margin-top:14px;font-size:13px;color:#64748b;text-decoration:none;">Quên mật khẩu?</a>
     </form>
   </div>
 </body>

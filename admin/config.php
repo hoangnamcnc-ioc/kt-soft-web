@@ -4,6 +4,7 @@ session_start();
 const DATA_FILE = __DIR__ . '/../data/lien_he.json';
 const USERS_FILE = __DIR__ . '/../data/admin_users.json';
 const LOGIN_ATTEMPTS_FILE = __DIR__ . '/../data/login_attempts.json';
+const PASSWORD_RESETS_FILE = __DIR__ . '/../data/password_resets.json';
 const DANG_NHAP_TOI_DA = 5;
 const DANG_NHAP_KHOA_GIAY = 300;
 
@@ -187,4 +188,37 @@ function nguoi_dung_tim_theo_username(string $username): ?array
         }
     }
     return null;
+}
+
+/** Tao 1 token dat lai mat khau cho user_id, het han sau 1 gio, tra ve token vua tao. */
+function tao_token_dat_lai(int $userId): string
+{
+    $resets = doc_json_file(PASSWORD_RESETS_FILE);
+    $token = bin2hex(random_bytes(32));
+    $resets[$token] = ['user_id' => $userId, 'het_han' => time() + 3600, 'da_dung' => false];
+    ghi_json_file(PASSWORD_RESETS_FILE, $resets);
+    return $token;
+}
+
+/** Kiem tra 1 token con hieu luc khong (ton tai, chua dung, chua het han), tra ve user_id neu hop le. */
+function kiem_tra_token_dat_lai(string $token): ?int
+{
+    $resets = doc_json_file(PASSWORD_RESETS_FILE);
+    $r = $resets[$token] ?? null;
+    if (!$r || $r['da_dung'] || $r['het_han'] < time()) {
+        return null;
+    }
+    return (int) $r['user_id'];
+}
+
+/** Danh dau 1 token da dung, dong thoi vo hieu hoa moi token khac dang cho cua cung user do. */
+function danh_dau_token_da_dung(string $token, int $userId): void
+{
+    $resets = doc_json_file(PASSWORD_RESETS_FILE);
+    foreach ($resets as $t => $r) {
+        if ((int) $r['user_id'] === $userId) {
+            $resets[$t]['da_dung'] = true;
+        }
+    }
+    ghi_json_file(PASSWORD_RESETS_FILE, $resets);
 }

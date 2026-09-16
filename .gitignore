@@ -5,6 +5,7 @@ data/luot_xem.log
 data/login_attempts.json
 data/luot_tai.json
 data/danh_gia.json
+data/password_resets.json
 downloads/*.exe
 *.log
 .DS_Store
