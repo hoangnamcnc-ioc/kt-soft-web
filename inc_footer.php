@@ -26,6 +26,7 @@
           <li><a href="https://hocketoanthue.vn/phan-mem" target="_blank" rel="noopener">hocketoanthue.vn ↗</a></li>
           <li><a href="bang-gia.php">Bảng giá</a></li>
           <li><a href="lien-he.php">Liên hệ tư vấn</a></li>
+          <li><a href="status.php">Trạng thái hệ thống</a></li>
         </ul>
       </div>
       <div>
