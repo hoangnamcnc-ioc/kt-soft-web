@@ -92,7 +92,7 @@ require_once __DIR__ . '/inc_header.php';
           </li>
           <li>
             <span class="icon">🧾</span>
-            <div><b>Kế toán</b><br><a href="https://hocketoanthue.vn" target="_blank" rel="noopener">hocketoanthue.vn</a></div>
+            <div><b>Kế toán</b><br><a href="https://hocketoanthue.vn/phan-mem" target="_blank" rel="noopener">hocketoanthue.vn</a></div>
           </li>
         </ul>
       </div>

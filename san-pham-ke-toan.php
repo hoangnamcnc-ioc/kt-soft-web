@@ -13,7 +13,7 @@ require_once __DIR__ . '/inc_header.php';
       không cần thuê kế toán dịch vụ cho những nghiệp vụ cơ bản hàng ngày.
     </p>
     <div class="cta-row">
-      <a href="https://hocketoanthue.vn" class="btn" style="background:var(--ketoan);" target="_blank" rel="noopener">Xem tại hocketoanthue.vn →</a>
+      <a href="https://hocketoanthue.vn/phan-mem" class="btn" style="background:var(--ketoan);" target="_blank" rel="noopener">Xem tại hocketoanthue.vn →</a>
       <a href="lien-he.php" class="btn btn-ghost">Liên hệ tư vấn</a>
     </div>
   </div>
@@ -36,7 +36,7 @@ require_once __DIR__ . '/inc_header.php';
           <li>Xuất báo cáo, bảng kê dạng Excel/XML để nộp cơ quan thuế</li>
         </ul>
         <div class="cta-row">
-          <a href="https://hocketoanthue.vn" class="btn" style="background:var(--ketoan);" target="_blank" rel="noopener">Tìm hiểu thêm →</a>
+          <a href="https://hocketoanthue.vn/phan-mem" class="btn" style="background:var(--ketoan);" target="_blank" rel="noopener">Tìm hiểu thêm →</a>
         </div>
       </div>
       <div class="mock" style="--card-bg: var(--ketoan-bg); --card-accent: var(--ketoan);">
@@ -56,7 +56,7 @@ require_once __DIR__ . '/inc_header.php';
         <h2>Muốn xem chi tiết tính năng và bảng giá?</h2>
         <p>Trang riêng hocketoanthue.vn có đầy đủ tài liệu, mẫu tờ khai và hướng dẫn sử dụng.</p>
       </div>
-      <a href="https://hocketoanthue.vn" class="btn" target="_blank" rel="noopener">Truy cập hocketoanthue.vn →</a>
+      <a href="https://hocketoanthue.vn/phan-mem" class="btn" target="_blank" rel="noopener">Truy cập hocketoanthue.vn →</a>
     </div>
   </div>
 </section>
