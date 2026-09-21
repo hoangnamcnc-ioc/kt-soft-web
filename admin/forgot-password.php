@@ -28,8 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 . "Co yeu cau dat lai mat khau cho tai khoan quan tri \"{$user['username']}\".\n"
                 . "Bam vao link duoi day de dat mat khau moi (hieu luc 1 gio):\n\n$resetLink\n\n"
                 . "Neu ban khong yeu cau, vui long bo qua email nay.\n";
-            $headers = 'From: KT-SOFT Admin <no-reply@kt-soft.vn>';
-            @mail($user['email'], $subject, $body, $headers);
+            sendMail($user['email'], $subject, $body);
         }
         // Luon hien thong bao giong nhau du tai khoan co ton tai/co email hay khong, tranh lo
         // thong tin ten dang nhap nao dang ton tai trong he thong.

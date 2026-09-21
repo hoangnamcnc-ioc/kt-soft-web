@@ -10,3 +10,4 @@ downloads/*.exe
 admin/qlbh_db_config.php
 *.log
 .DS_Store
+admin/smtp_config.php
