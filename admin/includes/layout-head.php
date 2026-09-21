@@ -66,11 +66,44 @@
   .alert { padding: 12px 16px; border-radius: var(--radius); margin-bottom: 20px; font-size: 14px; }
   .alert-success { background: #d1fae5; color: #065f46; }
   .alert-error { background: #fee2e2; color: var(--danger); }
+
+  .mini-grid-2, .mini-grid-3, .mini-grid-4 { display: grid; gap: 16px; margin-bottom: 20px; }
+  .mini-grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .mini-grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .mini-grid-4 { grid-template-columns: repeat(4, 1fr); }
+  .mini-stat { text-align: center; padding: 16px; background: var(--gray-50); border-radius: 10px; }
+  .mini-stat .num { font-size: 26px; font-weight: 800; color: var(--primary); }
+  .mini-stat .label { font-size: 13px; color: var(--gray-500); }
+
+  .menu-toggle { display: none; background: none; border: none; font-size: 22px; cursor: pointer; padding: 4px 8px; color: var(--gray-900); }
+  .sidebar-overlay { display: none; }
+
+  @media (max-width: 900px) {
+    .stat-grid, .mini-grid-3, .mini-grid-4 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 560px) {
+    .stat-grid, .mini-grid-2, .mini-grid-3, .mini-grid-4 { grid-template-columns: 1fr; }
+    .admin-content { padding: 16px; }
+    .admin-topbar { padding: 12px 16px; }
+    table.data-table { display: block; overflow-x: auto; white-space: nowrap; }
+  }
+  @media (max-width: 780px) {
+    .menu-toggle { display: inline-block; }
+    .admin-sidebar {
+      position: fixed; top: 0; left: 0; height: 100%; z-index: 100;
+      transform: translateX(-100%); transition: transform .2s ease;
+    }
+    .admin-sidebar.open { transform: translateX(0); }
+    .sidebar-overlay.open {
+      display: block; position: fixed; inset: 0; background: rgba(0,0,0,.4); z-index: 99;
+    }
+  }
 </style>
 </head>
 <body>
 <div class="admin-wrap">
-  <aside class="admin-sidebar">
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <aside class="admin-sidebar" id="adminSidebar">
     <div class="brand">
       <div class="ico">KT</div>
       <div><div class="brand-name">KT-SOFT Admin</div><div class="brand-sub">Quản trị website</div></div>
@@ -98,7 +131,10 @@
   </aside>
   <div class="admin-main">
     <div class="admin-topbar">
-      <h1><?= e($adminTitle ?? 'Dashboard') ?></h1>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Mở menu">☰</button>
+        <h1><?= e($adminTitle ?? 'Dashboard') ?></h1>
+      </div>
       <div><?= $topbarActions ?? '' ?></div>
     </div>
     <div class="admin-content">

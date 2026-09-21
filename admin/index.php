@@ -33,22 +33,22 @@ require __DIR__ . '/includes/layout-head.php';
     <?php if ($khachHang === null): ?>
       <p style="color:#64748b;font-size:13.5px;margin:0;">Không kết nối được tới dữ liệu QLBH-CLOUD lúc này.</p>
     <?php else: ?>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:20px;">
-        <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
-          <div style="font-size:26px;font-weight:800;color:#1d4ed8;"><?= (int) $khachHang['tong'] ?></div>
-          <div style="font-size:13px;color:#64748b;">Tổng đã đăng ký</div>
+      <div class="mini-grid-4">
+        <div class="mini-stat">
+          <div class="num"><?= (int) $khachHang['tong'] ?></div>
+          <div class="label">Tổng đã đăng ký</div>
         </div>
-        <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
-          <div style="font-size:26px;font-weight:800;color:#d97706;"><?= (int) $khachHang['dung_thu'] ?></div>
-          <div style="font-size:13px;color:#64748b;">Đang dùng thử</div>
+        <div class="mini-stat">
+          <div class="num" style="color:#d97706;"><?= (int) $khachHang['dung_thu'] ?></div>
+          <div class="label">Đang dùng thử</div>
         </div>
-        <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
-          <div style="font-size:26px;font-weight:800;color:#059669;"><?= (int) $khachHang['tra_phi'] ?></div>
-          <div style="font-size:13px;color:#64748b;">Đã trả phí</div>
+        <div class="mini-stat">
+          <div class="num" style="color:#059669;"><?= (int) $khachHang['tra_phi'] ?></div>
+          <div class="label">Đã trả phí</div>
         </div>
-        <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
-          <div style="font-size:26px;font-weight:800;color:#1d4ed8;"><?= (int) $khachHang['hoat_dong_7_ngay'] ?></div>
-          <div style="font-size:13px;color:#64748b;">Hoạt động 7 ngày qua</div>
+        <div class="mini-stat">
+          <div class="num"><?= (int) $khachHang['hoat_dong_7_ngay'] ?></div>
+          <div class="label">Hoạt động 7 ngày qua</div>
         </div>
       </div>
       <?php if ($khachHang['moi_nhat']): ?>
@@ -72,18 +72,18 @@ require __DIR__ . '/includes/layout-head.php';
 <div class="card">
   <div class="card-header"><h3>📊 Lượt truy cập website</h3></div>
   <div style="padding:20px;">
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px;">
-      <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
-        <div style="font-size:26px;font-weight:800;color:#1d4ed8;"><?= (int) $thongKeXem['hom_nay'] ?></div>
-        <div style="font-size:13px;color:#64748b;">Hôm nay</div>
+    <div class="mini-grid-3">
+      <div class="mini-stat">
+        <div class="num"><?= (int) $thongKeXem['hom_nay'] ?></div>
+        <div class="label">Hôm nay</div>
       </div>
-      <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
-        <div style="font-size:26px;font-weight:800;color:#1d4ed8;"><?= (int) $thongKeXem['bay_ngay'] ?></div>
-        <div style="font-size:13px;color:#64748b;">7 ngày qua</div>
+      <div class="mini-stat">
+        <div class="num"><?= (int) $thongKeXem['bay_ngay'] ?></div>
+        <div class="label">7 ngày qua</div>
       </div>
-      <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
-        <div style="font-size:26px;font-weight:800;color:#1d4ed8;"><?= (int) $thongKeXem['ba_muoi_ngay'] ?></div>
-        <div style="font-size:13px;color:#64748b;">30 ngày qua</div>
+      <div class="mini-stat">
+        <div class="num"><?= (int) $thongKeXem['ba_muoi_ngay'] ?></div>
+        <div class="label">30 ngày qua</div>
       </div>
     </div>
     <?php if ($thongKeXem['top_trang']): ?>
@@ -106,16 +106,18 @@ require __DIR__ . '/includes/layout-head.php';
 
 <div class="card">
   <div class="card-header"><h3>💻 QLBH-SOFT — Tải về &amp; đánh giá</h3></div>
-  <div style="padding:20px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
-    <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
-      <div style="font-size:26px;font-weight:800;color:#1d4ed8;">⬇️ <?= (int) $luotTaiQlbhSoft ?></div>
-      <div style="font-size:13px;color:#64748b;">Lượt tải bản cài đặt</div>
-    </div>
-    <div style="text-align:center;padding:16px;background:#f8fafc;border-radius:10px;">
-      <div style="font-size:26px;font-weight:800;color:#d97706;">
-        <?= $danhGiaQlbhSoft['so_luot'] > 0 ? $danhGiaQlbhSoft['trung_binh'] . '/5 ⭐' : '—' ?>
+  <div style="padding:20px;">
+    <div class="mini-grid-2" style="margin-bottom:0;">
+      <div class="mini-stat">
+        <div class="num">⬇️ <?= (int) $luotTaiQlbhSoft ?></div>
+        <div class="label">Lượt tải bản cài đặt</div>
       </div>
-      <div style="font-size:13px;color:#64748b;"><?= $danhGiaQlbhSoft['so_luot'] ?> lượt đánh giá</div>
+      <div class="mini-stat">
+        <div class="num" style="color:#d97706;">
+          <?= $danhGiaQlbhSoft['so_luot'] > 0 ? $danhGiaQlbhSoft['trung_binh'] . '/5 ⭐' : '—' ?>
+        </div>
+        <div class="label"><?= $danhGiaQlbhSoft['so_luot'] ?> lượt đánh giá</div>
+      </div>
     </div>
   </div>
 </div>
