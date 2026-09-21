@@ -1,4 +1,10 @@
 <?php
+// Tat hien thi loi PHP ra man hinh tren production - tranh lo duong dan server khi co loi.
+// Van ghi log day du vao error_log cua host de con debug duoc.
+error_reporting(E_ALL);
+ini_set('display_errors', '0');
+ini_set('log_errors', '1');
+
 session_start();
 
 const DATA_FILE = __DIR__ . '/../data/lien_he.json';

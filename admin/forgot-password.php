@@ -6,12 +6,19 @@ if (admin_dang_nhap()) {
 }
 
 $sent = false;
+$rateLimited = false;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     admin_check_csrf();
     $username = trim($_POST['username'] ?? '');
 
-    if ($username !== '') {
+    if (dang_nhap_dang_bi_khoa() > 0) {
+        // Dung chung co che khoa IP voi trang dang nhap - tranh spam gui email/do token qua
+        // trang nay (chi co it tai khoan admin, nguong 5 lan/300 giay khong anh huong su dung
+        // that vi rat hiem khi can bam "quen mat khau" nhieu lan lien tuc).
+        $rateLimited = true;
+    } elseif ($username !== '') {
+        dang_nhap_ghi_that_bai();
         $user = nguoi_dung_tim_theo_username($username);
         if ($user && !empty($user['email'])) {
             $token = tao_token_dat_lai((int) $user['id']);
@@ -61,7 +68,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
   <div class="box">
     <h1>Quên mật khẩu</h1>
-    <?php if ($sent): ?>
+    <?php if ($rateLimited): ?>
+      <div class="alert-success" style="background:#fef2f2;border-color:#fecaca;color:#b91c1c;">
+        Bạn đã yêu cầu quá nhiều lần. Vui lòng thử lại sau ít phút.
+      </div>
+      <a href="login.php" class="back-link">← Quay lại đăng nhập</a>
+    <?php elseif ($sent): ?>
       <div class="alert-success">
         Nếu tài khoản này tồn tại và đã cấu hình email khôi phục, chúng tôi đã gửi link đặt lại
         mật khẩu (hiệu lực 1 giờ). Nếu không nhận được, kiểm tra hộp thư Spam hoặc đăng nhập bằng
