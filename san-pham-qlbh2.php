@@ -34,6 +34,7 @@ require_once __DIR__ . '/inc_header.php';
           <li>Quản lý kho theo từng chi nhánh, cảnh báo dưới định mức</li>
           <li>Kiểm hàng, chuyển hàng giữa các chi nhánh có xác nhận 2 chiều</li>
           <li>Nhập hàng, quản lý nhà cung cấp và công nợ phải trả</li>
+          <li>Đơn giao hàng riêng ngoài quầy, sao chép đơn nhanh, biểu phí tự động theo khu vực</li>
         </ul>
       </div>
       <div class="mock" style="--card-bg: var(--qlbh2-bg); --card-accent: var(--qlbh2);">
@@ -68,6 +69,7 @@ require_once __DIR__ . '/inc_header.php';
           <li>Khuyến mại, mã giảm giá, chiến dịch marketing theo đợt</li>
           <li>Đặt hàng online công khai, không cần khách đăng nhập</li>
           <li>Phiếu bảo hành tự tạo theo từng sản phẩm khi hoàn tất đơn</li>
+          <li>Theo dõi mọi yêu cầu bảo hành, cấu hình kênh gửi marketing (SMS/Email)</li>
         </ul>
       </div>
     </div>
@@ -100,6 +102,52 @@ require_once __DIR__ . '/inc_header.php';
         <div class="mock-row"><span>Thuế GTGT ước tính (1%)</span><b>15.000.000đ</b></div>
         <div class="mock-row"><span>Thuế TNCN ước tính (0,5%)</span><b>2.500.000đ</b></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="border-top:1px solid #eee;">
+  <div class="container">
+    <h2 style="margin-bottom:6px;">Lịch sử cập nhật</h2>
+    <p class="desc" style="margin-top:0;margin-bottom:24px;">
+      QLBH-CLOUD chạy hoàn toàn trên trình duyệt (SaaS) — mọi bản cập nhật được áp dụng tự động
+      ngay trên app.kt-soft.vn, bạn không cần cài đặt hay làm gì thêm.
+    </p>
+
+    <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Cập nhật 23/09/2026</h3>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Tạo đơn giao hàng riêng (không cần đứng tại quầy) — dùng cho đơn đặt qua điện thoại, mạng xã hội</li>
+        <li>Sao chép đơn hàng cũ chỉ 1 cú nhấp — khách đặt lại y hệt lần trước rất nhanh</li>
+        <li>Xuất file Excel danh sách đơn hàng, đúng theo bộ lọc đang xem trên màn hình</li>
+        <li>Chọn nhân viên bán hàng khác khi thu ngân bận — đúng người, đúng hoa hồng, đúng bảng lương</li>
+        <li>Biểu phí giao hàng theo khu vực, tự động điền khi nhập địa chỉ giao hàng</li>
+        <li>Tổng quan vận chuyển: đếm vận đơn theo từng trạng thái, biết ngay đang tồn ở khâu nào</li>
+        <li>Cấu hình kênh marketing (tên người gửi, brandname SMS, chân trang tin nhắn)</li>
+        <li>Danh sách yêu cầu bảo hành — theo dõi tất cả yêu cầu ở một chỗ, không cần mở từng phiếu</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Vá lỗi &amp; nâng cao độ tin cậy</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Nút Thanh toán luôn hiển thị sẵn trên màn hình bán hàng, không phải cuộn trang mỗi lần tính tiền — cả trên máy tính lẫn điện thoại</li>
+        <li>Tăng cường cách ly dữ liệu giữa các cửa hàng dùng chung hệ thống, rà soát và vá nhiều lỗ hổng bảo mật</li>
+        <li>Form thêm sản phẩm: đưa "Tên sản phẩm" lên ô đầu tiên, dễ nhập hơn cho người mới</li>
+        <li>Các trang danh sách còn trống (chưa có sản phẩm, đơn hàng...) chỉ rõ bước tiếp theo cần làm</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Trước đó</h3>
+      </div>
+      <p class="desc" style="margin:8px 0 0;">
+        Ra mắt bản dùng thử tự đăng ký (miễn phí 12 tháng), mỗi cửa hàng có dữ liệu tách biệt hoàn
+        toàn dù dùng chung hệ thống. Bán hàng tại quầy, quản lý kho đa chi nhánh, khách hàng &amp;
+        công nợ, nhập hàng &amp; nhà cung cấp, khuyến mại &amp; tích điểm, sổ quỹ, ước tính thuế hộ
+        kinh doanh, sao lưu dữ liệu tự động.
+      </p>
     </div>
   </div>
 </section>
