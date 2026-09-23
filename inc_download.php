@@ -11,6 +11,10 @@ const DOWNLOAD_MAP = [
         'file' => 'downloads/QLCV-Setup.exe',
         'ten' => 'QLCV-Setup.exe',
     ],
+    'ke-toan' => [
+        'file' => 'downloads/KT-SOFT-Setup.exe',
+        'ten' => 'KT-SOFT-Setup.exe',
+    ],
 ];
 
 const LUOT_TAI_FILE = __DIR__ . '/data/luot_tai.json';

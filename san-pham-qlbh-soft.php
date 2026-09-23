@@ -108,6 +108,77 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
   </div>
 </section>
 
+<section class="section" style="border-top:1px solid #eee;">
+  <div class="container">
+    <h2 style="margin-bottom:6px;">Lịch sử cập nhật</h2>
+    <p class="desc" style="margin-top:0;margin-bottom:24px;">
+      Cài bản mới đè lên bản cũ (không cần gỡ cài đặt) — toàn bộ dữ liệu bán hàng, khách hàng,
+      hàng hóa của bạn được giữ nguyên. Xem <a href="#huong-dan-cap-nhat">hướng dẫn cập nhật an toàn</a> bên dưới.
+    </p>
+
+    <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.1.0</h3>
+        <span class="muted" style="font-size:13px;">23/09/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Quét mã vạch ở tất cả màn hình kho (nhập hàng, xuất kho, trả hàng, bán online) — trước đây chỉ có ở màn Bán hàng</li>
+        <li>Quên mật khẩu tự đặt lại qua email, không cần liên hệ hỗ trợ</li>
+        <li>Điểm tích lũy cho khách hàng: tự cộng điểm, đổi điểm trừ tiền, nhóm khách hàng (VIP/Bán lẻ...), hạn mức nợ cảnh báo</li>
+        <li>Thêm hình thức thanh toán Quét QR / Quẹt thẻ (tách riêng khỏi Chuyển khoản để đối soát dễ hơn)</li>
+        <li>Nhập/xuất Excel (.xlsx) cho tất cả các danh sách: hàng hóa, khách hàng, nhà cung cấp, tồn kho, sổ quỹ, đơn hàng, nhập hàng, bảng lương, và toàn bộ báo cáo</li>
+        <li>Tiền khách đưa / tiền thối lại ngay tại màn Bán hàng, kèm nút bấm nhanh các mệnh giá tiền</li>
+        <li>Báo cáo cuối ngày kiểu kiểm két: so tiền phải có với tiền đếm thực tế trong két</li>
+        <li>Tìm hàng hóa/khách hàng không cần gõ dấu tiếng Việt</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Vá lỗi &amp; nâng cao độ tin cậy</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Sửa lỗi đơn bán trước 7 giờ sáng bị tính nhầm sang doanh thu ngày hôm trước</li>
+        <li>Sửa lỗi chức năng Trả hàng bán không hoạt động</li>
+        <li>Sửa lỗi cột "Thành tiền" không cập nhật khi đổi số lượng trong giỏ hàng</li>
+        <li>Tăng độ an toàn dữ liệu: tự gộp dữ liệu về file chính định kỳ + sao lưu tự động mỗi ngày</li>
+        <li>Chặn bán âm kho khi có nhiều giao dịch cùng lúc; các lỗi bảo mật khác đã được rà soát và vá</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.0.0</h3>
+        <span class="muted" style="font-size:13px;">Phát hành lần đầu</span>
+      </div>
+      <p class="desc" style="margin:8px 0 0;">
+        Bán hàng tại quầy, quản lý hàng hóa/tồn kho, khách hàng &amp; công nợ, nhập hàng từ nhà
+        cung cấp, sổ quỹ thu chi, nhân viên &amp; bảng lương, sao lưu dữ liệu, ước tính thuế hộ
+        kinh doanh.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="huong-dan-cap-nhat" style="border-top:1px solid #eee; background:#f8fafc;">
+  <div class="container">
+    <h2 style="margin-bottom:6px;">Cách cập nhật lên bản mới nhất — không mất dữ liệu</h2>
+    <p class="desc" style="margin-top:0;">
+      Dữ liệu của bạn (đơn hàng, khách hàng, hàng hóa...) nằm trong thư mục <code>data</code>,
+      hoàn toàn tách biệt với chương trình. Cài đè bản mới sẽ <b>không đụng đến thư mục này</b>.
+    </p>
+    <ol class="feature-list" style="--card-accent: var(--qlbhsoft); list-style:decimal; padding-left:20px;">
+      <li>Tải bản cài mới nhất bằng nút bên dưới.</li>
+      <li>Chạy file <code>QLBH-SOFT-Setup.exe</code> vừa tải — <b>không cần gỡ bản cũ trước</b>. Nếu phần mềm đang mở, trình cài đặt sẽ tự đóng lại giúp bạn.</li>
+      <li>Bộ cài nhận ra bạn đã cài trước đó và tự động cài đè lên đúng vị trí cũ — chỉ thay chương trình, giữ nguyên toàn bộ dữ liệu.</li>
+      <li>Mở lại phần mềm, đăng nhập như bình thường — dữ liệu, tài khoản, mật khẩu đều giữ nguyên.</li>
+    </ol>
+    <p class="desc">
+      Cẩn thận hơn thì trước khi cập nhật, vào <b>Quản lý → Tổng quan → Sao lưu dữ liệu</b>, bấm
+      <b>Tải xuống</b> để có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
+    </p>
+    <div class="cta-row">
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.1.0 mới nhất</a>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
     <div class="cta-band">
