@@ -118,25 +118,27 @@ require __DIR__ . '/includes/layout-head.php';
   </div>
 </div>
 
-<?php foreach ($thongKeTai as $tk): ?>
 <div class="card">
-  <div class="card-header"><h3>💻 <?= e($tk['ten']) ?> — Tải về &amp; đánh giá</h3></div>
+  <div class="card-header"><h3>💻 Tải về &amp; đánh giá phần mềm</h3></div>
   <div style="padding:20px;">
-    <div class="mini-grid-2" style="margin-bottom:0;">
-      <div class="mini-stat">
-        <div class="num">⬇️ <?= (int) $tk['luot_tai'] ?></div>
-        <div class="label">Lượt tải bản cài đặt</div>
-      </div>
-      <div class="mini-stat">
-        <div class="num" style="color:#d97706;">
-          <?= $tk['danh_gia']['so_luot'] > 0 ? $tk['danh_gia']['trung_binh'] . '/5 ⭐' : '—' ?>
-        </div>
-        <div class="label"><?= $tk['danh_gia']['so_luot'] ?> lượt đánh giá</div>
-      </div>
-    </div>
+    <table class="data-table">
+      <thead><tr><th>Phần mềm</th><th style="text-align:right;">Lượt tải</th><th style="text-align:right;">Đánh giá</th></tr></thead>
+      <tbody>
+        <?php foreach ($thongKeTai as $tk): ?>
+          <tr>
+            <td><?= e($tk['ten']) ?></td>
+            <td style="text-align:right;font-weight:700;color:#1d4ed8;">⬇️ <?= (int) $tk['luot_tai'] ?></td>
+            <td style="text-align:right;color:#d97706;font-weight:700;">
+              <?= $tk['danh_gia']['so_luot'] > 0
+                    ? $tk['danh_gia']['trung_binh'] . '/5 ⭐ <span style="color:#64748b;font-weight:400;">(' . $tk['danh_gia']['so_luot'] . ')</span>'
+                    : '<span style="color:#94a3b8;font-weight:400;">— chưa có đánh giá</span>' ?>
+            </td>
+          </tr>
+        <?php endforeach; ?>
+      </tbody>
+    </table>
   </div>
 </div>
-<?php endforeach; ?>
 
 <div class="card">
   <div class="card-header">
