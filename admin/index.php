@@ -7,8 +7,22 @@ admin_yeu_cau_dang_nhap();
 
 $khachHang = qlbh_thong_ke_khach_hang();
 
-$luotTaiQlbhSoft = doc_luot_tai('qlbh-soft');
-$danhGiaQlbhSoft = doc_danh_gia('qlbh-soft');
+// Ten hien thi rieng cho tung san pham (key khop voi DOWNLOAD_MAP trong inc_download.php).
+// Dung 1 mang + vong lap thay vi chep code cho tung san pham - them san pham moi vao
+// DOWNLOAD_MAP la dashboard tu hien them, khong phai sua file nay.
+$tenSanPhamTai = [
+    'qlbh-soft' => 'QLBH-SOFT',
+    'qlcv' => 'QLCV',
+    'ke-toan' => 'KT-SOFT (Kế toán)',
+];
+$thongKeTai = [];
+foreach (DOWNLOAD_MAP as $key => $info) {
+    $thongKeTai[$key] = [
+        'ten' => $tenSanPhamTai[$key] ?? $info['ten'],
+        'luot_tai' => doc_luot_tai($key),
+        'danh_gia' => doc_danh_gia($key),
+    ];
+}
 
 $items = lien_he_doc_tat_ca();
 $tongSo = count($items);
@@ -104,23 +118,25 @@ require __DIR__ . '/includes/layout-head.php';
   </div>
 </div>
 
+<?php foreach ($thongKeTai as $tk): ?>
 <div class="card">
-  <div class="card-header"><h3>💻 QLBH-SOFT — Tải về &amp; đánh giá</h3></div>
+  <div class="card-header"><h3>💻 <?= e($tk['ten']) ?> — Tải về &amp; đánh giá</h3></div>
   <div style="padding:20px;">
     <div class="mini-grid-2" style="margin-bottom:0;">
       <div class="mini-stat">
-        <div class="num">⬇️ <?= (int) $luotTaiQlbhSoft ?></div>
+        <div class="num">⬇️ <?= (int) $tk['luot_tai'] ?></div>
         <div class="label">Lượt tải bản cài đặt</div>
       </div>
       <div class="mini-stat">
         <div class="num" style="color:#d97706;">
-          <?= $danhGiaQlbhSoft['so_luot'] > 0 ? $danhGiaQlbhSoft['trung_binh'] . '/5 ⭐' : '—' ?>
+          <?= $tk['danh_gia']['so_luot'] > 0 ? $tk['danh_gia']['trung_binh'] . '/5 ⭐' : '—' ?>
         </div>
-        <div class="label"><?= $danhGiaQlbhSoft['so_luot'] ?> lượt đánh giá</div>
+        <div class="label"><?= $tk['danh_gia']['so_luot'] ?> lượt đánh giá</div>
       </div>
     </div>
   </div>
 </div>
+<?php endforeach; ?>
 
 <div class="card">
   <div class="card-header">
