@@ -122,6 +122,18 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.1.2</h3>
+        <span class="muted" style="font-size:13px;">26/09/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Vá lỗi</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Sửa lỗi bù trừ công nợ khi 1 đối tác vừa là khách hàng vừa là nhà cung cấp (cùng mã số thuế): trước đây công nợ phải trả bên nhà cung cấp không giảm đúng sau khi bù trừ</li>
+        <li>Sửa lỗi số phiếu báo giá / đơn mua hàng tự động sinh bị trùng nhau</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.1.1</h3>
         <span class="muted" style="font-size:13px;">26/09/2026</span>
       </div>
@@ -197,7 +209,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.1.1 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.1.2 mới nhất</a>
     </div>
   </div>
 </section>
