@@ -122,6 +122,22 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.1.1</h3>
+        <span class="muted" style="font-size:13px;">26/09/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Màn hình rà soát hóa đơn sau khi tải từ Tổng cục Thuế: xem danh sách (đối tác, MST, số tiền, đã có/chưa có trong sổ sách), tích chọn hóa đơn cần cập nhật trước khi ghi sổ</li>
+        <li>Tùy chọn tải kèm bản thể hiện PDF của hóa đơn để xem/in, mở nhanh PDF hoặc XML từng hóa đơn</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Vá lỗi</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Sửa lỗi "HTTP 403 – Hệ thống phát hiện hành vi không hợp lệ" khi tải hóa đơn từ hoadondientu.gdt.gov.vn</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.1.0</h3>
         <span class="muted" style="font-size:13px;">23/09/2026</span>
       </div>
@@ -181,7 +197,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.1.0 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.1.1 mới nhất</a>
     </div>
   </div>
 </section>
