@@ -108,7 +108,11 @@
       <div class="ico">KT</div>
       <div><div class="brand-name">KT-SOFT Admin</div><div class="brand-sub">Quản trị website</div></div>
     </div>
-    <?php $curFile = basename($_SERVER['SCRIPT_NAME']); $chuaDoc = count(array_filter(lien_he_doc_tat_ca(), fn($it) => empty($it['da_doc']))); ?>
+    <?php
+      $curFile = basename($_SERVER['SCRIPT_NAME']);
+      $chuaDoc = count(array_filter(lien_he_doc_tat_ca(), fn($it) => empty($it['da_doc'])));
+      $chuaXuLyFeedback = count(array_filter(feedback_doc_tat_ca(), fn($it) => empty($it['da_xu_ly'])));
+    ?>
     <nav class="admin-nav">
       <div class="nav-section">Tổng quan</div>
       <a href="index.php" class="<?= $curFile === 'index.php' ? 'active' : '' ?>"><span class="ico">📊</span> Dashboard</a>
@@ -117,6 +121,10 @@
       <a href="lien-he.php" class="<?= $curFile === 'lien-he.php' ? 'active' : '' ?>">
         <span class="ico">📨</span> Form liên hệ
         <?php if ($chuaDoc > 0): ?><span class="badge-count"><?= $chuaDoc ?></span><?php endif; ?>
+      </a>
+      <a href="feedback.php" class="<?= $curFile === 'feedback.php' ? 'active' : '' ?>">
+        <span class="ico">💬</span> Phản hồi người dùng
+        <?php if ($chuaXuLyFeedback > 0): ?><span class="badge-count"><?= $chuaXuLyFeedback ?></span><?php endif; ?>
       </a>
 
       <div class="nav-section">Hệ thống</div>

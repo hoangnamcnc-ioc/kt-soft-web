@@ -16,6 +16,13 @@ const PASSWORD_RESETS_FILE = __DIR__ . '/../data/password_resets.json';
 const DANG_NHAP_TOI_DA = 5;
 const DANG_NHAP_KHOA_GIAY = 300;
 
+// Phan hoi (bao loi/gop y) gui tu CA 3 san pham: QLBH-CLOUD (web, goi qua fetch tu trinh duyet),
+// QLBH-SOFT va KT-SOFT (desktop, goi server-to-server qua internet khi may co mang) - dung 1
+// noi tap trung duy nhat tren kt-soft.vn thay vi moi san pham tu luu rieng 1 cho.
+const FEEDBACK_DATA_FILE = __DIR__ . '/../data/feedback.json';
+const FEEDBACK_RATE_FILE = __DIR__ . '/../data/feedback_rate.json';
+const FEEDBACK_GIOI_HAN_MOI_GIO = 20; // moi IP toi da 20 lan gui/gio - chan spam tu dong
+
 function dang_nhap_ip(): string
 {
     return $_SERVER['REMOTE_ADDR'] ?? 'unknown';
@@ -173,6 +180,59 @@ function lien_he_them(array $fields): void
     $fields['da_doc'] = false;
     $items[] = $fields;
     lien_he_ghi_tat_ca($items);
+}
+
+/** Đọc/ghi toàn bộ phản hồi (báo lỗi/góp ý) từ 3 sản phẩm - dùng chung 1 file JSON. */
+function feedback_doc_tat_ca(): array
+{
+    return doc_json_file(FEEDBACK_DATA_FILE);
+}
+
+function feedback_ghi_tat_ca(array $items): void
+{
+    ghi_json_file(FEEDBACK_DATA_FILE, $items);
+}
+
+/** Thêm 1 phản hồi mới (gọi từ feedback_api.php), tự sinh id tăng dần. Trả về id vừa tạo. */
+function feedback_them(array $fields): int
+{
+    $items = feedback_doc_tat_ca();
+    $maxId = 0;
+    foreach ($items as $it) {
+        $maxId = max($maxId, (int) ($it['id'] ?? 0));
+    }
+    $fields['id'] = $maxId + 1;
+    $fields['da_xu_ly'] = false;
+    $items[] = $fields;
+    feedback_ghi_tat_ca($items);
+    return $fields['id'];
+}
+
+/**
+ * Chan spam don gian theo IP: moi IP toi da FEEDBACK_GIOI_HAN_MOI_GIO lan gui/gio. Luu trong 1
+ * file JSON rieng (khong chung voi feedback.json de khong lam file du lieu that bi nhieu thoi
+ * gian voi gio thu vo nghia). Tu don dep cac IP qua 1 gio khong hoat dong de file khong phinh
+ * vo han theo thoi gian.
+ */
+function feedback_qua_gioi_han(string $ip): bool
+{
+    $data = doc_json_file(FEEDBACK_RATE_FILE);
+    $now = time();
+    foreach ($data as $k => $times) {
+        $data[$k] = array_values(array_filter((array) $times, fn($t) => $now - (int) $t < 3600));
+        if (!$data[$k]) {
+            unset($data[$k]);
+        }
+    }
+    $times = $data[$ip] ?? [];
+    if (count($times) >= FEEDBACK_GIOI_HAN_MOI_GIO) {
+        ghi_json_file(FEEDBACK_RATE_FILE, $data);
+        return true;
+    }
+    $times[] = $now;
+    $data[$ip] = $times;
+    ghi_json_file(FEEDBACK_RATE_FILE, $data);
+    return false;
 }
 
 /**
