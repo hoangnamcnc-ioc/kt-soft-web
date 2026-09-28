@@ -122,6 +122,24 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.1.4</h3>
+        <span class="muted" style="font-size:13px;">28/09/2026</span>
+        <span class="badge" style="background:#fee2e2;color:#991b1b;">Khuyến nghị cập nhật</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Vá lỗi quan trọng</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Sửa lỗi kết chuyển cuối kỳ tính sai khi có "Giảm giá hàng bán" hoặc "Hàng bán bị trả lại": trước đây khoản giảm trừ bị cộng nhầm vào doanh thu thay vì trừ đi, làm lợi nhuận ghi sổ sau khi khóa sổ bị sai lệch. Nếu bạn đã khóa sổ kỳ có dùng 1 trong 2 chức năng này bằng bản cũ hơn, vào <b>Khóa sổ → Bỏ khóa sổ</b> kỳ đó, xóa phiếu kết chuyển đã lập, cập nhật lên bản này rồi khóa sổ lại</li>
+        <li>Sửa lỗi giảm giá hàng mua luôn ghi vào tài khoản Hàng hóa (156) bất kể mặt hàng thực tế là nguyên vật liệu hay công cụ dụng cụ</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Gửi góp ý / báo lỗi ngay trong phần mềm (menu Hệ thống), gửi thẳng về bộ phận hỗ trợ kèm ảnh chụp màn hình nếu cần</li>
+        <li>Bỏ đóng gói riêng trình duyệt Chromium (giảm dung lượng bộ cài từ ~200MB xuống còn ~55MB) - dùng Chrome/Edge có sẵn trên máy để tải hóa đơn từ Tổng cục Thuế, đồng thời sửa lỗi trang trắng do bị nhận nhầm là bot</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.1.2</h3>
         <span class="muted" style="font-size:13px;">26/09/2026</span>
       </div>
@@ -209,7 +227,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.1.2 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.1.4 mới nhất</a>
     </div>
   </div>
 </section>
