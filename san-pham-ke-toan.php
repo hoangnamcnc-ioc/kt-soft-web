@@ -122,9 +122,19 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.1.5</h3>
+        <span class="muted" style="font-size:13px;">29/09/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Cải thiện</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Tải hóa đơn từ Tổng cục Thuế: tự động chờ và thử lại khi bị chặn tạm thời (lỗi "Hệ thống phát hiện hành vi không hợp lệ"), kèm hướng dẫn xử lý rõ hơn nếu vẫn không tải được</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.1.4</h3>
         <span class="muted" style="font-size:13px;">28/09/2026</span>
-        <span class="badge" style="background:#fee2e2;color:#991b1b;">Khuyến nghị cập nhật</span>
       </div>
       <p style="font-weight:600; margin:8px 0 4px;">Vá lỗi quan trọng</p>
       <ul class="feature-list" style="--card-accent: var(--ketoan);">
@@ -227,7 +237,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.1.4 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.1.5 mới nhất</a>
     </div>
   </div>
 </section>
