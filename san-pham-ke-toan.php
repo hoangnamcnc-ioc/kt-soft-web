@@ -134,6 +134,8 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       <p style="font-weight:600; margin:12px 0 4px;">Cải thiện</p>
       <ul class="feature-list" style="--card-accent: var(--ketoan);">
         <li>Ẩn menu "Hệ thống báo cáo HKD và DNSSN" khi đơn vị là Doanh nghiệp thông thường (không áp dụng)</li>
+        <li>Viết lại hoàn toàn cách tải hóa đơn từ Tổng cục Thuế: bạn tự tra cứu trên chính trình duyệt (đúng như thao tác quen thuộc), phần mềm chỉ gom kết quả và tự động bấm tải từng hóa đơn - khắc phục dứt điểm lỗi bị chặn/tải nhầm file trước đây</li>
+        <li>Áp trần đóng BHXH/BHYT/BHTN theo lương cơ sở/lương tối thiểu vùng khi tính bảng lương</li>
       </ul>
     </div>
 
@@ -254,7 +256,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.1.5 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.0 mới nhất</a>
     </div>
   </div>
 </section>
