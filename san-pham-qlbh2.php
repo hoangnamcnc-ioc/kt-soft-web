@@ -116,6 +116,35 @@ require_once __DIR__ . '/inc_header.php';
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Cập nhật 30/09/2026</h3>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>In tem giá/mã vạch cho sản phẩm — chọn hàng, in ra giấy A4 hoặc giấy decal tem</li>
+        <li>Mở ca/đóng ca bán hàng — kiểm tiền mặt đầu ca và cuối ca, tự tính chênh lệch</li>
+        <li>Vai trò tùy chỉnh theo từng khu vực (Thủ kho, Thủ quỹ...) thay vì chỉ có sẵn 3 vai trò cố định</li>
+        <li>Nhắc nợ khách hàng — danh sách khách còn nợ, gửi nhắc nhanh</li>
+        <li>Gợi ý nhập hàng theo tốc độ bán thực tế của từng sản phẩm</li>
+        <li>Quét mã vạch bằng camera điện thoại khi kiểm hàng — không cần máy quét riêng</li>
+        <li>Đơn vị quy đổi (thùng/lốc/lon...) khi nhập hàng</li>
+        <li>Nhập dữ liệu sẵn có từ QLBH-SOFT sang QLBH-CLOUD khi mở thêm chi nhánh</li>
+        <li>Chọn xem Top 10/20/50/100 trong các báo cáo sản phẩm/khách hàng bán chạy</li>
+        <li>Phân trang cho danh sách Đơn hàng/Sản phẩm/Khách hàng/Tồn kho — tải nhanh hơn khi dữ liệu nhiều</li>
+        <li>Nút Góp ý/Báo lỗi trên mọi trang, gửi thẳng tới đội ngũ phát triển</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Vá lỗi &amp; nâng cao độ tin cậy</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Thanh báo hiệu đang tải trang khi chuyển trang/lọc/phân trang danh sách lớn</li>
+        <li>Tiếng bíp phân biệt quét mã vạch thành công với quét ra nhiều kết quả trùng ở màn Bán hàng</li>
+        <li>Hủy đơn hàng báo lỗi rõ ràng thay vì im lặng; xác nhận trước khi xóa ảnh sản phẩm/thành phần combo</li>
+        <li>Cảnh báo khi chiết khấu bị giới hạn hoặc cho khách nợ mà chưa có số điện thoại</li>
+        <li>Sửa nhanh tồn kho ngay tại chỗ trong danh sách Quản lý kho</li>
+        <li>Làm rõ cách gia hạn và thêm số điện thoại (không bắt buộc) ở trang đăng ký dùng thử</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Cập nhật 23/09/2026</h3>
       </div>
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>

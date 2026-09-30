@@ -118,6 +118,75 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.3.0</h3>
+        <span class="muted" style="font-size:13px;">30/09/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>In tem giá/mã vạch cho sản phẩm — in trực tiếp trên giấy A4 hoặc giấy decal tem, không cần máy in tem riêng</li>
+        <li>Mở ca/đóng ca bán hàng — kiểm tiền mặt đầu ca và cuối ca, tự tính chênh lệch</li>
+        <li>Nhận thanh toán VietQR ngay tại quầy, tự động xác nhận đã chuyển khoản qua SePay (không cần thu ngân tự bấm xác nhận)</li>
+        <li>Khôi phục dữ liệu từ file backup khác (USB, máy khác) ngay trong phần mềm</li>
+        <li>Mã PIN ngắn (4-6 số) để khóa/mở nhanh màn hình bán hàng, không cần gõ mật khẩu đầy đủ mỗi lần</li>
+        <li>Trả hàng: gõ một phần là hiện gợi ý đơn hàng, không cần nhớ chính xác cả mã đơn</li>
+        <li>Kích hoạt lại sản phẩm đã ngừng kinh doanh ngay trong danh sách</li>
+        <li>Lưu lại lịch sử kiểm két tiền mặt cuối ngày để tra cứu lại sau này</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Vá lỗi &amp; nâng cao độ tin cậy</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Chống trừ kho 2 lần khi mạng chập chờn lúc thanh toán</li>
+        <li>Giữ lại hóa đơn đang bán dở nếu lỡ tắt trình duyệt, không mất giỏ hàng</li>
+        <li>Sửa giá hàng loạt: xác nhận trước khi lưu, hiện rõ số dòng thực sự thay đổi</li>
+        <li>Bắt buộc nhập lý do khi xuất hủy hàng; hiện số lượng sản phẩm liên quan khi chặn xóa danh mục/nhà cung cấp/vị trí</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.2.1</h3>
+        <span class="muted" style="font-size:13px;">27/09/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Nút "Góp ý / Báo lỗi" ngay trong phần mềm (màn Quản lý và màn Bán hàng) — gửi thẳng cho nhà phát triển, không cần tự cấu hình email hay liên hệ ở đâu khác</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.2.0</h3>
+        <span class="muted" style="font-size:13px;">25/09/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Bán hàng theo đơn vị quy đổi: khai báo Thùng/Lốc/... quy đổi ra đơn vị lẻ, chọn ngay đơn vị lúc bán tại màn Bán hàng, tồn kho và báo cáo vẫn tự động quy đổi chính xác về đơn vị cơ bản</li>
+        <li>Giá bán riêng theo nhóm khách hàng (Sỉ/Lẻ/VIP...): thiết lập bảng giá riêng cho từng nhóm, đơn hàng tự áp dụng đúng giá theo nhóm của khách</li>
+        <li>Gợi ý đặt hàng lại: tự tính theo tốc độ bán 30 ngày gần nhất, đề xuất số lượng cần nhập thêm, xuất được ra Excel để gửi nhà cung cấp</li>
+        <li>Nhắc nợ khách hàng qua Zalo: danh sách khách đang nợ sắp theo nợ cao nhất, soạn sẵn nội dung nhắc nợ để sao chép/gửi qua Zalo</li>
+        <li>Truy cập qua Wi-Fi/LAN kèm mã QR: mở thêm quầy thu ngân bằng điện thoại/máy tính bảng khác trong quán, không cần cài lại phần mềm</li>
+        <li>Chọn khổ giấy in hóa đơn 58mm hoặc 80mm cho đúng loại máy in nhiệt đang dùng</li>
+        <li>Tự động gửi báo cáo cuối ngày qua email cho tài khoản Quản lý vào giờ đã hẹn</li>
+        <li>Sao lưu dữ liệu tự động chép thêm 1 bản sang thư mục khác (ví dụ thư mục Google Drive/OneDrive đã đồng bộ sẵn) — tự động có thêm 1 bản trên mây</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.1.1 <span style="font-size:12px;font-weight:700;color:#dc2626;background:#fee2e2;padding:2px 8px;border-radius:10px;vertical-align:middle;">Vá khẩn cấp</span></h3>
+        <span class="muted" style="font-size:13px;">25/09/2026</span>
+      </div>
+      <p class="desc" style="margin:8px 0 10px;">
+        Khuyến nghị <b>mọi khách hàng đang dùng bản 1.1.0 cập nhật ngay</b>. Bản này vá 3 lỗi
+        nghiêm trọng: (1) một số trường hợp truy cập bất thường có thể làm phần mềm tự tắt
+        đột ngột giữa lúc bán hàng, (2) nhập file Excel thiếu cột giá/tồn kho có thể vô tình
+        xóa mất giá bán và tồn kho của các mặt hàng trùng mã, (3) trả hàng cho đơn có giảm
+        giá tính sai số tiền hoàn/công nợ. Đã kiểm chứng lại toàn bộ trên bản cài đặt thật
+        trước khi phát hành.
+      </p>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.1.0</h3>
         <span class="muted" style="font-size:13px;">23/09/2026</span>
       </div>
@@ -174,7 +243,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       <b>Tải xuống</b> để có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.1.0 mới nhất</a>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.2.1 mới nhất</a>
     </div>
   </div>
 </section>

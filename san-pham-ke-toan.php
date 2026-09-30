@@ -122,6 +122,23 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.2.0</h3>
+        <span class="muted" style="font-size:13px;">30/09/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Gửi email đối chiếu công nợ cuối kỳ/cuối năm cho khách hàng và nhà cung cấp ngay trong phần mềm — chỉ cần khai báo email trong Danh mục đối tượng công nợ</li>
+        <li>In hàng loạt nhiều Phiếu thu/Phiếu chi cùng lúc, không phải in từng phiếu một</li>
+        <li>Bù trừ công nợ: cho phép chọn thủ công cặp khách hàng/nhà cung cấp khi không tự động khớp được mã số thuế</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Cải thiện</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Ẩn menu "Hệ thống báo cáo HKD và DNSSN" khi đơn vị là Doanh nghiệp thông thường (không áp dụng)</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.1.5</h3>
         <span class="muted" style="font-size:13px;">29/09/2026</span>
       </div>
