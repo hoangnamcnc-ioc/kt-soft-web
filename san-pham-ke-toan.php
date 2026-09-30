@@ -122,6 +122,18 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.2.1</h3>
+        <span class="muted" style="font-size:13px;">30/09/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Vá lỗi</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Sửa lỗi "Đối chiếu hóa đơn điện tử" báo TẤT CẢ hóa đơn là "CHƯA NHẬP" dù đã lập đúng Phiếu nhập mua: số hóa đơn trong file XML gốc đệm đủ 8 chữ số (ví dụ "12357" ghi thành "00012357") nhưng file Excel/màn hình tra cứu của GDT lại hiển thị không đệm số 0, khiến so sánh bị lệch</li>
+        <li>Sửa cảnh báo trùng hóa đơn khi nhập không nhận ra hóa đơn đã có sẵn nếu số hóa đơn đệm số 0 khác nhau giữa 2 lần nhập</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.2.0</h3>
         <span class="muted" style="font-size:13px;">30/09/2026</span>
       </div>
@@ -256,7 +268,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.0 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.1 mới nhất</a>
     </div>
   </div>
 </section>
