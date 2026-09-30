@@ -12,6 +12,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($action === 'toggle_done') {
                 $items[$i]['da_xu_ly'] = empty($it['da_xu_ly']);
             } elseif ($action === 'delete') {
+                if (!empty($it['anh_dinh_kem'])) {
+                    $path = __DIR__ . '/..' . $it['anh_dinh_kem'];
+                    if (is_file($path)) {
+                        unlink($path);
+                    }
+                }
                 unset($items[$i]);
             }
             break;
@@ -84,6 +90,13 @@ require __DIR__ . '/includes/layout-head.php';
           <td><?= e($loaiNhan[$it['loai'] ?? ''] ?? ($it['loai'] ?? '')) ?></td>
           <td style="max-width:340px;color:#475569;white-space:pre-wrap;"><?= e($it['noi_dung'] ?? '') ?>
             <?php if (!empty($it['may_tinh'])): ?><div style="color:#94a3b8;font-size:12px;margin-top:4px;"><?= e($it['may_tinh']) ?></div><?php endif; ?>
+            <?php if (!empty($it['anh_dinh_kem'])): ?>
+              <div style="margin-top:6px;">
+                <a href="<?= e($it['anh_dinh_kem']) ?>" target="_blank" rel="noopener">
+                  <img src="<?= e($it['anh_dinh_kem']) ?>" alt="Ảnh đính kèm" style="max-width:160px;max-height:120px;border:1px solid #e2e8f0;border-radius:6px;">
+                </a>
+              </div>
+            <?php endif; ?>
           </td>
           <td>
             <?= e($it['nguoi_gui'] ?: '—') ?>

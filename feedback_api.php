@@ -80,6 +80,8 @@ if (mb_strlen($noiDung) > 3000) {
     $noiDung = mb_substr($noiDung, 0, 3000);
 }
 
+$anhDinhKem = !empty($input['anh_base64']) ? feedback_luu_anh_dinh_kem((string) $input['anh_base64']) : null;
+
 $id = feedback_them([
     'time' => date('c'),
     'san_pham' => $sanPham,
@@ -89,6 +91,7 @@ $id = feedback_them([
     'nguoi_gui' => mb_substr(trim((string) ($input['nguoi_gui'] ?? '')), 0, 100) ?: null,
     'lien_he' => mb_substr(trim((string) ($input['lien_he'] ?? '')), 0, 150) ?: null,
     'may_tinh' => mb_substr(trim((string) ($input['may_tinh'] ?? '')), 0, 200) ?: null,
+    'anh_dinh_kem' => $anhDinhKem,
     'ip' => $ip,
 ]);
 
@@ -101,6 +104,7 @@ $body = "Sản phẩm: $sanPham\n"
     . (!empty($input['lien_he']) ? 'Liên hệ lại qua: ' . $input['lien_he'] . "\n" : '')
     . (!empty($input['may_tinh']) ? 'Máy tính: ' . $input['may_tinh'] . "\n" : '')
     . "\nNội dung:\n$noiDung\n\n"
+    . ($anhDinhKem ? 'Ảnh đính kèm: https://kt-soft.vn' . $anhDinhKem . "\n\n" : '')
     . "Xem tại: https://kt-soft.vn/admin/feedback.php\n";
 sendMail('hoangnamcnc@gmail.com', $subject, $body);
 

@@ -22,6 +22,11 @@ const DANG_NHAP_KHOA_GIAY = 300;
 const FEEDBACK_DATA_FILE = __DIR__ . '/../data/feedback.json';
 const FEEDBACK_RATE_FILE = __DIR__ . '/../data/feedback_rate.json';
 const FEEDBACK_GIOI_HAN_MOI_GIO = 20; // moi IP toi da 20 lan gui/gio - chan spam tu dong
+// Anh dinh kem (chup man hinh loi) phai nam trong webroot (data/ bi chan truy cap web) de admin
+// xem duoc qua <img>, ten file random de khong ai doan/liet ke duoc anh cua nguoi khac.
+const FEEDBACK_UPLOAD_DIR = __DIR__ . '/../uploads/feedback';
+const FEEDBACK_UPLOAD_URL_PREFIX = '/uploads/feedback/';
+const FEEDBACK_ANH_TOI_DA_BYTE = 5 * 1024 * 1024; // 5MB
 
 function dang_nhap_ip(): string
 {
@@ -206,6 +211,45 @@ function feedback_them(array $fields): int
     $items[] = $fields;
     feedback_ghi_tat_ca($items);
     return $fields['id'];
+}
+
+/**
+ * Xu ly anh chup man hinh loi dinh kem theo 1 phan hoi (tuy chon), nhan qua chuoi base64 (KHONG
+ * qua $_FILES/multipart) - hosting nay co WAF chan cung mot so request multipart/form-data co
+ * kem file nhi phan toi feedback_api.php (tra ve 403 ngay tu web server, PHP khong kip chay),
+ * trong khi POST JSON/text thuong (ke ca chua chuoi base64 dai) van di qua binh thuong. Kiem
+ * tra dung la anh that qua noi dung giai ma (khong chi dua vao ten/duoi file nguoi gui khai bao
+ * co the gia mao), gioi han dung luong, luu voi ten file random. Tra ve duong dan URL tuong doi
+ * (vd '/uploads/feedback/xxx.jpg') de luu vao ban ghi phan hoi, hoac null neu khong co/loi.
+ */
+function feedback_luu_anh_dinh_kem(string $base64): ?string
+{
+    $base64 = preg_replace('#^data:image/[a-zA-Z0-9.+-]+;base64,#', '', trim($base64));
+    if ($base64 === '') {
+        return null;
+    }
+    // Base64 phinh ra ~33% so voi du lieu goc - kiem tra so bo do dai chuoi truoc de tranh giai
+    // ma mot chuoi qua lon mot cach vo ich (vd bi gui sai/co y lam qua tai server).
+    if (strlen($base64) > FEEDBACK_ANH_TOI_DA_BYTE * 2) {
+        return null;
+    }
+    $data = base64_decode($base64, true);
+    if ($data === false || strlen($data) === 0 || strlen($data) > FEEDBACK_ANH_TOI_DA_BYTE) {
+        return null;
+    }
+    $info = @getimagesizefromstring($data);
+    $extByMime = ['image/jpeg' => 'jpg', 'image/png' => 'png', 'image/webp' => 'webp', 'image/gif' => 'gif'];
+    if (!$info || !isset($extByMime[$info['mime']])) {
+        return null;
+    }
+    if (!is_dir(FEEDBACK_UPLOAD_DIR)) {
+        mkdir(FEEDBACK_UPLOAD_DIR, 0755, true);
+    }
+    $ten = bin2hex(random_bytes(16)) . '.' . $extByMime[$info['mime']];
+    if (file_put_contents(FEEDBACK_UPLOAD_DIR . '/' . $ten, $data) === false) {
+        return null;
+    }
+    return FEEDBACK_UPLOAD_URL_PREFIX . $ten;
 }
 
 /**
