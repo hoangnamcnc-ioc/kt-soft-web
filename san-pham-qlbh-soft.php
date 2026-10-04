@@ -118,6 +118,28 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.5.0</h3>
+        <span class="muted" style="font-size:13px;">05/10/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Thiết bị truy cập qua Wi-Fi/LAN phải được quản lý duyệt: điện thoại/máy tính bảng lạ vào địa chỉ phần mềm sẽ bị giữ ở trang "Chờ quản lý duyệt", quản lý duyệt/từ chối/thu hồi ngay trong Tổng quan; sau khi duyệt, nhân viên vẫn phải đăng nhập bằng tài khoản riêng. Máy chính luôn vào được</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.4.0</h3>
+        <span class="muted" style="font-size:13px;">30/09/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Quét mã vạch bằng camera (điện thoại/webcam) ở màn Bán hàng và các ô quét trong Quản lý — không cần mua máy quét mã vạch</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.3.0</h3>
         <span class="muted" style="font-size:13px;">30/09/2026</span>
       </div>
@@ -243,7 +265,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       <b>Tải xuống</b> để có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.2.1 mới nhất</a>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.5.0 mới nhất</a>
     </div>
   </div>
 </section>
