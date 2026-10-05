@@ -116,6 +116,22 @@ require_once __DIR__ . '/inc_header.php';
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Cập nhật 05/10/2026</h3>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Phiếu nhập hàng: hàng chưa có trong danh mục thì tạo nhanh ngay trong phiếu (nút "Tạo hàng mới" hiện khi tìm không thấy), tạo xong tự thêm vào phiếu, không phải thoát ra trang Sản phẩm</li>
+        <li>Quét mã vạch bằng camera điện thoại/laptop ở Bán hàng (POS), Tạo đơn giao hàng, Nhập hàng và Chuyển hàng — không cần mua máy quét riêng</li>
+        <li>Góp ý / Báo lỗi: đính kèm được ảnh chụp màn hình lỗi để đội phát triển xem đúng cái bạn đang thấy</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Cải thiện</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Nút Góp ý / Báo lỗi chuyển lên thanh menu phía trên thay cho nút nổi ở góc màn hình — không còn che nút Thanh toán trên điện thoại</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Cập nhật 30/09/2026</h3>
       </div>
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
