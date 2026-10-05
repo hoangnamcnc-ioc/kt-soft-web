@@ -122,6 +122,17 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.2.6</h3>
+        <span class="muted" style="font-size:13px;">05/10/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Cải thiện</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Phiếu nhập mua từ hóa đơn điện tử: giá vốn nhập kho tính bằng thành tiền chia số lượng nên giá trị tồn kho khớp tuyệt đối với sổ cái, còn cột "Đơn giá" vẫn hiển thị đúng như trên hóa đơn gốc (lưu riêng, không bị làm tròn ảnh hưởng đến kho)</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.2.5</h3>
         <span class="muted" style="font-size:13px;">05/10/2026</span>
       </div>
@@ -317,7 +328,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.5 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.6 mới nhất</a>
     </div>
   </div>
 </section>
