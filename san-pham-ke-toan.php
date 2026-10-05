@@ -122,6 +122,18 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.2.3</h3>
+        <span class="muted" style="font-size:13px;">05/10/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Cải thiện giao diện</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Tất cả các bảng trong phần mềm tự động giãn cột vừa nội dung và lấp đầy chiều ngang màn hình, không còn phải kéo chỉnh từng cột bằng tay</li>
+        <li>Chữ dài tự xuống dòng thay vì bị che hoặc phải cuộn ngang; vẫn kéo chỉnh tay được, và bảng nào bạn đã tự chỉnh thì phần mềm giữ nguyên</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.2.2</h3>
         <span class="muted" style="font-size:13px;">05/10/2026</span>
         <span class="badge" style="background:#fee2e2;color:#991b1b;">Khuyến nghị cập nhật</span>
@@ -281,7 +293,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.2 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.3 mới nhất</a>
     </div>
   </div>
 </section>
