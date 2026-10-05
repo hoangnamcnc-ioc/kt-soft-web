@@ -118,6 +118,17 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.5.1</h3>
+        <span class="muted" style="font-size:13px;">05/10/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Cải thiện</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Phiếu nhập hàng: hàng chưa có trong danh mục thì tạo nhanh ngay trong phiếu (nút "Tạo hàng mới"), tạo xong tự chọn vào phiếu, không phải thoát ra màn Hàng hóa rồi quay lại</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.5.0</h3>
         <span class="muted" style="font-size:13px;">05/10/2026</span>
       </div>
@@ -265,7 +276,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       <b>Tải xuống</b> để có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.5.0 mới nhất</a>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.5.1 mới nhất</a>
     </div>
   </div>
 </section>
