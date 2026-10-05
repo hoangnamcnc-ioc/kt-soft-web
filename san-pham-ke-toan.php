@@ -122,6 +122,17 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.2.4</h3>
+        <span class="muted" style="font-size:13px;">05/10/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Cải thiện giao diện</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Dòng đang được chọn trong các bảng luôn tô màu cam đậm, chữ đậm, dễ nhìn — kể cả sau khi bấm sang nút khác (trước đây chuyển sang xám nhạt rất khó thấy)</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.2.3</h3>
         <span class="muted" style="font-size:13px;">05/10/2026</span>
       </div>
@@ -293,7 +304,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.3 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.4 mới nhất</a>
     </div>
   </div>
 </section>
