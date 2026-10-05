@@ -122,6 +122,19 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.2.2</h3>
+        <span class="muted" style="font-size:13px;">05/10/2026</span>
+        <span class="badge" style="background:#fee2e2;color:#991b1b;">Khuyến nghị cập nhật</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Vá lỗi quan trọng</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Sửa lỗi nhập hóa đơn điện tử (XML) đọc nhầm <b>ký hiệu hóa đơn</b> thành mẫu số ("1" thay vì "C26TKK"), khiến phiếu nhập mua lưu sai ký hiệu và chức năng Đối chiếu hóa đơn điện tử luôn báo "CHƯA NHẬP"</li>
+        <li>Sửa lỗi nhập hàng loạt nhiều hóa đơn của các người bán khác nhau: từ hóa đơn thứ 2 trở đi bị gán nhầm nhà cung cấp của hóa đơn trước. Nếu bạn đã nhập hàng loạt bằng bản cũ, nên xóa các phiếu nhập mua đó và nhập lại bằng bản này</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.2.1</h3>
         <span class="muted" style="font-size:13px;">30/09/2026</span>
       </div>
@@ -268,7 +281,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.1 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.2 mới nhất</a>
     </div>
   </div>
 </section>
