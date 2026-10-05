@@ -122,6 +122,19 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.2.5</h3>
+        <span class="muted" style="font-size:13px;">05/10/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Vá lỗi &amp; cải thiện</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Nhập phiếu nhập mua từ file XML hóa đơn điện tử tải về từ Tổng cục Thuế: phiếu ghi đúng từng con số như hóa đơn gốc — thành tiền từng dòng, thuế GTGT theo từng thuế suất và tổng thanh toán — không còn lệch vài đồng đến vài chục đồng khi đối chiếu</li>
+        <li>Ô "Đơn giá" trong phiếu nhập mua, hóa đơn bán hàng và các phiếu trả hàng cho nhập số lẻ (tối đa 4 chữ số thập phân) như trên hóa đơn, không còn bị làm tròn về đồng</li>
+        <li>Xem chi tiết phiếu nhập mua có thêm các dòng Cộng tiền hàng, Thuế GTGT và Tổng cộng ở cuối</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.2.4</h3>
         <span class="muted" style="font-size:13px;">05/10/2026</span>
       </div>
@@ -304,7 +317,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.4 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.5 mới nhất</a>
     </div>
   </div>
 </section>
