@@ -122,6 +122,25 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.2.7</h3>
+        <span class="muted" style="font-size:13px;">06/10/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Nút <b>"Sửa phiếu nhập cũ từ file XML"</b> ở màn hình Đối chiếu hóa đơn điện tử: tự sửa ký hiệu hóa đơn và nhà cung cấp của các phiếu đã lập sai bằng bản cũ, không đụng số tiền hay kho</li>
+        <li>Màn hình Kết chuyển có danh sách <b>"Việc cần làm cuối kỳ"</b> (khấu hao, phân bổ CCDC, lương, rà soát dữ liệu, khấu trừ GTGT, tạm tính TNDN, kết chuyển, khóa sổ) - việc nào đã làm/chưa làm, làm ở đâu</li>
+        <li>Rà soát dữ liệu mở rộng: phát hiện phiếu nhập thiếu nhà cung cấp/số hóa đơn, ký hiệu hóa đơn đáng ngờ, hóa đơn bị nhập trùng, công nợ sai chiều</li>
+        <li>Tự sao lưu nguyên file dữ liệu mỗi khi nâng cấp lên phiên bản mới, trước khi cập nhật cấu trúc dữ liệu</li>
+        <li>Thêm hướng dẫn tải hóa đơn từ Tổng cục Thuế từng bước trong phần Hướng dẫn sử dụng</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Cải thiện</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Mọi bút toán mới đều được làm tròn về đồng nguyên, số sổ khớp hóa đơn, không tích lũy sai số lẻ</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.2.6</h3>
         <span class="muted" style="font-size:13px;">05/10/2026</span>
       </div>
@@ -328,7 +347,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.6 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.7 mới nhất</a>
     </div>
   </div>
 </section>
