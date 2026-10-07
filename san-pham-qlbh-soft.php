@@ -116,7 +116,21 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       hàng hóa của bạn được giữ nguyên. Xem <a href="#huong-dan-cap-nhat">hướng dẫn cập nhật an toàn</a> bên dưới.
     </p>
 
-    <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
+    <div class="changelog-item" style="border-left:3px solid #dc2626; padding-left:16px; margin-bottom:22px;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.5.2 <span style="font-size:12px;font-weight:700;color:#dc2626;background:#fee2e2;padding:2px 8px;border-radius:10px;vertical-align:middle;">Bản vá bảo mật</span></h3>
+        <span class="muted" style="font-size:13px;">06/10/2026</span>
+      </div>
+      <p class="desc" style="margin:8px 0 6px;">Khuyến nghị mọi khách hàng cập nhật. Bản này tăng độ an toàn của phần mềm:</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Cập nhật các thư viện nền tảng lên phiên bản đã vá lỗi bảo mật</li>
+        <li>Hàng tính theo cái/gói/lon chỉ bán được số lượng nguyên (hàng tính theo kg, lít, mét vẫn bán được số lẻ như 0,5)</li>
+        <li>Khóa đăng nhập sau nhiều lần sai chỉ áp dụng cho thiết bị đang nhập sai, người lạ trong Wi-Fi không thể làm chủ quán bị khóa tài khoản</li>
+      </ul>
+      <p class="desc" style="margin:6px 0 0;">Lưu ý: tính năng gửi email (đặt lại mật khẩu, báo cáo tự động) cần máy có kết nối Internet.</p>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.5.1</h3>
         <span class="muted" style="font-size:13px;">05/10/2026</span>
@@ -276,7 +290,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       <b>Tải xuống</b> để có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.5.1 mới nhất</a>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.5.2 mới nhất</a>
     </div>
   </div>
 </section>

@@ -116,6 +116,25 @@ require_once __DIR__ . '/inc_header.php';
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Cập nhật 07/10/2026</h3>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Sửa lỗi quan trọng</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Hủy đơn hàng: hoàn đúng tiền đã thu vào sổ quỹ theo từng phương thức, hoàn công nợ, điểm tích lũy, lượt dùng mã giảm giá và hủy phiếu bảo hành của đơn</li>
+        <li>Trả hàng: chỉ trả được đơn đã Hoàn thành, tiền hoàn tính theo giá sau chiết khấu, ưu tiên trừ vào công nợ còn lại rồi mới hoàn tiền mặt, đồng thời trừ điểm tích lũy</li>
+        <li>Bấm Thanh toán hai lần hoặc mạng chập chờn không còn tạo trùng đơn; thu nợ bấm đúp không còn thu quá số nợ</li>
+        <li>Mở ca / đóng ca: không thể mở hai ca cùng lúc hoặc đóng một ca hai lần</li>
+        <li>Camera quét mã vạch tắt hẳn khi đóng cửa sổ quét (không còn sáng đèn camera)</li>
+        <li>Báo cáo và trang chủ không còn tính đơn nháp vào doanh thu</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Phân quyền</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Giá vốn và giá trị tồn kho chỉ hiển thị cho Quản trị / Quản lý, thu ngân không còn thấy</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Cập nhật 05/10/2026</h3>
       </div>
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
