@@ -3,7 +3,7 @@
     <div class="footer-grid">
       <div>
         <a href="index.php" class="brand" style="margin-bottom:12px;">
-          <span class="logo-mark">KT</span><span>KT-SOFT</span>
+          <img src="assets/img/logo-64.png" alt="KT-SOFT" class="logo-img" width="38" height="38"><span>KT-SOFT</span>
         </a>
         <p class="muted" style="font-size:14px;margin-top:12px;max-width:260px;">
           Phần mềm quản lý bán hàng, kế toán và công việc — gọn nhẹ, dễ dùng, đúng nghiệp vụ thực tế
