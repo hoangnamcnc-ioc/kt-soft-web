@@ -116,7 +116,17 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       hàng hóa của bạn được giữ nguyên. Xem <a href="#huong-dan-cap-nhat">hướng dẫn cập nhật an toàn</a> bên dưới.
     </p>
 
-    <div class="changelog-item" style="border-left:3px solid #dc2626; padding-left:16px; margin-bottom:22px;">
+    <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.5.3</h3>
+        <span class="muted" style="font-size:13px;">07/10/2026</span>
+      </div>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Bộ nhận dạng thương hiệu KT mới: biểu tượng trên file chạy, bộ cài đặt, tab trình duyệt và màn hình đăng nhập — đồng nhất với KT-SOFT và hocketoanthue.vn</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; opacity:0.85; padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.5.2 <span style="font-size:12px;font-weight:700;color:#dc2626;background:#fee2e2;padding:2px 8px;border-radius:10px;vertical-align:middle;">Bản vá bảo mật</span></h3>
         <span class="muted" style="font-size:13px;">06/10/2026</span>
@@ -290,7 +300,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       <b>Tải xuống</b> để có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.5.2 mới nhất</a>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.5.3 mới nhất</a>
     </div>
   </div>
 </section>
