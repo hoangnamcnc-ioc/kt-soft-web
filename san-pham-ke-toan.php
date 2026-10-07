@@ -122,6 +122,18 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.2.10</h3>
+        <span class="muted" style="font-size:13px;">07/10/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Cải thiện</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Bộ nhận dạng thương hiệu KT mới: biểu tượng trên file chạy, bộ cài đặt và shortcut — đồng nhất với hocketoanthue.vn</li>
+        <li>Khi nâng cấp, các bút toán cũ còn số lẻ được làm tròn về đồng một lần (bỏ qua kỳ đã khóa sổ)</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.2.8</h3>
         <span class="muted" style="font-size:13px;">06/10/2026</span>
       </div>
@@ -359,7 +371,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.8 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.10 mới nhất</a>
     </div>
   </div>
 </section>
