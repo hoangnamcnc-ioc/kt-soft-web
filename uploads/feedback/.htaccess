@@ -1,1 +1,8 @@
 Options -Indexes
+# Thu muc nay chi chua anh khach gui: cam chay moi loai script de file tai len khong thanh webshell.
+<FilesMatch "\.(php|phtml|php[0-9]|phar|pl|py|cgi|sh)$">
+  Require all denied
+</FilesMatch>
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>

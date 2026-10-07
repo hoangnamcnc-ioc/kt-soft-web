@@ -49,8 +49,8 @@ if (trim((string) ($input['website'] ?? '')) !== '') {
     exit;
 }
 
-$ip = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? '0.0.0.0';
-$ip = trim(explode(',', $ip)[0]);
+// Chi tin REMOTE_ADDR: X-Forwarded-For do client tu gui, doi gia tri moi lan la qua duoc gioi han tan suat.
+$ip = (string) ($_SERVER['REMOTE_ADDR'] ?? '0.0.0.0');
 if (feedback_qua_gioi_han($ip)) {
     http_response_code(429);
     echo json_encode(['ok' => false, 'error' => 'Bạn gửi hơi nhiều, vui lòng thử lại sau ít phút.']);
