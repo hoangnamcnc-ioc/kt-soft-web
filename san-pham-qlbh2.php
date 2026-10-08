@@ -126,6 +126,10 @@ require_once __DIR__ . '/inc_header.php';
         <li>Mở ca / đóng ca: không thể mở hai ca cùng lúc hoặc đóng một ca hai lần</li>
         <li>Camera quét mã vạch tắt hẳn khi đóng cửa sổ quét (không còn sáng đèn camera)</li>
         <li>Báo cáo và trang chủ không còn tính đơn nháp vào doanh thu</li>
+        <li>Đặt hàng Online dùng được cho MỌI cửa hàng: mỗi cửa hàng có đường dẫn riêng (Cấu hình → Đặt hàng Online), khách đặt vào đúng cửa hàng đó</li>
+        <li>Nhân viên tự chấm công vào/ra ca và xem giờ công, lương tạm tính của mình ở mục "Chấm công &amp; lương của tôi"</li>
+        <li>Thu ngân trả hàng có hạn mức (mặc định 500.000đ/phiếu, chỉnh ở Cấu hình bán hàng); vượt mức phải nhờ Quản lý lập phiếu</li>
+        <li>Vai trò tùy chỉnh có thêm tùy chọn "Chặt": không kèm quyền bán hàng cơ bản (vd vai trò Thủ kho không vào được POS và đơn hàng)</li>
         <li>Hủy đơn / trả hàng hoàn hàng về đúng lô hạn sử dụng đã bị trừ khi bán (áp dụng cho đơn bán từ bản này trở đi)</li>
         <li>Báo cáo doanh thu và lãi gộp đã trừ hàng khách trả lại; thu ngân chỉ in được hóa đơn của chi nhánh mình</li>
       </ul>
