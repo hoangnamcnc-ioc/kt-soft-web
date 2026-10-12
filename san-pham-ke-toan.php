@@ -122,6 +122,20 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.2.11</h3>
+        <span class="muted" style="font-size:13px;">12/10/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Vá lỗi và hoàn thiện nghiệp vụ</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Tồn kho tính theo ngày và gộp các dòng cùng mặt hàng; giá vốn bình quân tính đúng tại ngày xuất</li>
+        <li>Trả hàng cho nhà cung cấp giảm công nợ theo đúng giá trả; bảng kê GTGT đã trừ hàng trả lại và giảm giá</li>
+        <li>Chặn xóa/sửa phiếu nhập làm tồn kho âm (vẫn cho sửa ký hiệu hóa đơn khi số lượng và ngày giữ nguyên)</li>
+        <li>Khấu hao và lương làm tròn về đồng; kiểm tồn kho trước khi xóa bản cũ khi sửa hóa đơn bán hàng</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.2.10</h3>
         <span class="muted" style="font-size:13px;">07/10/2026</span>
       </div>
@@ -371,7 +385,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.10 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.11 mới nhất</a>
     </div>
   </div>
 </section>
