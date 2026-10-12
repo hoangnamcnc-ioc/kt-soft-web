@@ -116,6 +116,24 @@ require_once __DIR__ . '/inc_header.php';
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Cập nhật 12/10/2026</h3>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Sửa lỗi quan trọng</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Đối soát COD với hãng vận chuyển: ghi đủ vào sổ quỹ (phiếu thu tiền khách trả + phiếu chi phí vận chuyển hãng khấu trừ), cập nhật "đã thanh toán" của đơn và trừ công nợ khách — trước đây chỉ đánh dấu đã đối soát, tiền COD không vào sổ</li>
+        <li>Đơn đặt trước (nhập → duyệt → hoàn thành) thu tiền sau được bình thường; sửa lỗi không ghi nhận được thu nợ cho loại đơn này</li>
+        <li>Sửa chiết khấu của đơn đã bán: tự đồng bộ trạng thái thanh toán và công nợ khách; không cho sửa đơn đã hủy hoặc làm tổng đơn thấp hơn số đã thu</li>
+        <li>Hết hạn dùng thử: màn hình bán hàng báo rõ lý do thay vì âm thầm lưu đơn tạm</li>
+        <li>Đặt lại mật khẩu, thanh toán gia hạn, điều chỉnh giá vốn, tạo sản phẩm mới: ghi dữ liệu theo từng giao dịch trọn vẹn, tránh dở dang khi có sự cố</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Cải thiện</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Thu nợ đơn hàng, thu nợ khách hàng và đối soát COD cho chọn hình thức (tiền mặt, chuyển khoản, thẻ, QR) để sổ quỹ và đối chiếu ca bán hàng không bị lẫn</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Cập nhật 07/10/2026</h3>
       </div>
       <p style="font-weight:600; margin:8px 0 4px;">Sửa lỗi quan trọng</p>

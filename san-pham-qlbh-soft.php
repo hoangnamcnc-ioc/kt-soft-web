@@ -118,6 +118,76 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.7.1</h3>
+        <span class="muted" style="font-size:13px;">12/10/2026</span>
+      </div>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Nhiều kho hoàn thiện hơn: cảnh báo sắp hết hàng, gợi ý đặt hàng, sổ quỹ tiền mặt, ca bán hàng và hạn sử dụng đều tính riêng theo từng kho (có lựa chọn xem tất cả kho)</li>
+        <li>Sổ chi tiết vật tư, hàng hóa xem được riêng từng kho, tính cả hàng chuyển kho</li>
+        <li>Kiểm kho và xuất kho thao tác đúng trên tồn của kho đang chọn</li>
+        <li>Sổ chi tiết tiền (S2e) gộp cả tiền mặt và tiền gửi ngân hàng</li>
+        <li>Hủy đơn, trả hàng, hủy đặt hàng đã trả bằng chuyển khoản/QR: phần mềm hỏi "đã chuyển khoản hoàn tiền cho khách chưa?" rồi mới ghi khoản chi vào sổ ngân hàng, không tự ghi nữa</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.7.0</h3>
+        <span class="muted" style="font-size:13px;">08/10/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Hạn thanh toán công nợ: đặt số ngày được nợ cho từng khách, phần mềm tính tuổi nợ (0-30, 31-60, 61-90, trên 90 ngày), cảnh báo khách quá hạn ở Tổng quan và màn Nhắc nợ</li>
+        <li>Bảng kê công nợ theo khách (sao kê có số dư đầu kỳ, phát sinh, số dư cuối kỳ) để in gửi khách</li>
+        <li>Sổ tiền gửi ngân hàng: nhiều tài khoản, tự ghi thu/chi khi bán hàng, thu nợ, cọc, trả hàng, nhập hàng bằng chuyển khoản / QR / quẹt thẻ; nộp tiền mặt vào ngân hàng và rút về quỹ</li>
+        <li>Báo cáo xem được chứng từ gốc: bấm vào một dòng báo cáo để mở danh sách đơn hàng / phiếu nhập tạo nên con số đó</li>
+        <li>Báo cáo theo nhân viên phụ trách khách hàng (doanh thu, công nợ, nợ quá hạn)</li>
+        <li>Nhiều kho / cửa hàng trong một dữ liệu: tồn kho riêng từng kho, chọn kho đang bán, gán kho cố định cho nhân viên, chuyển hàng giữa các kho</li>
+        <li>Kiểm tra bản mới ngay trong phần mềm: có bản mới sẽ hiện thông báo kèm nút tải về</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Lưu ý</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Sổ tiền gửi ngân hàng bắt đầu ghi từ khi cài bản này; lịch sử cũ không tự đưa vào — nhập số dư đầu tại mục Tài khoản để khớp số dư thật</li>
+        <li>Khi dùng nhiều kho, sổ quỹ tiền mặt, ca bán hàng và lô hạn sử dụng vẫn dùng chung cho tất cả kho</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.6.1</h3>
+        <span class="muted" style="font-size:13px;">08/10/2026</span>
+      </div>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Quét mã vạch bằng camera ở thêm nữa các ô nhập mã vạch: form Thêm/Sửa sản phẩm, Tạo hàng mới khi nhập hàng, In tem và ô tìm trong Hàng hóa</li>
+        <li>Màn Kiểm kho có ô quét mã vạch để nhảy tới đúng dòng cần đếm</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.6.0</h3>
+        <span class="muted" style="font-size:13px;">08/10/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Phân quyền thêm 2 vai trò <b>Thủ kho</b> và <b>Kế toán</b>: mỗi người chỉ thấy và dùng đúng phần việc của mình</li>
+        <li>Đặt hàng trước có đặt cọc: lưu giỏ hàng thành đơn đặt hàng, khi khách đến nhận chỉ thu phần còn lại, tự đối trừ tiền cọc, hoàn hoặc giữ cọc khi hủy</li>
+        <li>Quản lý giao hàng: đối tác giao hàng, vận đơn theo dõi trạng thái, tiền thu hộ (COD) và đối soát với đối tác</li>
+        <li>Công nợ nhà cung cấp: ghi nhận phần còn nợ khi nhập hàng, trả tiền dần cho nhà cung cấp</li>
+        <li>Hủy đơn bán và hủy phiếu nhập (nhập nhầm): tự hoàn lại tồn kho, công nợ, tiền mặt và điểm tích lũy</li>
+        <li>Thu ngân thu nợ khách ngay tại quầy, tự ghi phiếu thu tiền mặt vào sổ quỹ</li>
+        <li>Nhân viên tự chấm công Vào ca / Ra ca ngay trên màn hình Bán hàng</li>
+        <li>Báo cáo mới: Kênh bán hàng, Đặt hàng; bảng giá gửi khách qua Zalo (có giá theo nhóm sỉ/lẻ)</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">An toàn &amp; kiểm soát</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Thu ngân trả hàng phải có quản lý duyệt bằng tài khoản quản lý</li>
+        <li>Thu ngân không còn tự đổi được hạn mức nợ, nhóm giá hay xóa khách hàng, và không xem được giá vốn</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.5.3</h3>
         <span class="muted" style="font-size:13px;">07/10/2026</span>
       </div>
@@ -300,7 +370,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       <b>Tải xuống</b> để có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.5.3 mới nhất</a>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.7.1 mới nhất</a>
     </div>
   </div>
 </section>
