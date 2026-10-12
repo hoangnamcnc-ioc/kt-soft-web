@@ -124,6 +124,7 @@ require_once __DIR__ . '/inc_header.php';
         <li>Đơn đặt trước (nhập → duyệt → hoàn thành) thu tiền sau được bình thường; sửa lỗi không ghi nhận được thu nợ cho loại đơn này</li>
         <li>Sửa chiết khấu của đơn đã bán: tự đồng bộ trạng thái thanh toán và công nợ khách; không cho sửa đơn đã hủy hoặc làm tổng đơn thấp hơn số đã thu</li>
         <li>Hết hạn dùng thử: màn hình bán hàng báo rõ lý do thay vì âm thầm lưu đơn tạm</li>
+        <li>Trang "Sơ đồ chức năng" mới: toàn bộ luồng làm việc của cửa hàng theo 4 bước (Thiết lập → Cung ứng &amp; kho → Bán hàng &amp; vận chuyển → Hậu kiểm &amp; báo cáo), bấm vào ô để mở chức năng, chỉ hiện chức năng tài khoản được phép dùng; menu có thêm nhóm "Chức năng" gồm Sơ đồ, Hướng dẫn và Góp ý / Báo lỗi</li>
         <li>Sửa sản phẩm trong đơn chưa giao (đổi số lượng, đơn giá, bỏ dòng, thêm mặt hàng): tồn kho, lô hạn dùng, tổng tiền, trạng thái thanh toán và công nợ khách tự cập nhật theo</li>
         <li>Vận đơn chuyển sang "Đã hoàn" (hàng quay về cửa hàng): hệ thống tự hủy đơn, hoàn kho, hoàn tiền/công nợ/điểm (Quản lý/Quản trị); nhân viên thu ngân sẽ được nhắc nhờ Quản lý hủy</li>
         <li>Cửa hàng hết hạn dùng thử vẫn tải được toàn bộ dữ liệu của mình ngay trên trang thông báo hết hạn</li>

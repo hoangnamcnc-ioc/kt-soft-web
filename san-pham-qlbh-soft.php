@@ -118,6 +118,26 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.7.3</h3>
+        <span class="muted" style="font-size:13px;">12/10/2026</span>
+      </div>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Trang mới <b>Sơ đồ chức năng</b> trong màn hình Quản lý: gom toàn bộ chức năng theo luồng làm việc 4 bước (thiết lập → cung ứng &amp; kho → bán hàng &amp; chăm sóc khách → hậu kiểm &amp; báo cáo), bấm vào ô để mở đúng chức năng; mỗi vai trò chỉ thấy phần mình được dùng</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.7.2</h3>
+        <span class="muted" style="font-size:13px;">12/10/2026</span>
+      </div>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Thêm hướng dẫn xử lý cảnh báo của Windows SmartScreen / phần mềm diệt virus ngay trong mục Phiên bản phần mềm</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.7.1</h3>
         <span class="muted" style="font-size:13px;">12/10/2026</span>
       </div>
@@ -369,8 +389,25 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       Cẩn thận hơn thì trước khi cập nhật, vào <b>Quản lý → Tổng quan → Sao lưu dữ liệu</b>, bấm
       <b>Tải xuống</b> để có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
+    <div style="border:1px solid #fcd34d; background:#fffbeb; border-radius:10px; padding:14px 16px; margin:14px 0;">
+      <b>Windows hoặc trình duyệt cảnh báo khi tải/cài đặt?</b>
+      <p style="margin:6px 0 0;">
+        Đây là phần mềm bán hàng nhỏ, chưa có chứng chỉ ký số của nhà phát hành nên Windows
+        SmartScreen có thể hiện "Windows protected your PC" hoặc "Unknown publisher". Đây là cảnh báo
+        thông thường với phần mềm chưa ký số, không phải do file bị lỗi. Bạn làm như sau:
+      </p>
+      <ol style="margin:8px 0 0; padding-left:20px;">
+        <li>Trình duyệt (Chrome/Edge) hỏi giữ file: bấm <b>Giữ lại</b> (Keep).</li>
+        <li>Windows hiện hộp xanh "Windows protected your PC": bấm <b>More info</b> (Thông tin thêm), rồi bấm <b>Run anyway</b> (Vẫn chạy).</li>
+        <li>Nếu phần mềm diệt virus chặn: chọn cho phép/ngoại lệ với file <code>QLBH-SOFT-Setup.exe</code> rồi chạy lại.</li>
+      </ol>
+      <p style="margin:8px 0 0; font-size:13px; color:#666;">
+        Chỉ tải bộ cài từ trang kt-soft.vn này. Nếu bạn muốn kiểm tra thêm, có thể gửi file lên
+        virustotal.com để quét trước khi cài.
+      </p>
+    </div>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.7.1 mới nhất</a>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.7.3 mới nhất</a>
     </div>
   </div>
 </section>
