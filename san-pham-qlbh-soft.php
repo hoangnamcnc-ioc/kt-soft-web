@@ -118,6 +118,17 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.7.4</h3>
+        <span class="muted" style="font-size:13px;">12/10/2026</span>
+      </div>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><b>Dữ liệu mẫu 1 tuần bán hàng</b>: khi tạo cửa hàng mới có thể chọn nạp sẵn hàng hóa, khách hàng, nhân viên, nhập hàng, hóa đơn, sổ quỹ, sổ ngân hàng, công nợ của một tạp hóa nhỏ để xem thử các màn hình và báo cáo</li>
+        <li>Quen rồi thì bấm <b>Xóa dữ liệu mẫu &amp; bắt đầu thực tế</b> ở màn hình Tổng quan: xóa sạch dữ liệu kinh doanh, giữ lại thông tin cửa hàng và tài khoản quản lý; phần mềm tự sao lưu trước khi xóa và yêu cầu nhập lại mật khẩu</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.7.3</h3>
         <span class="muted" style="font-size:13px;">12/10/2026</span>
       </div>
@@ -407,7 +418,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       </p>
     </div>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.7.3 mới nhất</a>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.7.4 mới nhất</a>
     </div>
   </div>
 </section>

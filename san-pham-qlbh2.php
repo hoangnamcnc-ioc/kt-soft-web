@@ -124,6 +124,9 @@ require_once __DIR__ . '/inc_header.php';
         <li>Đơn đặt trước (nhập → duyệt → hoàn thành) thu tiền sau được bình thường; sửa lỗi không ghi nhận được thu nợ cho loại đơn này</li>
         <li>Sửa chiết khấu của đơn đã bán: tự đồng bộ trạng thái thanh toán và công nợ khách; không cho sửa đơn đã hủy hoặc làm tổng đơn thấp hơn số đã thu</li>
         <li>Hết hạn dùng thử: màn hình bán hàng báo rõ lý do thay vì âm thầm lưu đơn tạm</li>
+        <li>Mã QR cho khách quét chọn hàng: trang Cấu hình → Đặt hàng Online tạo sẵn mã QR (in poster, tải ảnh) và mã QR riêng cho từng bàn/quầy. Khách quét bằng camera, chọn số lượng bằng nút +/−, tìm kiếm, lọc theo nhóm hàng, chọn nhận tại chỗ hoặc giao tận nơi; đơn ghi sẵn vị trí (vd "[Bàn 3]") và có email báo cho chủ cửa hàng</li>
+        <li>Danh sách đơn hàng có ô tìm theo mã đơn, tên hoặc số điện thoại khách</li>
+        <li>Doanh thu thống nhất giữa Tổng quan, Báo cáo và Kế toán &amp; Thuế (đều là doanh thu thuần: trừ chiết khấu và hàng khách trả lại, không tính đơn nháp)</li>
         <li>Dữ liệu mẫu 1 tuần bán hàng: khi đăng ký cửa hàng có thể chọn tạo sẵn (24 sản phẩm, 14 khách, 3 nhà cung cấp, hơn 80 đơn bán, nhập hàng, công nợ, trả hàng, ca bán hàng, sổ quỹ, chấm công) để tham khảo; xem xong xóa sạch bằng một nút để bắt đầu dùng chính thức (Cấu hình → Dữ liệu mẫu). Cửa hàng đăng ký không chọn mẫu vẫn có thể tạo sau nếu còn trống</li>
         <li>Trang "Sơ đồ chức năng" mới: toàn bộ luồng làm việc của cửa hàng theo 4 bước (Thiết lập → Cung ứng &amp; kho → Bán hàng &amp; vận chuyển → Hậu kiểm &amp; báo cáo), bấm vào ô để mở chức năng, chỉ hiện chức năng tài khoản được phép dùng; menu có thêm nhóm "Chức năng" gồm Sơ đồ, Hướng dẫn và Góp ý / Báo lỗi</li>
         <li>Sửa sản phẩm trong đơn chưa giao (đổi số lượng, đơn giá, bỏ dòng, thêm mặt hàng): tồn kho, lô hạn dùng, tổng tiền, trạng thái thanh toán và công nợ khách tự cập nhật theo</li>
