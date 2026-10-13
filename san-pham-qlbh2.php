@@ -124,6 +124,11 @@ require_once __DIR__ . '/inc_header.php';
         <li>Đơn đặt trước (nhập → duyệt → hoàn thành) thu tiền sau được bình thường; sửa lỗi không ghi nhận được thu nợ cho loại đơn này</li>
         <li>Sửa chiết khấu của đơn đã bán: tự đồng bộ trạng thái thanh toán và công nợ khách; không cho sửa đơn đã hủy hoặc làm tổng đơn thấp hơn số đã thu</li>
         <li>Hết hạn dùng thử: màn hình bán hàng báo rõ lý do thay vì âm thầm lưu đơn tạm</li>
+        <li>Bán hàng (POS): chia nhiều hình thức thanh toán trong một đơn (vd một phần tiền mặt, một phần chuyển khoản); sổ quỹ ghi đúng từng hình thức, tiền khách đưa thừa được tính là tiền thối</li>
+        <li>Kế toán &amp; Thuế: xuất Excel sổ doanh thu (theo tháng, chi tiết sau chiết khấu, trừ hàng trả lại) kèm ước tính thuế; trang mới "Công nợ phải thu / phải trả" (khách nợ có số ngày nợ, nợ nhà cung cấp) cũng xuất được Excel</li>
+        <li>Tổng quan cho chủ quán/quản lý: lãi gộp hôm nay (kèm biên lãi), so sánh doanh thu với cùng ngày tuần trước, tiền trong sổ quỹ (tiền mặt và chuyển khoản/thẻ/QR)</li>
+        <li>Chống chấm công hộ: Quản trị có thể giới hạn nhân viên chỉ chấm công khi dùng Wi-Fi của cửa hàng (Chấm công → "Chống chấm công hộ")</li>
+        <li>Khách đặt hàng qua QR có trang theo dõi đơn (nhập mã đơn + số điện thoại): xem đơn đang ở bước nào, điểm tích lũy; dữ liệu mẫu có sẵn ảnh minh họa sản phẩm</li>
         <li>Mã QR cho khách quét chọn hàng: trang Cấu hình → Đặt hàng Online tạo sẵn mã QR (in poster, tải ảnh) và mã QR riêng cho từng bàn/quầy. Khách quét bằng camera, chọn số lượng bằng nút +/−, tìm kiếm, lọc theo nhóm hàng, chọn nhận tại chỗ hoặc giao tận nơi; đơn ghi sẵn vị trí (vd "[Bàn 3]") và có email báo cho chủ cửa hàng</li>
         <li>Danh sách đơn hàng có ô tìm theo mã đơn, tên hoặc số điện thoại khách</li>
         <li>Doanh thu thống nhất giữa Tổng quan, Báo cáo và Kế toán &amp; Thuế (đều là doanh thu thuần: trừ chiết khấu và hàng khách trả lại, không tính đơn nháp)</li>
