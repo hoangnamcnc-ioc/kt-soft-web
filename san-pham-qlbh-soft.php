@@ -118,6 +118,28 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.8.0</h3>
+        <span class="muted" style="font-size:13px;">13/10/2026</span>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><b>Khách quét mã QR để tự chọn hàng</b> bằng điện thoại (qua Wi-Fi của quán): xem hàng, chọn món, gửi đơn cho quầy; thu ngân kiểm tra, chốt thành hóa đơn và thu tiền. Khách theo dõi được trạng thái đơn, chủ quán in mã QR dán ở quầy; máy bán hàng có âm báo khi có đơn mới</li>
+        <li>Tách tab <b>Cài đặt</b> khỏi màn Tổng quan: Tổng quan gọn, chỉ còn doanh thu, cảnh báo, nợ quá hạn</li>
+        <li><b>Khóa sổ kế toán</b>: sau khi chốt kỳ, không ai hủy được đơn bán/phiếu nhập của kỳ đã khóa</li>
+        <li><b>Phiếu nhập chờ chi tiền</b>: thủ kho nhận hàng, kế toán/quản lý bấm chi tiền sau (ghi sổ quỹ hoặc sổ ngân hàng)</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Kiểm soát &amp; an toàn</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Thu ngân chỉ được giảm giá tối đa một tỷ lệ cài đặt (mặc định 10%); vượt mức cần quản lý nhập mật khẩu duyệt, mọi lần giảm giá đều ghi nhật ký</li>
+        <li>Đóng ca lệch tiền quá ngưỡng bắt buộc ghi lý do và được ghi nhật ký</li>
+        <li>Thủ kho không chi tiền mặt từ quỹ và không xem được doanh thu</li>
+        <li>Vá lỗi bảo mật: thiết bị lạ trong mạng Wi-Fi không còn tải được các trang nội bộ bằng đường dẫn đặc biệt</li>
+        <li>Mở đơn khách chọn vào giỏ báo rõ món nào hết hàng/giảm số lượng; chặn hai thu ngân chốt trùng một đơn</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.7.4</h3>
         <span class="muted" style="font-size:13px;">12/10/2026</span>
       </div>
@@ -418,7 +440,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       </p>
     </div>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.7.4 mới nhất</a>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.8.0 mới nhất</a>
     </div>
   </div>
 </section>

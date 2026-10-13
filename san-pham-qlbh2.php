@@ -124,6 +124,9 @@ require_once __DIR__ . '/inc_header.php';
         <li>Đơn đặt trước (nhập → duyệt → hoàn thành) thu tiền sau được bình thường; sửa lỗi không ghi nhận được thu nợ cho loại đơn này</li>
         <li>Sửa chiết khấu của đơn đã bán: tự đồng bộ trạng thái thanh toán và công nợ khách; không cho sửa đơn đã hủy hoặc làm tổng đơn thấp hơn số đã thu</li>
         <li>Hết hạn dùng thử: màn hình bán hàng báo rõ lý do thay vì âm thầm lưu đơn tạm</li>
+        <li>Chấm công xác minh vị trí GPS: Quản trị đặt vị trí cửa hàng và bán kính cho phép; nhân viên bấm Vào/Ra ca trên điện thoại (cho phép truy cập vị trí) chỉ chấm công được khi ở trong bán kính, khoảng cách được ghi vào ghi chú chấm công</li>
+        <li>Báo cáo: nút "Xuất Excel" báo cáo bán hàng (tổng quan, theo ngày, kênh, hình thức thanh toán, nhân viên, top sản phẩm và khách hàng)</li>
+        <li>Khách đặt hàng qua QR có thể thanh toán ngay bằng mã QR ngân hàng (VietQR) đúng số tiền, nội dung là mã đơn — hiện ở trang đặt hàng thành công và trang theo dõi đơn nếu cửa hàng đã khai báo tài khoản ở Cấu hình → Thanh toán</li>
         <li>Bán hàng (POS): chia nhiều hình thức thanh toán trong một đơn (vd một phần tiền mặt, một phần chuyển khoản); sổ quỹ ghi đúng từng hình thức, tiền khách đưa thừa được tính là tiền thối</li>
         <li>Kế toán &amp; Thuế: xuất Excel sổ doanh thu (theo tháng, chi tiết sau chiết khấu, trừ hàng trả lại) kèm ước tính thuế; trang mới "Công nợ phải thu / phải trả" (khách nợ có số ngày nợ, nợ nhà cung cấp) cũng xuất được Excel</li>
         <li>Tổng quan cho chủ quán/quản lý: lãi gộp hôm nay (kèm biên lãi), so sánh doanh thu với cùng ngày tuần trước, tiền trong sổ quỹ (tiền mặt và chuyển khoản/thẻ/QR)</li>
