@@ -118,6 +118,16 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Phiên bản 1.8.1</h3>
+        <span class="muted" style="font-size:13px;">13/10/2026</span>
+      </div>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Màn hình đăng nhập tự đưa đúng màn hình theo vai trò: thu ngân vào Bán hàng, thủ kho và kế toán vào Quản lý, không còn báo lỗi "không có quyền" khi bấm nhầm nút hoặc gõ Enter</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Phiên bản 1.8.0</h3>
         <span class="muted" style="font-size:13px;">13/10/2026</span>
       </div>
@@ -440,7 +450,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       </p>
     </div>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.8.0 mới nhất</a>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.8.1 mới nhất</a>
     </div>
   </div>
 </section>

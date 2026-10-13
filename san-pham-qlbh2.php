@@ -124,6 +124,11 @@ require_once __DIR__ . '/inc_header.php';
         <li>Đơn đặt trước (nhập → duyệt → hoàn thành) thu tiền sau được bình thường; sửa lỗi không ghi nhận được thu nợ cho loại đơn này</li>
         <li>Sửa chiết khấu của đơn đã bán: tự đồng bộ trạng thái thanh toán và công nợ khách; không cho sửa đơn đã hủy hoặc làm tổng đơn thấp hơn số đã thu</li>
         <li>Hết hạn dùng thử: màn hình bán hàng báo rõ lý do thay vì âm thầm lưu đơn tạm</li>
+        <li>Tự đối soát chuyển khoản: nhận thông báo biến động số dư (SePay, Casso...) và tự ghi thu vào đơn khi nội dung chuyển khoản có mã đơn; giao dịch chưa khớp gán tay được (Tài chính → Đối soát chuyển khoản)</li>
+        <li>QR thanh toán tại quầy POS có mã tham chiếu: khi khách chuyển khoản màn hình thu ngân và màn hình phụ của khách tự báo "đã nhận tiền"</li>
+        <li>Đơn online chưa thanh toán sau 1 giờ: trang "Đơn online chờ thanh toán" với nút Gọi, SMS soạn sẵn (kèm link có mã QR), Zalo; chủ cửa hàng còn nhận email nhắc tổng hợp</li>
+        <li>Email gửi qua hàng đợi: không làm chậm trang, tự thử lại khi máy chủ mail chập chờn</li>
+        <li>Giá vốn tính được theo bình quân gia quyền (Cấu hình → Quản lý kho &amp; Sản phẩm); sửa đơn chưa giao hỗ trợ cả combo; vai trò tùy chỉnh "Chặt" khóa thêm trang Khách hàng và Bảo hành</li>
         <li>Chấm công xác minh vị trí GPS: Quản trị đặt vị trí cửa hàng và bán kính cho phép; nhân viên bấm Vào/Ra ca trên điện thoại (cho phép truy cập vị trí) chỉ chấm công được khi ở trong bán kính, khoảng cách được ghi vào ghi chú chấm công</li>
         <li>Báo cáo: nút "Xuất Excel" báo cáo bán hàng (tổng quan, theo ngày, kênh, hình thức thanh toán, nhân viên, top sản phẩm và khách hàng)</li>
         <li>Khách đặt hàng qua QR có thể thanh toán ngay bằng mã QR ngân hàng (VietQR) đúng số tiền, nội dung là mã đơn — hiện ở trang đặt hàng thành công và trang theo dõi đơn nếu cửa hàng đã khai báo tài khoản ở Cấu hình → Thanh toán</li>
