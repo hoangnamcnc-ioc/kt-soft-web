@@ -118,19 +118,49 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.8.1</h3>
-        <span class="muted" style="font-size:13px;">13/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 1.8.4</h3>
+        <span class="muted" style="font-size:13px;">14/10/2026</span>
       </div>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
-        <li>Màn hình đăng nhập tự đưa đúng màn hình theo vai trò: thu ngân vào Bán hàng, thủ kho và kế toán vào Quản lý, không còn báo lỗi "không có quyền" khi bấm nhầm nút hoặc gõ Enter</li>
+        <li>Sửa lỗi: hàng bán theo cân/đo lẻ (vd 0,35 kg) không còn ra số tiền lẻ đồng; tiền được làm tròn đến đồng ở từng dòng hàng, khớp giữa hóa đơn, sổ quỹ và báo cáo</li>
+        <li>Chặn dữ liệu nhập không hợp lệ (số âm, chữ thay số, số lượng nhập bằng 0, giá bán âm) bằng thông báo rõ ràng thay vì báo lỗi hệ thống</li>
+        <li>Sửa lỗi hiển thị ảnh sản phẩm trên trang khách quét mã QR chọn hàng</li>
       </ul>
     </div>
 
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.8.0</h3>
-        <span class="muted" style="font-size:13px;">13/10/2026</span>
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.8.3</strong> <span class="muted" style="font-size:13px;">14/10/2026</span></summary>
+      <div class="changelog-body">
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Sửa lỗi: sau khi xóa dữ liệu mẫu, giỏ hàng/hóa đơn đang giữ và mã đơn cũ trên máy bán hàng, điện thoại khách không còn bị lẫn sang dữ liệu mới</li>
+        <li>Sửa lỗi: ảnh sản phẩm hiển thị đúng trên trang khách quét mã QR chọn hàng</li>
+        <li>Hiển thị đúng tên người mở ca trong báo cáo cuối ngày; hoàn thiện nội dung quyền riêng tư</li>
+      </ul>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.8.2</strong> <span class="muted" style="font-size:13px;">13/10/2026</span></summary>
+      <div class="changelog-body">
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><b>Sơ đồ chức năng</b> là trang đầu tiên hiện ra ngay sau khi đăng nhập (quản lý, thủ kho, kế toán), thêm các ô mới: khách quét QR, khóa sổ, hàng sắp hết, phiếu chờ chi, công nợ quá hạn</li>
+        <li>Bổ sung <b>Điều khoản sử dụng, Quyền riêng tư và Giấy phép mã nguồn mở</b>: hiển thị khi cài đặt, trong phần mềm (Cài đặt) và tại kt-soft.vn</li>
+      </ul>
+      </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.8.1</strong> <span class="muted" style="font-size:13px;">13/10/2026</span></summary>
+      <div class="changelog-body">
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li>Màn hình đăng nhập tự đưa đúng màn hình theo vai trò: thu ngân vào Bán hàng, thủ kho và kế toán vào Quản lý, không còn báo lỗi "không có quyền" khi bấm nhầm nút hoặc gõ Enter</li>
+      </ul>
+      </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.8.0</strong> <span class="muted" style="font-size:13px;">13/10/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li><b>Khách quét mã QR để tự chọn hàng</b> bằng điện thoại (qua Wi-Fi của quán): xem hàng, chọn món, gửi đơn cho quầy; thu ngân kiểm tra, chốt thành hóa đơn và thu tiền. Khách theo dõi được trạng thái đơn, chủ quán in mã QR dán ở quầy; máy bán hàng có âm báo khi có đơn mới</li>
@@ -146,44 +176,40 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
         <li>Vá lỗi bảo mật: thiết bị lạ trong mạng Wi-Fi không còn tải được các trang nội bộ bằng đường dẫn đặc biệt</li>
         <li>Mở đơn khách chọn vào giỏ báo rõ món nào hết hàng/giảm số lượng; chặn hai thu ngân chốt trùng một đơn</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.7.4</h3>
-        <span class="muted" style="font-size:13px;">12/10/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.7.4</strong> <span class="muted" style="font-size:13px;">12/10/2026</span></summary>
+      <div class="changelog-body">
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li><b>Dữ liệu mẫu 1 tuần bán hàng</b>: khi tạo cửa hàng mới có thể chọn nạp sẵn hàng hóa, khách hàng, nhân viên, nhập hàng, hóa đơn, sổ quỹ, sổ ngân hàng, công nợ của một tạp hóa nhỏ để xem thử các màn hình và báo cáo</li>
         <li>Quen rồi thì bấm <b>Xóa dữ liệu mẫu &amp; bắt đầu thực tế</b> ở màn hình Tổng quan: xóa sạch dữ liệu kinh doanh, giữ lại thông tin cửa hàng và tài khoản quản lý; phần mềm tự sao lưu trước khi xóa và yêu cầu nhập lại mật khẩu</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.7.3</h3>
-        <span class="muted" style="font-size:13px;">12/10/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.7.3</strong> <span class="muted" style="font-size:13px;">12/10/2026</span></summary>
+      <div class="changelog-body">
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>Trang mới <b>Sơ đồ chức năng</b> trong màn hình Quản lý: gom toàn bộ chức năng theo luồng làm việc 4 bước (thiết lập → cung ứng &amp; kho → bán hàng &amp; chăm sóc khách → hậu kiểm &amp; báo cáo), bấm vào ô để mở đúng chức năng; mỗi vai trò chỉ thấy phần mình được dùng</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.7.2</h3>
-        <span class="muted" style="font-size:13px;">12/10/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.7.2</strong> <span class="muted" style="font-size:13px;">12/10/2026</span></summary>
+      <div class="changelog-body">
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>Thêm hướng dẫn xử lý cảnh báo của Windows SmartScreen / phần mềm diệt virus ngay trong mục Phiên bản phần mềm</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.7.1</h3>
-        <span class="muted" style="font-size:13px;">12/10/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.7.1</strong> <span class="muted" style="font-size:13px;">12/10/2026</span></summary>
+      <div class="changelog-body">
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>Nhiều kho hoàn thiện hơn: cảnh báo sắp hết hàng, gợi ý đặt hàng, sổ quỹ tiền mặt, ca bán hàng và hạn sử dụng đều tính riêng theo từng kho (có lựa chọn xem tất cả kho)</li>
         <li>Sổ chi tiết vật tư, hàng hóa xem được riêng từng kho, tính cả hàng chuyển kho</li>
@@ -191,13 +217,12 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
         <li>Sổ chi tiết tiền (S2e) gộp cả tiền mặt và tiền gửi ngân hàng</li>
         <li>Hủy đơn, trả hàng, hủy đặt hàng đã trả bằng chuyển khoản/QR: phần mềm hỏi "đã chuyển khoản hoàn tiền cho khách chưa?" rồi mới ghi khoản chi vào sổ ngân hàng, không tự ghi nữa</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.7.0</h3>
-        <span class="muted" style="font-size:13px;">08/10/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.7.0</strong> <span class="muted" style="font-size:13px;">08/10/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>Hạn thanh toán công nợ: đặt số ngày được nợ cho từng khách, phần mềm tính tuổi nợ (0-30, 31-60, 61-90, trên 90 ngày), cảnh báo khách quá hạn ở Tổng quan và màn Nhắc nợ</li>
@@ -213,24 +238,22 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
         <li>Sổ tiền gửi ngân hàng bắt đầu ghi từ khi cài bản này; lịch sử cũ không tự đưa vào — nhập số dư đầu tại mục Tài khoản để khớp số dư thật</li>
         <li>Khi dùng nhiều kho, sổ quỹ tiền mặt, ca bán hàng và lô hạn sử dụng vẫn dùng chung cho tất cả kho</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.6.1</h3>
-        <span class="muted" style="font-size:13px;">08/10/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.6.1</strong> <span class="muted" style="font-size:13px;">08/10/2026</span></summary>
+      <div class="changelog-body">
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>Quét mã vạch bằng camera ở thêm nữa các ô nhập mã vạch: form Thêm/Sửa sản phẩm, Tạo hàng mới khi nhập hàng, In tem và ô tìm trong Hàng hóa</li>
         <li>Màn Kiểm kho có ô quét mã vạch để nhảy tới đúng dòng cần đếm</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.6.0</h3>
-        <span class="muted" style="font-size:13px;">08/10/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.6.0</strong> <span class="muted" style="font-size:13px;">08/10/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>Phân quyền thêm 2 vai trò <b>Thủ kho</b> và <b>Kế toán</b>: mỗi người chỉ thấy và dùng đúng phần việc của mình</li>
@@ -247,23 +270,21 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
         <li>Thu ngân trả hàng phải có quản lý duyệt bằng tài khoản quản lý</li>
         <li>Thu ngân không còn tự đổi được hạn mức nợ, nhóm giá hay xóa khách hàng, và không xem được giá vốn</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.5.3</h3>
-        <span class="muted" style="font-size:13px;">07/10/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.5.3</strong> <span class="muted" style="font-size:13px;">07/10/2026</span></summary>
+      <div class="changelog-body">
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>Bộ nhận dạng thương hiệu KT mới: biểu tượng trên file chạy, bộ cài đặt, tab trình duyệt và màn hình đăng nhập — đồng nhất với KT-SOFT và hocketoanthue.vn</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; opacity:0.85; padding-left:16px; margin-bottom:22px;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.5.2 <span style="font-size:12px;font-weight:700;color:#dc2626;background:#fee2e2;padding:2px 8px;border-radius:10px;vertical-align:middle;">Bản vá bảo mật</span></h3>
-        <span class="muted" style="font-size:13px;">06/10/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1;  padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.5.2 <span style="font-size:12px;font-weight:700;color:#dc2626;background:#fee2e2;padding:2px 8px;border-radius:10px;vertical-align:middle;">Bản vá bảo mật</span></strong> <span class="muted" style="font-size:13px;">06/10/2026</span></summary>
+      <div class="changelog-body">
       <p class="desc" style="margin:8px 0 6px;">Khuyến nghị mọi khách hàng cập nhật. Bản này tăng độ an toàn của phần mềm:</p>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>Cập nhật các thư viện nền tảng lên phiên bản đã vá lỗi bảo mật</li>
@@ -271,46 +292,42 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
         <li>Khóa đăng nhập sau nhiều lần sai chỉ áp dụng cho thiết bị đang nhập sai, người lạ trong Wi-Fi không thể làm chủ quán bị khóa tài khoản</li>
       </ul>
       <p class="desc" style="margin:6px 0 0;">Lưu ý: tính năng gửi email (đặt lại mật khẩu, báo cáo tự động) cần máy có kết nối Internet.</p>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.5.1</h3>
-        <span class="muted" style="font-size:13px;">05/10/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.5.1</strong> <span class="muted" style="font-size:13px;">05/10/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Cải thiện</p>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>Phiếu nhập hàng: hàng chưa có trong danh mục thì tạo nhanh ngay trong phiếu (nút "Tạo hàng mới"), tạo xong tự chọn vào phiếu, không phải thoát ra màn Hàng hóa rồi quay lại</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.5.0</h3>
-        <span class="muted" style="font-size:13px;">05/10/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.5.0</strong> <span class="muted" style="font-size:13px;">05/10/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>Thiết bị truy cập qua Wi-Fi/LAN phải được quản lý duyệt: điện thoại/máy tính bảng lạ vào địa chỉ phần mềm sẽ bị giữ ở trang "Chờ quản lý duyệt", quản lý duyệt/từ chối/thu hồi ngay trong Tổng quan; sau khi duyệt, nhân viên vẫn phải đăng nhập bằng tài khoản riêng. Máy chính luôn vào được</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.4.0</h3>
-        <span class="muted" style="font-size:13px;">30/09/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.4.0</strong> <span class="muted" style="font-size:13px;">30/09/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>Quét mã vạch bằng camera (điện thoại/webcam) ở màn Bán hàng và các ô quét trong Quản lý — không cần mua máy quét mã vạch</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.3.0</h3>
-        <span class="muted" style="font-size:13px;">30/09/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.3.0</strong> <span class="muted" style="font-size:13px;">30/09/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>In tem giá/mã vạch cho sản phẩm — in trực tiếp trên giấy A4 hoặc giấy decal tem, không cần máy in tem riêng</li>
@@ -329,24 +346,22 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
         <li>Sửa giá hàng loạt: xác nhận trước khi lưu, hiện rõ số dòng thực sự thay đổi</li>
         <li>Bắt buộc nhập lý do khi xuất hủy hàng; hiện số lượng sản phẩm liên quan khi chặn xóa danh mục/nhà cung cấp/vị trí</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.2.1</h3>
-        <span class="muted" style="font-size:13px;">27/09/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.2.1</strong> <span class="muted" style="font-size:13px;">27/09/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>Nút "Góp ý / Báo lỗi" ngay trong phần mềm (màn Quản lý và màn Bán hàng) — gửi thẳng cho nhà phát triển, không cần tự cấu hình email hay liên hệ ở đâu khác</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.2.0</h3>
-        <span class="muted" style="font-size:13px;">25/09/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.2.0</strong> <span class="muted" style="font-size:13px;">25/09/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>Bán hàng theo đơn vị quy đổi: khai báo Thùng/Lốc/... quy đổi ra đơn vị lẻ, chọn ngay đơn vị lúc bán tại màn Bán hàng, tồn kho và báo cáo vẫn tự động quy đổi chính xác về đơn vị cơ bản</li>
@@ -358,13 +373,12 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
         <li>Tự động gửi báo cáo cuối ngày qua email cho tài khoản Quản lý vào giờ đã hẹn</li>
         <li>Sao lưu dữ liệu tự động chép thêm 1 bản sang thư mục khác (ví dụ thư mục Google Drive/OneDrive đã đồng bộ sẵn) — tự động có thêm 1 bản trên mây</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.1.1 <span style="font-size:12px;font-weight:700;color:#dc2626;background:#fee2e2;padding:2px 8px;border-radius:10px;vertical-align:middle;">Vá khẩn cấp</span></h3>
-        <span class="muted" style="font-size:13px;">25/09/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.1.1 <span style="font-size:12px;font-weight:700;color:#dc2626;background:#fee2e2;padding:2px 8px;border-radius:10px;vertical-align:middle;">Vá khẩn cấp</span></strong> <span class="muted" style="font-size:13px;">25/09/2026</span></summary>
+      <div class="changelog-body">
       <p class="desc" style="margin:8px 0 10px;">
         Khuyến nghị <b>mọi khách hàng đang dùng bản 1.1.0 cập nhật ngay</b>. Bản này vá 3 lỗi
         nghiêm trọng: (1) một số trường hợp truy cập bất thường có thể làm phần mềm tự tắt
@@ -373,13 +387,12 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
         giá tính sai số tiền hoàn/công nợ. Đã kiểm chứng lại toàn bộ trên bản cài đặt thật
         trước khi phát hành.
       </p>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.1.0</h3>
-        <span class="muted" style="font-size:13px;">23/09/2026</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.1.0</strong> <span class="muted" style="font-size:13px;">23/09/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>Quét mã vạch ở tất cả màn hình kho (nhập hàng, xuất kho, trả hàng, bán online) — trước đây chỉ có ở màn Bán hàng</li>
@@ -399,19 +412,19 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
         <li>Tăng độ an toàn dữ liệu: tự gộp dữ liệu về file chính định kỳ + sao lưu tự động mỗi ngày</li>
         <li>Chặn bán âm kho khi có nhiều giao dịch cùng lúc; các lỗi bảo mật khác đã được rà soát và vá</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.0.0</h3>
-        <span class="muted" style="font-size:13px;">Phát hành lần đầu</span>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px;">
+      <summary><strong>Phiên bản 1.0.0</strong> <span class="muted" style="font-size:13px;">Phát hành lần đầu</span></summary>
+      <div class="changelog-body">
       <p class="desc" style="margin:8px 0 0;">
         Bán hàng tại quầy, quản lý hàng hóa/tồn kho, khách hàng &amp; công nợ, nhập hàng từ nhà
         cung cấp, sổ quỹ thu chi, nhân viên &amp; bảng lương, sao lưu dữ liệu, ước tính thuế hộ
         kinh doanh.
       </p>
-    </div>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -450,8 +463,16 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       </p>
     </div>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.8.1 mới nhất</a>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.8.4 mới nhất</a>
     </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <p class="muted" style="font-size:12.5px;margin:0;">
+      <b>Quyền riêng tư:</b> dữ liệu bán hàng nằm hoàn toàn trên máy của bạn. Phần mềm chỉ gửi về kt-soft.vn một tín hiệu ẩn danh (mã cài đặt ngẫu nhiên và số phiên bản, tối đa 1 lần/ngày) để chúng tôi biết số máy đang dùng; bạn có thể tắt tại Cài đặt → Phiên bản phần mềm. Xem <a href="dieu-khoan.php">Điều khoản sử dụng</a> và <a href="quyen-rieng-tu.php">Chính sách quyền riêng tư</a>.
+    </p>
   </div>
 </section>
 
