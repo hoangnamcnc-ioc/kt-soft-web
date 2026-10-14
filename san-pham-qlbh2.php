@@ -114,7 +114,49 @@ require_once __DIR__ . '/inc_header.php';
       ngay trên app.kt-soft.vn, bạn không cần cài đặt hay làm gì thêm.
     </p>
 
-    <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
+        <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Cập nhật 14/10/2026</h3>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Sau khi đăng nhập, mở khóa màn hình hoặc đăng ký, người dùng vào thẳng trang Sơ đồ chức năng; sơ đồ hiển thị đúng và đủ các chức năng của từng vai trò (khớp menu bên trái, có thẻ "Khác" cho chức năng chưa có ô riêng)</li>
+        <li>Đặt hàng Online: cửa hàng nào cũng có đường dẫn riêng tự tạo (kể cả cửa hàng đầu tiên, link cũ vẫn dùng được); cập nhật hướng dẫn điều kiện cho khớp tính năng QR ngân hàng và đối soát tự động</li>
+        <li>Pháp lý: trang Điều khoản sử dụng và Chính sách bảo mật (dữ liệu cá nhân), dòng bản quyền ở chân trang, ô đồng ý điều khoản khi đăng ký (lưu thời điểm đồng ý), lời lưu ý "số liệu tham khảo" ở báo cáo, kế toán, công nợ và file Excel, dòng riêng tư cho khách đặt hàng qua QR</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
+      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
+        <h3 style="margin:0;">Cập nhật 13/10/2026</h3>
+      </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Mã QR cho khách quét chọn hàng: trang Cấu hình → Đặt hàng Online tạo sẵn mã QR (in poster, tải ảnh) và mã QR riêng cho từng bàn/quầy. Khách quét bằng camera, chọn số lượng bằng nút +/−, tìm kiếm, lọc theo nhóm hàng, chọn nhận tại chỗ hoặc giao tận nơi; đơn ghi sẵn vị trí (vd "[Bàn 3]") và có email báo cho chủ cửa hàng</li>
+        <li>Khách đặt hàng qua QR có thể thanh toán ngay bằng mã QR ngân hàng (VietQR) đúng số tiền, nội dung là mã đơn — hiện ở trang đặt hàng thành công và trang theo dõi đơn nếu cửa hàng đã khai báo tài khoản ở Cấu hình → Thanh toán</li>
+        <li>Khách đặt hàng qua QR có trang theo dõi đơn (nhập mã đơn + số điện thoại): xem đơn đang ở bước nào, điểm tích lũy; dữ liệu mẫu có sẵn ảnh minh họa sản phẩm</li>
+        <li>Tự đối soát chuyển khoản: nhận thông báo biến động số dư (SePay, Casso...) và tự ghi thu vào đơn khi nội dung chuyển khoản có mã đơn; giao dịch chưa khớp gán tay được (Tài chính → Đối soát chuyển khoản)</li>
+        <li>QR thanh toán tại quầy POS có mã tham chiếu: khi khách chuyển khoản màn hình thu ngân và màn hình phụ của khách tự báo "đã nhận tiền"</li>
+        <li>Đơn online chưa thanh toán sau 1 giờ: trang "Đơn online chờ thanh toán" với nút Gọi, SMS soạn sẵn (kèm link có mã QR), Zalo; chủ cửa hàng còn nhận email nhắc tổng hợp</li>
+        <li>Bán hàng (POS): chia nhiều hình thức thanh toán trong một đơn (vd một phần tiền mặt, một phần chuyển khoản); sổ quỹ ghi đúng từng hình thức, tiền khách đưa thừa được tính là tiền thối</li>
+        <li>Chấm công xác minh vị trí GPS: Quản trị đặt vị trí cửa hàng và bán kính cho phép; nhân viên bấm Vào/Ra ca trên điện thoại (cho phép truy cập vị trí) chỉ chấm công được khi ở trong bán kính, khoảng cách được ghi vào ghi chú chấm công</li>
+        <li>Chống chấm công hộ: Quản trị có thể giới hạn nhân viên chỉ chấm công khi dùng Wi-Fi của cửa hàng (Chấm công → "Chống chấm công hộ")</li>
+        <li>Báo cáo: nút "Xuất Excel" báo cáo bán hàng (tổng quan, theo ngày, kênh, hình thức thanh toán, nhân viên, top sản phẩm và khách hàng)</li>
+        <li>Kế toán &amp; Thuế: xuất Excel sổ doanh thu (theo tháng, chi tiết sau chiết khấu, trừ hàng trả lại) kèm ước tính thuế; trang mới "Công nợ phải thu / phải trả" (khách nợ có số ngày nợ, nợ nhà cung cấp) cũng xuất được Excel</li>
+        <li>Tổng quan cho chủ quán/quản lý: lãi gộp hôm nay (kèm biên lãi), so sánh doanh thu với cùng ngày tuần trước, tiền trong sổ quỹ (tiền mặt và chuyển khoản/thẻ/QR)</li>
+        <li>Dữ liệu mẫu 1 tuần bán hàng: khi đăng ký cửa hàng có thể chọn tạo sẵn (24 sản phẩm, 14 khách, 3 nhà cung cấp, hơn 80 đơn bán, nhập hàng, công nợ, trả hàng, ca bán hàng, sổ quỹ, chấm công) để tham khảo; xem xong xóa sạch bằng một nút để bắt đầu dùng chính thức (Cấu hình → Dữ liệu mẫu). Cửa hàng đăng ký không chọn mẫu vẫn có thể tạo sau nếu còn trống</li>
+        <li>Trang "Sơ đồ chức năng" mới: toàn bộ luồng làm việc của cửa hàng theo 4 bước (Thiết lập → Cung ứng &amp; kho → Bán hàng &amp; vận chuyển → Hậu kiểm &amp; báo cáo), bấm vào ô để mở chức năng, chỉ hiện chức năng tài khoản được phép dùng; menu có thêm nhóm "Chức năng" gồm Sơ đồ, Hướng dẫn và Góp ý / Báo lỗi</li>
+        <li>Danh sách đơn hàng có ô tìm theo mã đơn, tên hoặc số điện thoại khách</li>
+        <li>Email gửi qua hàng đợi: không làm chậm trang, tự thử lại khi máy chủ mail chập chờn</li>
+        <li>Giá vốn tính được theo bình quân gia quyền (Cấu hình → Quản lý kho &amp; Sản phẩm); sửa đơn chưa giao hỗ trợ cả combo; vai trò tùy chỉnh "Chặt" khóa thêm trang Khách hàng và Bảo hành</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Cải thiện</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Doanh thu thống nhất giữa Tổng quan, Báo cáo và Kế toán &amp; Thuế (đều là doanh thu thuần: trừ chiết khấu và hàng khách trả lại, không tính đơn nháp)</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Cập nhật 12/10/2026</h3>
       </div>
@@ -124,31 +166,13 @@ require_once __DIR__ . '/inc_header.php';
         <li>Đơn đặt trước (nhập → duyệt → hoàn thành) thu tiền sau được bình thường; sửa lỗi không ghi nhận được thu nợ cho loại đơn này</li>
         <li>Sửa chiết khấu của đơn đã bán: tự đồng bộ trạng thái thanh toán và công nợ khách; không cho sửa đơn đã hủy hoặc làm tổng đơn thấp hơn số đã thu</li>
         <li>Hết hạn dùng thử: màn hình bán hàng báo rõ lý do thay vì âm thầm lưu đơn tạm</li>
-        <li>Sau khi đăng nhập, mở khóa màn hình hoặc đăng ký, người dùng vào thẳng trang Sơ đồ chức năng; sơ đồ hiển thị đúng và đủ các chức năng của từng vai trò (khớp menu bên trái, có thẻ "Khác" cho chức năng chưa có ô riêng)</li>
-        <li>Đặt hàng Online: cửa hàng nào cũng có đường dẫn riêng tự tạo (kể cả cửa hàng đầu tiên, link cũ vẫn dùng được); cập nhật hướng dẫn điều kiện cho khớp tính năng QR ngân hàng và đối soát tự động</li>
-        <li>Pháp lý: trang Điều khoản sử dụng và Chính sách bảo mật (dữ liệu cá nhân), dòng bản quyền ở chân trang, ô đồng ý điều khoản khi đăng ký (lưu thời điểm đồng ý), lời lưu ý "số liệu tham khảo" ở báo cáo, kế toán, công nợ và file Excel, dòng riêng tư cho khách đặt hàng qua QR</li>
-        <li>Tự đối soát chuyển khoản: nhận thông báo biến động số dư (SePay, Casso...) và tự ghi thu vào đơn khi nội dung chuyển khoản có mã đơn; giao dịch chưa khớp gán tay được (Tài chính → Đối soát chuyển khoản)</li>
-        <li>QR thanh toán tại quầy POS có mã tham chiếu: khi khách chuyển khoản màn hình thu ngân và màn hình phụ của khách tự báo "đã nhận tiền"</li>
-        <li>Đơn online chưa thanh toán sau 1 giờ: trang "Đơn online chờ thanh toán" với nút Gọi, SMS soạn sẵn (kèm link có mã QR), Zalo; chủ cửa hàng còn nhận email nhắc tổng hợp</li>
-        <li>Email gửi qua hàng đợi: không làm chậm trang, tự thử lại khi máy chủ mail chập chờn</li>
-        <li>Giá vốn tính được theo bình quân gia quyền (Cấu hình → Quản lý kho &amp; Sản phẩm); sửa đơn chưa giao hỗ trợ cả combo; vai trò tùy chỉnh "Chặt" khóa thêm trang Khách hàng và Bảo hành</li>
-        <li>Chấm công xác minh vị trí GPS: Quản trị đặt vị trí cửa hàng và bán kính cho phép; nhân viên bấm Vào/Ra ca trên điện thoại (cho phép truy cập vị trí) chỉ chấm công được khi ở trong bán kính, khoảng cách được ghi vào ghi chú chấm công</li>
-        <li>Báo cáo: nút "Xuất Excel" báo cáo bán hàng (tổng quan, theo ngày, kênh, hình thức thanh toán, nhân viên, top sản phẩm và khách hàng)</li>
-        <li>Khách đặt hàng qua QR có thể thanh toán ngay bằng mã QR ngân hàng (VietQR) đúng số tiền, nội dung là mã đơn — hiện ở trang đặt hàng thành công và trang theo dõi đơn nếu cửa hàng đã khai báo tài khoản ở Cấu hình → Thanh toán</li>
-        <li>Bán hàng (POS): chia nhiều hình thức thanh toán trong một đơn (vd một phần tiền mặt, một phần chuyển khoản); sổ quỹ ghi đúng từng hình thức, tiền khách đưa thừa được tính là tiền thối</li>
-        <li>Kế toán &amp; Thuế: xuất Excel sổ doanh thu (theo tháng, chi tiết sau chiết khấu, trừ hàng trả lại) kèm ước tính thuế; trang mới "Công nợ phải thu / phải trả" (khách nợ có số ngày nợ, nợ nhà cung cấp) cũng xuất được Excel</li>
-        <li>Tổng quan cho chủ quán/quản lý: lãi gộp hôm nay (kèm biên lãi), so sánh doanh thu với cùng ngày tuần trước, tiền trong sổ quỹ (tiền mặt và chuyển khoản/thẻ/QR)</li>
-        <li>Chống chấm công hộ: Quản trị có thể giới hạn nhân viên chỉ chấm công khi dùng Wi-Fi của cửa hàng (Chấm công → "Chống chấm công hộ")</li>
-        <li>Khách đặt hàng qua QR có trang theo dõi đơn (nhập mã đơn + số điện thoại): xem đơn đang ở bước nào, điểm tích lũy; dữ liệu mẫu có sẵn ảnh minh họa sản phẩm</li>
-        <li>Mã QR cho khách quét chọn hàng: trang Cấu hình → Đặt hàng Online tạo sẵn mã QR (in poster, tải ảnh) và mã QR riêng cho từng bàn/quầy. Khách quét bằng camera, chọn số lượng bằng nút +/−, tìm kiếm, lọc theo nhóm hàng, chọn nhận tại chỗ hoặc giao tận nơi; đơn ghi sẵn vị trí (vd "[Bàn 3]") và có email báo cho chủ cửa hàng</li>
-        <li>Danh sách đơn hàng có ô tìm theo mã đơn, tên hoặc số điện thoại khách</li>
-        <li>Doanh thu thống nhất giữa Tổng quan, Báo cáo và Kế toán &amp; Thuế (đều là doanh thu thuần: trừ chiết khấu và hàng khách trả lại, không tính đơn nháp)</li>
-        <li>Dữ liệu mẫu 1 tuần bán hàng: khi đăng ký cửa hàng có thể chọn tạo sẵn (24 sản phẩm, 14 khách, 3 nhà cung cấp, hơn 80 đơn bán, nhập hàng, công nợ, trả hàng, ca bán hàng, sổ quỹ, chấm công) để tham khảo; xem xong xóa sạch bằng một nút để bắt đầu dùng chính thức (Cấu hình → Dữ liệu mẫu). Cửa hàng đăng ký không chọn mẫu vẫn có thể tạo sau nếu còn trống</li>
-        <li>Trang "Sơ đồ chức năng" mới: toàn bộ luồng làm việc của cửa hàng theo 4 bước (Thiết lập → Cung ứng &amp; kho → Bán hàng &amp; vận chuyển → Hậu kiểm &amp; báo cáo), bấm vào ô để mở chức năng, chỉ hiện chức năng tài khoản được phép dùng; menu có thêm nhóm "Chức năng" gồm Sơ đồ, Hướng dẫn và Góp ý / Báo lỗi</li>
+        <li>Đặt lại mật khẩu, thanh toán gia hạn, điều chỉnh giá vốn, tạo sản phẩm mới: ghi dữ liệu theo từng giao dịch trọn vẹn, tránh dở dang khi có sự cố</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Sửa sản phẩm trong đơn chưa giao (đổi số lượng, đơn giá, bỏ dòng, thêm mặt hàng): tồn kho, lô hạn dùng, tổng tiền, trạng thái thanh toán và công nợ khách tự cập nhật theo</li>
         <li>Vận đơn chuyển sang "Đã hoàn" (hàng quay về cửa hàng): hệ thống tự hủy đơn, hoàn kho, hoàn tiền/công nợ/điểm (Quản lý/Quản trị); nhân viên thu ngân sẽ được nhắc nhờ Quản lý hủy</li>
         <li>Cửa hàng hết hạn dùng thử vẫn tải được toàn bộ dữ liệu của mình ngay trên trang thông báo hết hạn</li>
-        <li>Đặt lại mật khẩu, thanh toán gia hạn, điều chỉnh giá vốn, tạo sản phẩm mới: ghi dữ liệu theo từng giao dịch trọn vẹn, tránh dở dang khi có sự cố</li>
       </ul>
       <p style="font-weight:600; margin:12px 0 4px;">Cải thiện</p>
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
@@ -168,6 +192,9 @@ require_once __DIR__ . '/inc_header.php';
         <li>Mở ca / đóng ca: không thể mở hai ca cùng lúc hoặc đóng một ca hai lần</li>
         <li>Camera quét mã vạch tắt hẳn khi đóng cửa sổ quét (không còn sáng đèn camera)</li>
         <li>Báo cáo và trang chủ không còn tính đơn nháp vào doanh thu</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Có đơn online mới thì hệ thống gửi email báo ngay cho chủ cửa hàng</li>
         <li>Trang "Đối chiếu số liệu" (menu Tài chính) tự tìm chỗ sổ sách không khớp: công nợ khách, tiền thu từng đơn, đơn hủy chưa hoàn tiền, tồn kho âm, ca bán hàng lệch tiền</li>
         <li>Đặt hàng Online dùng được cho MỌI cửa hàng: mỗi cửa hàng có đường dẫn riêng (Cấu hình → Đặt hàng Online), khách đặt vào đúng cửa hàng đó</li>
@@ -183,7 +210,7 @@ require_once __DIR__ . '/inc_header.php';
       </ul>
     </div>
 
-    <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px; opacity:0.85;">
+<div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px; opacity:0.85;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
         <h3 style="margin:0;">Cập nhật 05/10/2026</h3>
       </div>
