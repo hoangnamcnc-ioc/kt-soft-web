@@ -126,10 +126,9 @@ require_once __DIR__ . '/inc_header.php';
       </ul>
     </div>
 
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Cập nhật 13/10/2026</h3>
-      </div>
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary>Cập nhật 13/10/2026</summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Mã QR cho khách quét chọn hàng: trang Cấu hình → Đặt hàng Online tạo sẵn mã QR (in poster, tải ảnh) và mã QR riêng cho từng bàn/quầy. Khách quét bằng camera, chọn số lượng bằng nút +/−, tìm kiếm, lọc theo nhóm hàng, chọn nhận tại chỗ hoặc giao tận nơi; đơn ghi sẵn vị trí (vd "[Bàn 3]") và có email báo cho chủ cửa hàng</li>
@@ -154,12 +153,12 @@ require_once __DIR__ . '/inc_header.php';
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Doanh thu thống nhất giữa Tổng quan, Báo cáo và Kế toán &amp; Thuế (đều là doanh thu thuần: trừ chiết khấu và hàng khách trả lại, không tính đơn nháp)</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Cập nhật 12/10/2026</h3>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary>Cập nhật 12/10/2026</summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Sửa lỗi quan trọng</p>
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Đối soát COD với hãng vận chuyển: ghi đủ vào sổ quỹ (phiếu thu tiền khách trả + phiếu chi phí vận chuyển hãng khấu trừ), cập nhật "đã thanh toán" của đơn và trừ công nợ khách — trước đây chỉ đánh dấu đã đối soát, tiền COD không vào sổ</li>
@@ -178,12 +177,12 @@ require_once __DIR__ . '/inc_header.php';
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Thu nợ đơn hàng, thu nợ khách hàng và đối soát COD cho chọn hình thức (tiền mặt, chuyển khoản, thẻ, QR) để sổ quỹ và đối chiếu ca bán hàng không bị lẫn</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Cập nhật 07/10/2026</h3>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary>Cập nhật 07/10/2026</summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Sửa lỗi quan trọng</p>
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Hủy đơn hàng: hoàn đúng tiền đã thu vào sổ quỹ theo từng phương thức, hoàn công nợ, điểm tích lũy, lượt dùng mã giảm giá và hủy phiếu bảo hành của đơn</li>
@@ -208,12 +207,12 @@ require_once __DIR__ . '/inc_header.php';
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Giá vốn và giá trị tồn kho chỉ hiển thị cho Quản trị / Quản lý, thu ngân không còn thấy</li>
       </ul>
-    </div>
-
-<div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Cập nhật 05/10/2026</h3>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
+      <summary>Cập nhật 05/10/2026</summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Phiếu nhập hàng: hàng chưa có trong danh mục thì tạo nhanh ngay trong phiếu (nút "Tạo hàng mới" hiện khi tìm không thấy), tạo xong tự thêm vào phiếu, không phải thoát ra trang Sản phẩm</li>
@@ -224,12 +223,12 @@ require_once __DIR__ . '/inc_header.php';
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Nút Góp ý / Báo lỗi chuyển lên thanh menu phía trên thay cho nút nổi ở góc màn hình — không còn che nút Thanh toán trên điện thoại</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Cập nhật 30/09/2026</h3>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
+      <summary>Cập nhật 30/09/2026</summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>In tem giá/mã vạch cho sản phẩm — chọn hàng, in ra giấy A4 hoặc giấy decal tem</li>
@@ -253,12 +252,12 @@ require_once __DIR__ . '/inc_header.php';
         <li>Sửa nhanh tồn kho ngay tại chỗ trong danh sách Quản lý kho</li>
         <li>Làm rõ cách gia hạn và thêm số điện thoại (không bắt buộc) ở trang đăng ký dùng thử</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Cập nhật 23/09/2026</h3>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
+      <summary>Cập nhật 23/09/2026</summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Tạo đơn giao hàng riêng (không cần đứng tại quầy) — dùng cho đơn đặt qua điện thoại, mạng xã hội</li>
@@ -277,19 +276,20 @@ require_once __DIR__ . '/inc_header.php';
         <li>Form thêm sản phẩm: đưa "Tên sản phẩm" lên ô đầu tiên, dễ nhập hơn cho người mới</li>
         <li>Các trang danh sách còn trống (chưa có sản phẩm, đơn hàng...) chỉ rõ bước tiếp theo cần làm</li>
       </ul>
-    </div>
-
-    <div class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; opacity:0.85;">
-      <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Trước đó</h3>
       </div>
+    </details>
+
+<details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px;">
+      <summary>Trước đó</summary>
+      <div class="changelog-body">
       <p class="desc" style="margin:8px 0 0;">
         Ra mắt bản dùng thử tự đăng ký (miễn phí 12 tháng), mỗi cửa hàng có dữ liệu tách biệt hoàn
         toàn dù dùng chung hệ thống. Bán hàng tại quầy, quản lý kho đa chi nhánh, khách hàng &amp;
         công nợ, nhập hàng &amp; nhà cung cấp, khuyến mại &amp; tích điểm, sổ quỹ, ước tính thuế hộ
         kinh doanh, sao lưu dữ liệu tự động.
       </p>
-    </div>
+      </div>
+    </details>
   </div>
 </section>
 

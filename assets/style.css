@@ -319,3 +319,11 @@ img { max-width: 100%; display: block; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* Lich su cap nhat: ban cu thu gon, bam tieu de de xo noi dung */
+details.changelog-item { margin-bottom:12px; }
+details.changelog-item > summary { cursor:pointer; list-style:none; display:flex; align-items:center; gap:10px; font-size:1.15rem; font-weight:700; padding:6px 0; }
+details.changelog-item > summary::-webkit-details-marker { display:none; }
+details.changelog-item > summary::after { content:"▾"; margin-left:auto; color:#64748b; transition:transform .2s; }
+details.changelog-item[open] > summary::after { transform:rotate(180deg); }
+details.changelog-item > summary:hover { color:var(--qlbh2, #1e3a8a); }
