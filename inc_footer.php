@@ -15,6 +15,7 @@
         <ul>
           <li><a href="san-pham-qlbh2.php">QLBH-CLOUD — Quản lý bán hàng đa chi nhánh</a></li>
           <li><a href="san-pham-qlbh-soft.php">QLBH-SOFT — Tạp hóa, siêu thị mini</a></li>
+          <li><a href="san-pham-qlcf-soft.php">QLCF-SOFT — Quán cà phê, trà sữa</a></li>
           <li><a href="san-pham-qlcv.php">QLCV — Quản lý công việc</a></li>
           <li><a href="san-pham-ke-toan.php">KT-SOFT Kế toán</a></li>
         </ul>
@@ -38,7 +39,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <?= date('Y') ?> KT-SOFT. Đã đăng ký bản quyền phần mềm.</span>
+      <span>© <?= date('Y') ?> KT-SOFT. Đã đăng ký bản quyền phần mềm. &middot; <a href="dieu-khoan.php">Điều khoản sử dụng</a> &middot; <a href="quyen-rieng-tu.php">Quyền riêng tư</a></span>
       <span>Được xây dựng cho hộ kinh doanh &amp; doanh nghiệp nhỏ Việt Nam 🇻🇳</span>
     </div>
   </div>

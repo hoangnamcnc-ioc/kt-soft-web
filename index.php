@@ -19,11 +19,12 @@ require_once __DIR__ . '/inc_header.php';
     <div class="pill-tabs">
       <a href="san-pham-qlbh2.php" class="pill-tab" style="--pill-accent:#93c5fd;"><span class="ico">🛒</span>QLBH-CLOUD</a>
       <a href="san-pham-qlbh-soft.php" class="pill-tab" style="--pill-accent:#6ee7b7;"><span class="ico">💻</span>QLBH-SOFT</a>
+      <a href="san-pham-qlcf-soft.php" class="pill-tab" style="--pill-accent:#fdba74;"><span class="ico">☕</span>QLCF-SOFT</a>
       <a href="san-pham-qlcv.php" class="pill-tab" style="--pill-accent:#d8b4fe;"><span class="ico">📋</span>QLCV</a>
       <a href="san-pham-ke-toan.php" class="pill-tab" style="--pill-accent:#fcd34d;"><span class="ico">🧾</span>Kế toán</a>
     </div>
     <div class="stats">
-      <div class="stat"><b>4</b><span>phần mềm đang vận hành</span></div>
+      <div class="stat"><b>5</b><span>phần mềm đang vận hành</span></div>
       <div class="stat"><b>100%</b><span>tiếng Việt, hỗ trợ trực tiếp</span></div>
       <div class="stat"><b>Cloud &amp; Local</b><span>tùy nhu cầu triển khai</span></div>
     </div>
@@ -61,6 +62,18 @@ require_once __DIR__ . '/inc_header.php';
         </p>
         <div class="status"><b>Chạy local</b> trên Windows, không cần mạng</div>
         <a href="san-pham-qlbh-soft.php" class="card-link">Xem chi tiết →</a>
+      </div>
+
+      <div class="product-card" style="--card-accent: var(--qlcf); --card-bg: var(--qlcf-bg);">
+        <div class="icon-blob">☕</div>
+        <span class="tag">☕ Cài trên máy · Quán cà phê, trà sữa</span>
+        <h3>QLCF-SOFT — Quản lý quán cà phê</h3>
+        <p>
+          Bán hàng bấm ly theo size/đường/đá/topping, in tem ly, kho nguyên liệu và công thức pha chế
+          tự trừ kho, chốt ca, chấm công — dùng cho một quán hoặc cả chuỗi chi nhánh.
+        </p>
+        <div class="status"><b>Mới ra mắt</b> · bản 0.1.0 cho Windows</div>
+        <a href="san-pham-qlcf-soft.php" class="card-link">Xem chi tiết →</a>
       </div>
 
       <div class="product-card" style="--card-accent: var(--qlcv); --card-bg: var(--qlcv-bg);">

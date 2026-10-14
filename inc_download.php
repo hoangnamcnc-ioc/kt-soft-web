@@ -7,6 +7,10 @@ const DOWNLOAD_MAP = [
         'file' => 'downloads/QLBH-SOFT-Setup.exe',
         'ten' => 'QLBH-SOFT-Setup.exe',
     ],
+    'qlcf-soft' => [
+        'file' => 'downloads/QLCF-SOFT-Setup.exe',
+        'ten' => 'QLCF-SOFT-Setup.exe',
+    ],
     'qlcv' => [
         'file' => 'downloads/QLCV-Setup.exe',
         'ten' => 'QLCV-Setup.exe',
