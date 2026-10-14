@@ -7,6 +7,9 @@ if (!isset(DOWNLOAD_MAP[$key])) {
     exit('Không tìm thấy file cần tải.');
 }
 
-tang_luot_tai($key);
+// Chi dem luot tai that: bo qua HEAD (bot/kiem tra lien ket) de so lieu khong bi tinh du.
+if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'GET') {
+    tang_luot_tai($key);
+}
 header('Location: ' . DOWNLOAD_MAP[$key]['file']);
 exit;

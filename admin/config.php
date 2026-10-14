@@ -258,6 +258,28 @@ function feedback_luu_anh_dinh_kem(string $base64): ?string
  * gian voi gio thu vo nghia). Tu don dep cac IP qua 1 gio khong hoat dong de file khong phinh
  * vo han theo thoi gian.
  */
+function lien_he_qua_gioi_han(string $ip): bool
+{
+    $file = __DIR__ . '/../data/lien_he_rate.json';
+    $data = doc_json_file($file);
+    $now = time();
+    foreach ($data as $k => $times) {
+        $data[$k] = array_values(array_filter((array) $times, fn($t) => $now - (int) $t < 3600));
+        if (!$data[$k]) {
+            unset($data[$k]);
+        }
+    }
+    $times = $data[$ip] ?? [];
+    if (count($times) >= 5) {
+        ghi_json_file($file, $data);
+        return true;
+    }
+    $times[] = $now;
+    $data[$ip] = $times;
+    ghi_json_file($file, $data);
+    return false;
+}
+
 function feedback_qua_gioi_han(string $ip): bool
 {
     $data = doc_json_file(FEEDBACK_RATE_FILE);

@@ -31,7 +31,27 @@ $pageDesc = $pageDesc ?? 'KT-SOFT phát triển phần mềm quản lý bán hà
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=6">
+<?php
+$ldApps = [
+    'san-pham-qlbh2.php' => ['QLBH-CLOUD', 'BusinessApplication', 'Web'],
+    'san-pham-qlbh-soft.php' => ['QLBH-SOFT', 'BusinessApplication', 'Windows'],
+    'san-pham-qlcf-soft.php' => ['QLCF-SOFT', 'BusinessApplication', 'Windows'],
+    'san-pham-qlcv.php' => ['QLCV', 'BusinessApplication', 'Windows'],
+    'san-pham-ke-toan.php' => ['KT-SOFT Kế toán', 'FinanceApplication', 'Windows'],
+];
+if ($currentPage === 'index.php') {
+    $ld = ['@context' => 'https://schema.org', '@type' => 'Organization', 'name' => 'KT-SOFT', 'url' => 'https://kt-soft.vn/',
+        'logo' => 'https://kt-soft.vn/assets/img/logo.png', 'email' => 'hoangnamcnc@gmail.com'];
+} elseif (isset($ldApps[$currentPage])) {
+    [$ldName, $ldCat, $ldOs] = $ldApps[$currentPage];
+    $ld = ['@context' => 'https://schema.org', '@type' => 'SoftwareApplication', 'name' => $ldName, 'applicationCategory' => $ldCat,
+        'operatingSystem' => $ldOs, 'description' => $pageDesc, 'url' => $canonicalUrl,
+        'publisher' => ['@type' => 'Organization', 'name' => 'KT-SOFT', 'url' => 'https://kt-soft.vn/']];
+}
+if (!empty($ld)): ?>
+<script type="application/ld+json"><?= json_encode($ld, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG) ?></script>
+<?php endif; ?>
+<link rel="stylesheet" href="assets/style.css?v=7">
 </head>
 <body>
 

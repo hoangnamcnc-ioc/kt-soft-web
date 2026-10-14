@@ -39,7 +39,7 @@ require_once __DIR__ . '/inc_header.php';
         <div>
           <b>QLBH-CLOUD</b> <span class="muted" style="font-size:12.5px;">(app.kt-soft.vn)</span>
           <p class="muted" style="margin:4px 0 0;font-size:13.5px;">
-            <?= $qlbhOk ? "Cơ sở dữ liệu phản hồi trong {$qlbhMs}ms" : 'Không thể kết nối tới cơ sở dữ liệu' ?>
+            <?= $qlbhOk ? "Dịch vụ đang phản hồi bình thường" : 'Dịch vụ đang gặp sự cố, chúng tôi đang kiểm tra' ?>
           </p>
         </div>
         <?php if ($qlbhOk): ?>

@@ -7,4 +7,7 @@
   <url><loc>https://kt-soft.vn/san-pham-qlcv.php</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kt-soft.vn/san-pham-ke-toan.php</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kt-soft.vn/lien-he.php</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://kt-soft.vn/bang-gia.php</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://kt-soft.vn/dieu-khoan.php</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://kt-soft.vn/quyen-rieng-tu.php</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
 </urlset>
