@@ -56,7 +56,7 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid var(--border);
 }
 .site-header .bar { display: flex; align-items: center; justify-content: space-between; height: 68px; }
-.brand { display: flex; align-items: center; gap: 10px; font-family: 'Be Vietnam Pro', sans-serif; font-weight: 700; font-size: 19px; color: var(--ink); }
+.brand { white-space: nowrap; display: flex; align-items: center; gap: 10px; font-family: 'Be Vietnam Pro', sans-serif; font-weight: 700; font-size: 19px; color: var(--ink); }
 .brand:hover { text-decoration: none; }
 .brand .logo-mark {
   width: 34px; height: 34px; border-radius: 10px;
@@ -65,8 +65,8 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 4px 14px -4px rgba(29,78,216,.55);
 }
 .brand .logo-img { width: 38px; height: 38px; border-radius: 9px; display: block; }
-.nav { display: flex; align-items: center; gap: 28px; }
-.nav a { position: relative; color: var(--ink-soft); font-weight: 500; font-size: 15px; padding: 4px 0; }
+.nav { display: flex; align-items: center; gap: 20px; }
+.nav a { position: relative; color: var(--ink-soft); font-weight: 500; font-size: 14.5px; padding: 4px 0; white-space: nowrap; }
 .nav a:hover { color: var(--brand); text-decoration: none; }
 .nav a::after {
   content: ''; position: absolute; left: 0; right: 100%; bottom: -4px; height: 2px;
@@ -234,6 +234,8 @@ img { max-width: 100%; display: block; }
 .cta-band p { color: #cbd5e1; margin-top: 8px; font-size: 15px; }
 .cta-band .btn { background: #fff; color: var(--brand-dark); box-shadow: 0 10px 24px -10px rgba(0,0,0,.4); }
 .cta-band .btn:hover { background: #e2e8f0; }
+.cta-band .btn.btn-ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.5); box-shadow: none; }
+.cta-band .btn.btn-ghost:hover { background: rgba(255,255,255,.14); border-color: #fff; }
 
 /* Contact page */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
@@ -277,6 +279,22 @@ img { max-width: 100%; display: block; }
 .footer-grid a { color: var(--muted); font-size: 14px; }
 .footer-grid a:hover { color: var(--brand); }
 .footer-bottom { border-top: 1px solid var(--border); margin-top: 36px; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 13px; color: var(--muted); }
+
+/* Menu thu gon som hon: 8 muc + nut dung thu khong vua mot dong tren man hinh <= 1100px */
+@media (max-width: 1100px) {
+  .nav {
+    display: none; position: absolute; top: 68px; left: 0; right: 0; background: var(--surface);
+    border-bottom: 1px solid var(--border); flex-direction: column; align-items: stretch; gap: 0;
+    padding: 8px 24px 16px; box-shadow: 0 12px 24px -12px rgba(15,23,42,.2);
+  }
+  .nav.open { display: flex; }
+  .nav a { padding: 12px 0; border-bottom: 1px solid var(--border); }
+  .nav a:last-of-type { border-bottom: none; }
+  .nav a::after { display: none; }
+  .nav-toggle { display: flex; }
+  .nav-cta-mobile { display: inline-flex; margin-top: 12px; justify-content: center; }
+  .cta-desktop { display: none; }
+}
 
 /* Responsive */
 @media (max-width: 860px) {
