@@ -124,6 +124,8 @@ require_once __DIR__ . '/inc_header.php';
         <li>Đơn đặt trước (nhập → duyệt → hoàn thành) thu tiền sau được bình thường; sửa lỗi không ghi nhận được thu nợ cho loại đơn này</li>
         <li>Sửa chiết khấu của đơn đã bán: tự đồng bộ trạng thái thanh toán và công nợ khách; không cho sửa đơn đã hủy hoặc làm tổng đơn thấp hơn số đã thu</li>
         <li>Hết hạn dùng thử: màn hình bán hàng báo rõ lý do thay vì âm thầm lưu đơn tạm</li>
+        <li>Sau khi đăng nhập, mở khóa màn hình hoặc đăng ký, người dùng vào thẳng trang Sơ đồ chức năng; sơ đồ hiển thị đúng và đủ các chức năng của từng vai trò (khớp menu bên trái, có thẻ "Khác" cho chức năng chưa có ô riêng)</li>
+        <li>Đặt hàng Online: cửa hàng nào cũng có đường dẫn riêng tự tạo (kể cả cửa hàng đầu tiên, link cũ vẫn dùng được); cập nhật hướng dẫn điều kiện cho khớp tính năng QR ngân hàng và đối soát tự động</li>
         <li>Pháp lý: trang Điều khoản sử dụng và Chính sách bảo mật (dữ liệu cá nhân), dòng bản quyền ở chân trang, ô đồng ý điều khoản khi đăng ký (lưu thời điểm đồng ý), lời lưu ý "số liệu tham khảo" ở báo cáo, kế toán, công nợ và file Excel, dòng riêng tư cho khách đặt hàng qua QR</li>
         <li>Tự đối soát chuyển khoản: nhận thông báo biến động số dư (SePay, Casso...) và tự ghi thu vào đơn khi nội dung chuyển khoản có mã đơn; giao dịch chưa khớp gán tay được (Tài chính → Đối soát chuyển khoản)</li>
         <li>QR thanh toán tại quầy POS có mã tham chiếu: khi khách chuyển khoản màn hình thu ngân và màn hình phụ của khách tự báo "đã nhận tiền"</li>
