@@ -1,3 +1,8 @@
+# Chuyen www.kt-soft.vn ve kt-soft.vn (1 dia chi chinh duy nhat)
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.kt-soft\.vn$ [NC]
+RewriteRule ^(.*)$ https://kt-soft.vn/$1 [L,R=301,NE]
+
 ## ONEPANEL Force HTTPS by SSL installation
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
