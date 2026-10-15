@@ -1,10 +1,11 @@
 <?php
-// Tin hieu an danh tu phan mem QLBH-SOFT / QLCF-SOFT: ma cai dat ngau nhien + phien ban + he dieu hanh.
+// Tin hieu an danh tu phan mem QLBH-SOFT / QLCF-SOFT / KT-SOFT: ma cai dat ngau nhien + phien ban + he dieu hanh.
 // KHONG luu dia chi IP, ten cua hang hay bat ky du lieu kinh doanh nao. Xem thong ke trong trang quan tri.
 // Truong 'sp' (san pham) la tuy chon: 'qlcf-soft' ghi vao file rieng; vang mat = QLBH-SOFT (ban cu khong gui truong nay).
 const INSTALLS_FILES = [
     'qlbh-soft' => __DIR__ . '/data/installs.json',
     'qlcf-soft' => __DIR__ . '/data/installs_qlcf.json',
+    'kt-soft' => __DIR__ . '/data/installs_ktsoft.json',
 ];
 
 header('Content-Type: application/json; charset=utf-8');

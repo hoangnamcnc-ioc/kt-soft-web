@@ -59,6 +59,7 @@ $docPhienBanMoi = function (string $file): string {
 };
 $caiDat = $thongKeCaiDat(__DIR__ . '/../data/installs.json', $docPhienBanMoi(__DIR__ . '/../qlbh-soft-version.json'));
 $caiDatCf = $thongKeCaiDat(__DIR__ . '/../data/installs_qlcf.json', $docPhienBanMoi(__DIR__ . '/../qlcf-soft-version.json'));
+$caiDatKt = $thongKeCaiDat(__DIR__ . '/../data/installs_ktsoft.json', $docPhienBanMoi(__DIR__ . '/../kt-soft-version.json'));
 
 $adminTitle = 'Dashboard';
 require __DIR__ . '/includes/layout-head.php';
@@ -70,7 +71,7 @@ require __DIR__ . '/includes/layout-head.php';
   <div class="stat-card"><div class="icon">🌐</div><div class="num">4</div><div class="label">Sản phẩm đang giới thiệu</div></div>
 </div>
 
-<?php foreach ([['QLBH-SOFT', $caiDat], ['QLCF-SOFT', $caiDatCf]] as [$tenSp, $cd]): ?>
+<?php foreach ([['QLBH-SOFT', $caiDat], ['QLCF-SOFT', $caiDatCf], ['KT-SOFT (Kế toán)', $caiDatKt]] as [$tenSp, $cd]): ?>
 <div class="card">
   <div class="card-header"><h3>💻 Máy đang dùng <?= e($tenSp) ?></h3></div>
   <div style="padding:20px;">
