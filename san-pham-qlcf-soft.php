@@ -120,9 +120,25 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlcf, #9a3412); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 0.1.0 <span style="font-size:12px;font-weight:700;color:var(--qlcf);background:var(--qlcf-bg);padding:2px 8px;border-radius:10px;vertical-align:middle;">Bản đầu tiên</span></h3>
-        <span class="muted" style="font-size:13px;">14/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 0.2.0 <span style="font-size:12px;font-weight:700;color:var(--qlcf);background:var(--qlcf-bg);padding:2px 8px;border-radius:10px;vertical-align:middle;">Mới nhất</span></h3>
+        <span class="muted" style="font-size:13px;">15/10/2026</span>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Vận hành chuẩn cho quán</p>
+      <ul class="feature-list" style="--card-accent: var(--qlcf);">
+        <li>Bàn giao ca: ghi chú lúc đóng ca, ca sau mở POS thấy ngay ghi chú "Bàn giao từ ca trước"</li>
+        <li>Đối soát kho: so nhập, tiêu hao lý thuyết theo công thức và kiểm kê để ra số hao hụt (kèm giá trị), cảnh báo khi hao hụt cao</li>
+        <li>Hạn sử dụng nguyên liệu: nhập HSD ở từng dòng phiếu nhập, cảnh báo hàng cũ sắp hết hạn hoặc quá hạn (theo FIFO) ở trang Nhập hàng và Tổng quan</li>
+        <li>Việc đầu ca / cuối ca (checklist): mẫu mặc định theo quy trình quán cà phê, chủ quán và quản lý sửa danh sách, xem lịch sử 14 ngày ai làm bao nhiêu %</li>
+        <li>Lịch làm việc theo tuần, sao chép từ tuần trước, chặn ca trùng giờ; nhân viên xin đổi ca (trước giờ bắt đầu ít nhất 24 giờ), quản lý duyệt hoặc từ chối</li>
+        <li>Thưởng / phạt kèm lý do trong bảng lương theo kỳ; thực nhận = lương giờ làm + thưởng − phạt</li>
+        <li>Gợi ý đặt hàng: nguyên liệu chạm ngưỡng tối thiểu kèm số lượng gợi ý, chi phí ước tính, thêm thẳng vào phiếu nhập hoặc sao chép gửi nhà cung cấp</li>
+        <li>Dữ liệu mẫu 1 tuần có đủ các mục trên để xem thử</li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 0.1.0</strong> <span class="muted" style="font-size:13px;">14/10/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng</p>
       <ul class="feature-list" style="--card-accent: var(--qlcf);">
         <li>Bán hàng bấm ly (size/đường/đá/topping), in tem ly theo số ly, màn hình pha chế, quản lý khu vực – bàn và bàn đặt trước</li>
@@ -132,7 +148,8 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
         <li>Chấm công theo ca, bảng lương theo giờ, nhiều chi nhánh, phân quyền chủ quán / quản lý / thu ngân</li>
         <li>Điều khoản sử dụng hiển thị khi cài đặt, giấy phép thư viện bên thứ ba, sao lưu và khôi phục dữ liệu</li>
       </ul>
-    </div>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -167,7 +184,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
       </p>
     </div>
     <div class="cta-row">
-      <a href="download.php?p=qlcf-soft" class="btn">⬇️ Tải bản 0.1.0 mới nhất</a>
+      <a href="download.php?p=qlcf-soft" class="btn">⬇️ Tải bản 0.2.0 mới nhất</a>
     </div>
   </div>
 </section>
