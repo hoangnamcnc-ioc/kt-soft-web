@@ -122,9 +122,25 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.2.12</h3>
-        <span class="muted" style="font-size:13px;">14/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 1.2.13</h3>
+        <span class="muted" style="font-size:13px;">15/10/2026</span>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Thông báo khi có bản cập nhật mới: phần mềm tự kiểm tra và báo kèm nút tải về, không cần theo dõi website</li>
+        <li>Tín hiệu ẩn danh đếm số máy đang dùng (không gửi dữ liệu sổ sách hay thông tin đơn vị), tắt được trong menu Hệ thống; chính sách quyền riêng tư đã cập nhật nội dung này</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Cải thiện &amp; sửa lỗi</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Kiểm tra vai trò và mật khẩu ngay ở tầng đăng nhập; nhắc đổi mật khẩu khi còn dùng tài khoản quản trị mặc định; vai trò chỉ xem không sửa được dự toán công trình</li>
+        <li>Dữ liệu mẫu không còn bị tính hạn dùng thử, nạp lại từ đơn sạch sẽ hơn</li>
+        <li>Sửa nhiều lỗi nghiệp vụ liên quan tồn kho, thuế và lương</li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.2.12</strong> <span class="muted" style="font-size:13px;">14/10/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--ketoan);">
         <li>Dữ liệu mẫu 1 tuần bán hàng: hỏi khi mở lần đầu, nạp hoặc xóa trong "Thông tin đơn vị" — chỉ xóa phần dữ liệu mẫu, giữ nguyên dữ liệu thật của bạn</li>
@@ -134,7 +150,8 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       <ul class="feature-list" style="--card-accent: var(--ketoan);">
         <li>Dữ liệu mẫu cho phép sử dụng lại nhiều lần và không còn cảnh báo giá sai lệch; bỏ cảnh báo tài khoản 632 với hàng bán bị trả lại; kiểm thử mở mọi màn hình với dữ liệu mẫu</li>
       </ul>
-    </div>
+      </div>
+    </details>
 
 <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
       <summary><strong>Phiên bản 1.2.11</strong> <span class="muted" style="font-size:13px;">12/10/2026</span></summary>
@@ -383,7 +400,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.12 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.13 mới nhất</a>
     </div>
   </div>
 </section>
