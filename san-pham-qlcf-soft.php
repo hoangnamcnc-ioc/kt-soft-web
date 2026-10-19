@@ -120,9 +120,29 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlcf, #9a3412); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 0.2.0 <span style="font-size:12px;font-weight:700;color:var(--qlcf);background:var(--qlcf-bg);padding:2px 8px;border-radius:10px;vertical-align:middle;">Mới nhất</span></h3>
-        <span class="muted" style="font-size:13px;">15/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 0.3.0 <span style="font-size:12px;font-weight:700;color:var(--qlcf);background:var(--qlcf-bg);padding:2px 8px;border-radius:10px;vertical-align:middle;">Mới nhất</span></h3>
+        <span class="muted" style="font-size:13px;">19/10/2026</span>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Thông minh hơn: gợi ý, phân tích, chăm sóc khách quen</p>
+      <ul class="feature-list" style="--card-accent: var(--qlcf);">
+        <li>Khách quen: ghi dị ứng / kiêng, sở thích, sinh nhật; khi bán, nhập SĐT là hiện món hay gọi (tự tính từ lịch sử mua) và nút "Gọi lại như lần trước"; dị ứng được in lên tem pha chế</li>
+        <li>Tổng quan nhắc khách sắp sinh nhật và khách quen lâu không ghé để chăm sóc</li>
+        <li>Phân tích thông minh: so với mọi tuần cùng thứ, dự báo doanh thu hôm nay và ngày mai, giờ cao điểm, doanh thu theo thứ, hiệu quả từng món (ngôi sao, bán chạy lãi thấp, lãi cao bán chậm...), món hay mua cùng nhau, so sánh các chi nhánh</li>
+        <li>Gợi ý thông minh ngay ở Tổng quan; cảnh báo giá nhập tăng, món lâu không bán được, nhân viên giảm giá cao bất thường</li>
+        <li>Gợi ý đặt hàng theo tốc độ dùng thật: nguyên liệu dùng nhanh được nhắc sớm kèm số ngày còn đủ dùng</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Kho chặt chẽ hơn</p>
+      <ul class="feature-list" style="--card-accent: var(--qlcf);">
+        <li>Tỷ lệ thành phẩm sau sơ chế (vd cam vắt còn 60%): công thức ghi lượng thành phẩm, kho tự trừ đúng lượng nguyên, giá vốn món chính xác hơn</li>
+        <li>Kiểm tra chất lượng khi nhận hàng: tick "Không đạt" kèm lý do — hàng trả lại không nhập kho, không tính tiền; báo cáo tỷ lệ trả lại theo nhà cung cấp</li>
+        <li>Nhắc "mua rồi mà chưa nhập phiếu": khoản chi quỹ mua nguyên liệu chưa có phiếu nhập khớp, hoặc nguyên liệu đang tồn âm</li>
+        <li>File Excel nhập nguyên liệu có thêm cột tỷ lệ thành phẩm</li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 0.2.0</strong> <span class="muted" style="font-size:13px;">15/10/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Vận hành chuẩn cho quán</p>
       <ul class="feature-list" style="--card-accent: var(--qlcf);">
         <li>Bàn giao ca: ghi chú lúc đóng ca, ca sau mở POS thấy ngay ghi chú "Bàn giao từ ca trước"</li>
@@ -134,7 +154,8 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
         <li>Gợi ý đặt hàng: nguyên liệu chạm ngưỡng tối thiểu kèm số lượng gợi ý, chi phí ước tính, thêm thẳng vào phiếu nhập hoặc sao chép gửi nhà cung cấp</li>
         <li>Dữ liệu mẫu 1 tuần có đủ các mục trên để xem thử</li>
       </ul>
-    </div>
+      </div>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
       <summary><strong>Phiên bản 0.1.0</strong> <span class="muted" style="font-size:13px;">14/10/2026</span></summary>
