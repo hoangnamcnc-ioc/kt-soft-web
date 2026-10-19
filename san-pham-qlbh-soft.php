@@ -118,15 +118,89 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.8.4</h3>
-        <span class="muted" style="font-size:13px;">14/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 1.9.2</h3>
+        <span class="muted" style="font-size:13px;">19/10/2026</span>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Dễ dùng hơn, bớt nhập tay</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><span><b>Tìm nhanh bằng Ctrl+K</b>: gõ để tìm hàng hóa, khách (tên hoặc số điện thoại), mã đơn, nhà cung cấp hoặc tên chức năng, chọn là mở đúng màn hình</span></li>
+        <li><span><b>Tạo phiếu nhập từ gợi ý</b>: một lần bấm là điền sẵn nhà cung cấp và các mặt hàng cần nhập theo dự báo, chỉ cần chỉnh giá theo báo giá thực tế</span></li>
+        <li><span><b>Gợi ý giá bán khi giá vốn tăng</b>: nhập hàng làm tỷ lệ lãi giảm thì phần mềm đề xuất giá bán mới để giữ nguyên tỷ lệ lãi cũ, đồng ý là cập nhật luôn</span></li>
+        <li><span><b>Mục tiêu doanh thu tháng</b>: đặt mục tiêu, theo dõi tiến độ, dự kiến cuối tháng và số tiền cần bán mỗi ngày còn lại</span></li>
+        <li><span><b>Tóm tắt bằng lời</b> cho 7 ngày qua hoặc tháng này (doanh thu, lãi, hàng nổi bật, điểm cần lưu ý), chép nhanh để gửi Zalo hoặc in</span></li>
+        <li><span><b>Chất lượng dữ liệu</b>: phát hiện hàng thiếu giá, giá bán thấp hơn giá vốn, trùng mã vạch hoặc trùng tên, tồn âm; đề xuất mức tồn tối thiểu theo tốc độ bán và áp dụng hàng loạt</span></li>
+        <li><span><b>Gợi ý khi thêm hàng mới</b>: gõ tên là gợi ý nhóm, nhà cung cấp, đơn vị tính từ hàng giống nhau; cảnh báo nếu trùng tên</span></li>
+        <li><span>Danh sách hàng hóa hiện thêm số ngày tồn kho còn đủ bán, cảnh báo hàng sắp hết hoặc tồn dư</span></li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.9.1</strong> <span class="muted" style="font-size:13px;">16/10/2026</span></summary>
+      <div class="changelog-body">
+      <p style="font-weight:600; margin:8px 0 4px;">Phần mềm thông minh hơn</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><span><b>Bản tin sáng</b>: tóm tắt hôm qua (doanh thu, lãi gộp, so với tuần trước), điểm sức khỏe cửa hàng và danh sách việc nên làm hôm nay, bấm vào là tới đúng chỗ xử lý</span></li>
+        <li><span><b>Gợi ý nhập hàng thông minh</b>: dự báo theo thứ trong tuần và xu hướng bán, nhóm theo nhà cung cấp, kèm danh sách tồn dư không nên nhập thêm</span></li>
+        <li><span><b>Cảnh báo chủ động</b>: doanh thu sụt bất thường, hàng bán dưới giá vốn, hàng bán giảm hoặc tăng mạnh, hàng sắp hết trong vài ngày</span></li>
+        <li><span><b>Phân tích thông minh</b>: dòng tiền 14 ngày, phân tích ABC, giờ cao điểm và gợi ý xếp ca, bất thường sâu (hủy đơn giờ lạ, hao hụt lặp lại, lệch két nhiều lần), khách quen sắp bỏ, nhắc nợ theo mức ưu tiên kèm tin nhắn mẫu, combo gợi ý, mô phỏng đổi giá</span></li>
+        <li><span><b>Máy bán hàng</b>: gợi ý hàng khách hay mua kèm, hiện món hay mua và công nợ của khách quen, báo khi nhập số lượng bất thường, hàng bán chạy theo khung giờ, mục "Việc cần làm"</span></li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Bảo mật &amp; độ tin cậy</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><span><b>Siết phân quyền</b>: thủ kho không còn xem được đơn hàng, danh sách khách, công nợ, doanh thu, không thu nợ hay kiểm két được</span></li>
+        <li><span><b>Cách đóng gói mới</b>: dùng trình chạy Node.js gốc có chữ ký số của OpenJS Foundation thay vì chèn mã vào file chạy, giúp giảm tình trạng phần mềm diệt virus báo nhầm. Cài đè lên bản cũ vẫn giữ nguyên toàn bộ dữ liệu</span></li>
+        <li><span>Sửa lỗi danh sách "Hoạt động gần đây" ở màn hình Quản lý không hiển thị</span></li>
+      </ul>
+      </div>
+    </details>
+
+    <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.9.0</strong> <span class="muted" style="font-size:13px;">15/10/2026</span></summary>
+      <div class="changelog-body">
+      <p style="font-weight:600; margin:8px 0 4px;">Hạn dùng &amp; hư hỏng</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><span><b>Bán theo hạn dùng gần nhất trước (FEFO)</b>: hàng đã nhập hạn sử dụng được trừ theo lô, số lượng từng lô chính xác</span></li>
+        <li><span><b>Hàng hết hạn bị cách ly</b>: máy bán hàng không bán được hàng đã quá hạn; màn <b>"Hàng cần xử lý"</b> liệt kê lô đã/sắp hết hạn (7/14/30 ngày) kèm giá vốn, giá xả gợi ý, nút hủy hoặc trả nhà cung cấp</span></li>
+        <li><span><b>Cận hạn theo nhóm hàng</b>: mỗi nhóm có ngưỡng riêng (sữa chua vài ngày, đồ hộp vài tháng); hàng cận hạn <b>tự giảm giá</b> ở máy bán hàng, nhập lô có hạn quá ngắn sẽ được cảnh báo ngay</span></li>
+        <li><span>Mặt hàng có thể bật <b>"Quản lý hạn sử dụng"</b> để bắt buộc nhập HSD khi nhập hàng</span></li>
+        <li><span><b>Xuất hủy phân loại</b> (hết hạn, hư hỏng, vỡ, mất...), tính thiệt hại theo giá vốn; kiểm kho thiếu tự ghi hao hụt; <b>báo cáo Tổn thất hàng hóa</b> theo loại, mặt hàng, tháng</span></li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Tiền bạc &amp; kiểm soát</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><span><b>Phân loại thu/chi</b> (thuê mặt bằng, điện nước, lương, marketing...) và khoản <b>"chủ rút tiền dùng cá nhân"</b> tách riêng khỏi chi phí; báo cáo <b>Lãi lỗ</b> có chi phí, tổn thất hàng và lãi ròng</span></li>
+        <li><span><b>Giá vốn bình quân</b> tự cập nhật khi nhập hàng (có thể tắt); cảnh báo khi nhà cung cấp tăng giá, báo cáo biến động giá nhập</span></li>
+        <li><span><b>Hạn trả nhà cung cấp</b> và bảng dòng tiền: phải trả đến hạn 7/30 ngày so với tiền đang có</span></li>
+        <li><span><b>Cảnh báo bất thường theo nhân viên</b>: giảm giá, hủy đơn, trả hàng, lệch két, hủy hàng nhiều hơn bình thường</span></li>
+        <li><span>Máy bán hàng có <b>loa báo đã nhận tiền</b> (kèm đọc số tiền) khi chuyển khoản được xác nhận</span></li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Quy trình cửa hàng</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><span><b>Danh sách mở cửa / đóng cửa</b> hằng ngày (tùy chỉnh được): nhân viên tick từng việc, việc chưa làm phải ghi lý do; có nhật ký ai làm lúc nào, nhắc khi quên và báo ngày bỏ sót</span></li>
+        <li><span><b>Biên bản bàn giao ca</b> in ra để người giao và người nhận ký: doanh thu theo cách thanh toán, tiền két dự kiến/thực đếm, hàng hủy, hàng hết hạn, hàng sắp hết</span></li>
+        <li><span><b>Kiểm hàng dễ mất mỗi ngày</b> (thuốc lá, rượu bia, sữa bột...) và nhắc <b>sắp hết trên kệ</b> kèm số lượng nên bổ sung</span></li>
+        <li><span><b>Đánh giá nhà cung cấp</b>: tỷ lệ trả lại, giao trễ so với ngày hẹn, hàng hỏng/hết hạn, số lần tăng giá, xếp loại A/B/C; phân nhóm ngành cho nhà cung cấp</span></li>
+        <li><span><b>Quà tặng và túi nilon tự trừ kho</b>, tính vào chi phí; túi nilon đặt định mức theo đơn, có báo cáo vật tư tiêu hao</span></li>
+        <li><span><b>Mã cân điện tử</b> (EAN-13 từ cân tem): quét tem là máy bán hàng tự thêm đúng hàng và đúng khối lượng/số tiền</span></li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Kho &amp; khách hàng</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><span><b>Báo cáo hàng chậm bán &amp; vốn bị chôn</b> kèm gợi ý xả hàng</span></li>
+        <li><span><b>Kiểm kho theo nhóm hàng</b> và lịch kiểm hằng tuần, nhắc ở Tổng quan</span></li>
+        <li><span><b>Quà tặng theo mốc</b>: tặng quà khi hóa đơn đạt mức, đổi quà bằng điểm tích lũy; máy bán hàng tự nhắc và ghi vào hóa đơn</span></li>
+      </ul>
+      </div>
+    </details>
+
+    <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.8.4</strong> <span class="muted" style="font-size:13px;">14/10/2026</span></summary>
+      <div class="changelog-body">
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li>Sửa lỗi: hàng bán theo cân/đo lẻ (vd 0,35 kg) không còn ra số tiền lẻ đồng; tiền được làm tròn đến đồng ở từng dòng hàng, khớp giữa hóa đơn, sổ quỹ và báo cáo</li>
         <li>Chặn dữ liệu nhập không hợp lệ (số âm, chữ thay số, số lượng nhập bằng 0, giá bán âm) bằng thông báo rõ ràng thay vì báo lỗi hệ thống</li>
         <li>Sửa lỗi hiển thị ảnh sản phẩm trên trang khách quét mã QR chọn hàng</li>
       </ul>
-    </div>
+      </div>
+    </details>
 
 <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
       <summary><strong>Phiên bản 1.8.3</strong> <span class="muted" style="font-size:13px;">14/10/2026</span></summary>
@@ -463,7 +537,9 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       </p>
     </div>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.8.4 mới nhất</a>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.9.2 mới nhất</a>
+      <p class="muted" style="font-size:12px;margin-top:10px;word-break:break-all;">Mã kiểm tra SHA-256 của bộ cài 1.9.2: <code>705a0950d4dda09711888e3f8a668fd44ea7420c7cc74ea8158534d679f8d2ec</code><br>
+      Nếu Windows Defender báo nhầm (phần mềm chưa ký số nên đôi khi bị đánh dấu "Trojan:Win32/Wacatac" do máy học đoán), bạn có thể đối chiếu mã trên để yên tâm file đúng của KT-SOFT.</p>
     </div>
   </div>
 </section>
