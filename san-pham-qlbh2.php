@@ -35,6 +35,8 @@ require_once __DIR__ . '/inc_header.php';
           <li>Kiểm hàng, chuyển hàng giữa các chi nhánh có xác nhận 2 chiều</li>
           <li>Nhập hàng, quản lý nhà cung cấp và công nợ phải trả</li>
           <li>Đơn giao hàng riêng ngoài quầy, sao chép đơn nhanh, biểu phí tự động theo khu vực</li>
+          <li>Lô hàng &amp; hạn sử dụng: cảnh báo cận hạn, xuất hủy có lý do, gợi ý xả hàng, kiểm kho theo nhóm</li>
+          <li>Màn hình bán hàng thông minh: khách quen hiện món hay mua và nợ, hỏi lại khi gõ nhầm số lượng/giá, gợi ý hàng bán chạy theo giờ</li>
         </ul>
       </div>
       <div class="mock" style="--card-bg: var(--qlbh2-bg); --card-accent: var(--qlbh2);">
@@ -91,6 +93,8 @@ require_once __DIR__ . '/inc_header.php';
           <li>Ước tính thuế GTGT/TNCN hộ kinh doanh, sổ doanh thu S1a/S2a-HKD</li>
           <li>Phân quyền theo vai trò và chi nhánh, khóa màn hình khi rời máy</li>
           <li>Sao lưu dữ liệu 1-click, tự động giữ 20 bản gần nhất</li>
+          <li>Phân tích kinh doanh: điểm sức khỏe cửa hàng, dự báo dòng tiền 14 ngày, ABC theo lãi gộp, giờ cao điểm, mô phỏng đổi giá</li>
+          <li>Cảnh báo bất thường (huỷ đơn lạ, két lệch, hao hụt lặp lại) và trợ lý hỏi đáp bằng tiếng Việt: "hôm nay bán bao nhiêu?"</li>
         </ul>
         <div class="cta-row">
           <a href="https://app.kt-soft.vn/dang-ky.php" class="btn" target="_blank" rel="noopener">Trải nghiệm QLBH-CLOUD →</a>
@@ -116,15 +120,47 @@ require_once __DIR__ . '/inc_header.php';
 
         <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Cập nhật 14/10/2026</h3>
+        <h3 style="margin:0;">Cập nhật 19/10/2026</h3>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Thông minh hơn</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Bản tin hôm nay ở Trang chủ: doanh thu, lãi hôm qua so với tuần trước và các việc nên làm (nhập hàng, hàng sắp hết hạn, trả nhà cung cấp, thu nợ)</li>
+        <li>Phân tích kinh doanh: điểm sức khỏe cửa hàng 0–100, dự báo dòng tiền 14 ngày (báo trước nếu sắp thiếu tiền), phân tích ABC theo lãi gộp, giờ cao điểm kèm gợi ý số nhân viên, mô phỏng "nếu tăng/giảm giá X%", combo gợi ý</li>
+        <li>Nhắc nợ thông minh: xếp khách theo khả năng đòi được, kèm tin nhắn soạn sẵn theo mức độ; danh sách khách quen sắp "bỏ đi" để chủ động chăm sóc</li>
+        <li>Cảnh báo bất thường: huỷ đơn/giảm giá lúc ít khách, một người huỷ phần lớn đơn, két thiếu tiền lặp lại, hàng hao hụt qua nhiều lần kiểm kho, nợ quá hạn, hàng hết hạn chưa xử lý</li>
+        <li>Trợ lý hỏi đáp bằng tiếng Việt: hỏi doanh thu, lãi, hàng bán chạy, tồn kho, hàng cần nhập, khách nợ... và nhận số liệu ngay từ dữ liệu của bạn (không gửi dữ liệu ra ngoài)</li>
+        <li>Gợi ý nhập hàng dự báo theo xu hướng bán, cảnh báo lô sẽ hết hạn trước khi bán hết; gợi ý xả hàng cận hạn với mức giảm không thấp hơn giá vốn</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Màn hình bán hàng</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Gõ số điện thoại hiện khách quen: nợ, số đơn, món hay mua, nút thêm nhanh các món lần trước</li>
+        <li>Hỏi lại khi gõ nhầm số lượng (vd 100 thay vì 10) hoặc giá lệch hẳn giá thường; gợi ý hàng bán chạy theo giờ; nhắc việc ca (lô sắp hết hạn, hàng dưới định mức)</li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Cập nhật 15/10/2026</strong></summary>
+      <div class="changelog-body">
+      <p style="font-weight:600; margin:8px 0 4px;">Quy trình tạp hóa / siêu thị mini</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Phiếu nhập hàng nhập luôn số lô và hạn sử dụng, ghi hạn trả tiền nhà cung cấp; cảnh báo hàng cận hạn và nợ nhà cung cấp đến hạn ở Trang chủ</li>
+        <li>Xuất hủy hàng (hết hạn, hư hỏng, mất) có lý do và giá trị hao hụt; trang Hàng tồn lâu / bán chậm cho biết vốn đang bị chôn</li>
+        <li>Kiểm kho theo nhóm hàng; nhà cung cấp có nhóm ngành hàng và đánh giá (giao chậm, hàng lỗi, tăng giá)</li>
+        <li>Sổ quỹ có loại "chủ rút tiền / góp vốn" tách riêng khỏi chi phí kinh doanh; hạn mức chiết khấu nhập tay của thu ngân</li>
+      </ul>
+      </div>
+    </details>
+    <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Cập nhật 14/10/2026</strong></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Sau khi đăng nhập, mở khóa màn hình hoặc đăng ký, người dùng vào thẳng trang Sơ đồ chức năng; sơ đồ hiển thị đúng và đủ các chức năng của từng vai trò (khớp menu bên trái, có thẻ "Khác" cho chức năng chưa có ô riêng)</li>
         <li>Đặt hàng Online: cửa hàng nào cũng có đường dẫn riêng tự tạo (kể cả cửa hàng đầu tiên, link cũ vẫn dùng được); cập nhật hướng dẫn điều kiện cho khớp tính năng QR ngân hàng và đối soát tự động</li>
         <li>Pháp lý: trang Điều khoản sử dụng và Chính sách bảo mật (dữ liệu cá nhân), dòng bản quyền ở chân trang, ô đồng ý điều khoản khi đăng ký (lưu thời điểm đồng ý), lời lưu ý "số liệu tham khảo" ở báo cáo, kế toán, công nợ và file Excel, dòng riêng tư cho khách đặt hàng qua QR</li>
       </ul>
-    </div>
+      </div>
+    </details>
 
 <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
       <summary>Cập nhật 13/10/2026</summary>
