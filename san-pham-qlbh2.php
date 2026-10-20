@@ -120,8 +120,21 @@ require_once __DIR__ . '/inc_header.php';
 
         <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Cập nhật 19/10/2026</h3>
+        <h3 style="margin:0;">Cập nhật 20/10/2026</h3>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Hỗ trợ người dùng thông minh hơn</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Kiểm tra dữ liệu: tự tìm giá bán thấp hơn giá vốn, thiếu giá vốn/giá bán, sản phẩm trùng, tồn kho âm, khách trùng số điện thoại — mỗi dòng bấm vào là đến đúng chỗ cần sửa</li>
+        <li>Gợi ý nhập hàng tạo luôn đơn đặt hàng nhập nháp, gom theo nhà cung cấp gần nhất; bạn chỉ cần kiểm tra rồi gửi</li>
+        <li>Phiếu nhập hàng cảnh báo khi giá nhập tăng/giảm đáng kể so với lần trước và gợi ý giá bán để giữ biên lãi</li>
+        <li>Cảnh báo bán dưới giá vốn theo từng nhân viên; dự báo doanh thu cả tháng theo tốc độ hiện tại ngay trong bản tin Trang chủ</li>
+        <li>Trợ lý hỏi đáp hiểu thêm: "doanh thu cuối tháng dự kiến", "kiểm tra dữ liệu"</li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Cập nhật 19/10/2026</strong></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Thông minh hơn</p>
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Bản tin hôm nay ở Trang chủ: doanh thu, lãi hôm qua so với tuần trước và các việc nên làm (nhập hàng, hàng sắp hết hạn, trả nhà cung cấp, thu nợ)</li>
@@ -136,7 +149,8 @@ require_once __DIR__ . '/inc_header.php';
         <li>Gõ số điện thoại hiện khách quen: nợ, số đơn, món hay mua, nút thêm nhanh các món lần trước</li>
         <li>Hỏi lại khi gõ nhầm số lượng (vd 100 thay vì 10) hoặc giá lệch hẳn giá thường; gợi ý hàng bán chạy theo giờ; nhắc việc ca (lô sắp hết hạn, hàng dưới định mức)</li>
       </ul>
-    </div>
+      </div>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
       <summary><strong>Cập nhật 15/10/2026</strong></summary>
