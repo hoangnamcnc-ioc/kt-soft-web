@@ -120,9 +120,22 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlcf, #9a3412); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 0.3.0 <span style="font-size:12px;font-weight:700;color:var(--qlcf);background:var(--qlcf-bg);padding:2px 8px;border-radius:10px;vertical-align:middle;">Mới nhất</span></h3>
-        <span class="muted" style="font-size:13px;">19/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 0.4.0 <span style="font-size:12px;font-weight:700;color:var(--qlcf);background:var(--qlcf-bg);padding:2px 8px;border-radius:10px;vertical-align:middle;">Mới nhất</span></h3>
+        <span class="muted" style="font-size:13px;">20/10/2026</span>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Khách gọi món dễ hơn và trợ lý hỗ trợ người dùng</p>
+      <ul class="feature-list" style="--card-accent: var(--qlcf);">
+        <li>Mã QR tự nối WiFi: nhập WiFi dành cho khách một lần, thẻ bàn in 2 bước — quét ① để tự nối WiFi (khỏi gõ mật khẩu), quét ② để xem thực đơn và gọi món</li>
+        <li>Trợ lý thiết lập trên Tổng quan: chỉ ra chỗ còn thiếu (món chưa có công thức, nguyên liệu chưa có giá vốn, chưa kiểm kê, quên đóng ca...) kèm thanh tiến độ và liên kết để sửa</li>
+        <li>Soạn nháp ghi chú bàn giao tự động khi đóng ca: sắp hết hàng, lô cận date, bàn chưa thanh toán, yêu cầu của khách chưa xử lý</li>
+        <li>Giá bán gợi ý cho món biên lãi còn mỏng (để đạt biên khoảng 60%)</li>
+        <li>Chọn khách quen ngay khi mở bàn: tem pha chế có cảnh báo dị ứng; file Excel nhập nguyên liệu có cột tỷ lệ thành phẩm</li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 0.3.0</strong> <span class="muted" style="font-size:13px;">19/10/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Thông minh hơn: gợi ý, phân tích, chăm sóc khách quen</p>
       <ul class="feature-list" style="--card-accent: var(--qlcf);">
         <li>Khách quen: ghi dị ứng / kiêng, sở thích, sinh nhật; khi bán, nhập SĐT là hiện món hay gọi (tự tính từ lịch sử mua) và nút "Gọi lại như lần trước"; dị ứng được in lên tem pha chế</li>
@@ -138,7 +151,9 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
         <li>Nhắc "mua rồi mà chưa nhập phiếu": khoản chi quỹ mua nguyên liệu chưa có phiếu nhập khớp, hoặc nguyên liệu đang tồn âm</li>
         <li>File Excel nhập nguyên liệu có thêm cột tỷ lệ thành phẩm</li>
       </ul>
-    </div>
+    
+      </div>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
       <summary><strong>Phiên bản 0.2.0</strong> <span class="muted" style="font-size:13px;">15/10/2026</span></summary>
