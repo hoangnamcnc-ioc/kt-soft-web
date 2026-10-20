@@ -1,6 +1,8 @@
 # Chuyen www.kt-soft.vn ve kt-soft.vn (1 dia chi chinh duy nhat)
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.kt-soft\.vn$ [NC]
+# Tep xac minh Google Search Console phai tra 200 ngay tai www (khong duoc chuyen huong)
+RewriteCond %{REQUEST_URI} !^/google[0-9a-f]+\.html$
 RewriteRule ^(.*)$ https://kt-soft.vn/$1 [L,R=301,NE]
 
 ## ONEPANEL Force HTTPS by SSL installation
