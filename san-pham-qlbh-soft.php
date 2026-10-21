@@ -118,9 +118,42 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.9.2</h3>
-        <span class="muted" style="font-size:13px;">19/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 1.9.4</h3>
+        <span class="muted" style="font-size:13px;">21/10/2026</span>
       </div>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><span><b>Chép bản tin sáng</b> chỉ một lần bấm để dán vào Zalo gửi cho chủ quán hoặc nhân viên (doanh thu, lãi, mục tiêu, việc nên làm)</span></li>
+        <li><span><b>Tăng cường bảo mật</b>: chống nhúng trang vào khung lạ, chống đoán kiểu tệp, ẩn thông tin máy chủ</span></li>
+      </ul>
+    </div>
+
+    <details id="phien-ban-cu" style="margin:6px 0 22px;">
+      <summary style="cursor:pointer;font-weight:600;color:var(--qlbhsoft, #2563eb);">Xem các phiên bản cũ hơn (27)</summary>
+      <div style="margin-top:16px;">
+
+    <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.9.3</strong> <span class="muted" style="font-size:13px;">20/10/2026</span></summary>
+      <div class="changelog-body">
+      <p style="font-weight:600; margin:8px 0 4px;">Trợ lý thông minh hơn cho chủ quán và thu ngân</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><span><b>Hỏi đáp nhanh bằng tiếng Việt</b> ngay trong ô Ctrl+K: "doanh thu hôm nay", "hàng nào sắp hết", "ai đang nợ nhiều nhất", "tồn kho coca"... chạy hoàn toàn trên máy bạn, không gửi dữ liệu ra ngoài</span></li>
+        <li><span><b>Soát cuối ngày</b>: ca chưa đóng, lệch tiền két, đơn hủy, hàng hết hạn, sao lưu hôm nay... một danh sách ✔/⚠/✖, bấm vào là tới nơi xử lý</span></li>
+        <li><span><b>Nhắc chi định kỳ</b> (điện, thuê mặt bằng, lương, thuế phí) kèm số tiền hay chi, lập sẵn phiếu chi một lần bấm</span></li>
+        <li><span><b>So sánh giá nhà cung cấp</b> cho cùng một mặt hàng, ước tính số tiền tiết kiệm mỗi tháng; <b>lãi theo nhóm hàng và nhà cung cấp</b></span></li>
+        <li><span><b>Trợ lý thiết lập</b>: tiến độ các bước để dùng phần mềm hiệu quả (giá vốn, mã vạch, VietQR, hạn sử dụng, mục tiêu...)</span></li>
+        <li><span><b>Mua lại đơn trước</b> của khách quen chỉ một lần bấm, và <b>cảnh báo đơn trùng</b> khi giỏ hàng giống hệt đơn vừa bán</span></li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Sửa lỗi</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><span>Phiếu nhập để trống đơn giá không còn bị tính ngầm là 0đ làm sai giá vốn bình quân (nhập 0 vẫn được nếu là hàng tặng)</span></li>
+        <li><span>Thanh nhắc mở/đóng cửa gọn lại trên màn hình điện thoại, không che hàng hóa</span></li>
+      </ul>
+      </div>
+    </details>
+
+    <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.9.2</strong> <span class="muted" style="font-size:13px;">19/10/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Dễ dùng hơn, bớt nhập tay</p>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li><span><b>Tìm nhanh bằng Ctrl+K</b>: gõ để tìm hàng hóa, khách (tên hoặc số điện thoại), mã đơn, nhà cung cấp hoặc tên chức năng, chọn là mở đúng màn hình</span></li>
@@ -132,7 +165,8 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
         <li><span><b>Gợi ý khi thêm hàng mới</b>: gõ tên là gợi ý nhóm, nhà cung cấp, đơn vị tính từ hàng giống nhau; cảnh báo nếu trùng tên</span></li>
         <li><span>Danh sách hàng hóa hiện thêm số ngày tồn kho còn đủ bán, cảnh báo hàng sắp hết hoặc tồn dư</span></li>
       </ul>
-    </div>
+      </div>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
       <summary><strong>Phiên bản 1.9.1</strong> <span class="muted" style="font-size:13px;">16/10/2026</span></summary>
@@ -499,6 +533,8 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       </p>
       </div>
     </details>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -537,8 +573,8 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       </p>
     </div>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.9.2 mới nhất</a>
-      <p class="muted" style="font-size:12px;margin-top:10px;word-break:break-all;">Mã kiểm tra SHA-256 của bộ cài 1.9.2: <code>705a0950d4dda09711888e3f8a668fd44ea7420c7cc74ea8158534d679f8d2ec</code><br>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.9.4 mới nhất</a>
+      <p class="muted" style="font-size:12px;margin-top:10px;word-break:break-all;">Mã kiểm tra SHA-256 của bộ cài 1.9.4: <code>5eb7027cff91c0ae2751ba5afcba0c2b1c2a4d25a83870ee850c8938d64af9a4</code><br>
       Nếu Windows Defender báo nhầm (phần mềm chưa ký số nên đôi khi bị đánh dấu "Trojan:Win32/Wacatac" do máy học đoán), bạn có thể đối chiếu mã trên để yên tâm file đúng của KT-SOFT.</p>
     </div>
   </div>
