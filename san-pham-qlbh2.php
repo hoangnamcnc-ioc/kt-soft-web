@@ -34,6 +34,7 @@ require_once __DIR__ . '/inc_header.php';
           <li>Quản lý kho theo từng chi nhánh, cảnh báo dưới định mức</li>
           <li>Kiểm hàng, chuyển hàng giữa các chi nhánh có xác nhận 2 chiều</li>
           <li>Nhập hàng, quản lý nhà cung cấp và công nợ phải trả</li>
+          <li>Chuyển nhanh từ KiotViet/Sapo bằng file Excel, cài như ứng dụng trên điện thoại</li>
           <li>Đơn giao hàng riêng ngoài quầy, sao chép đơn nhanh, biểu phí tự động theo khu vực</li>
           <li>Lô hàng &amp; hạn sử dụng: cảnh báo cận hạn, xuất hủy có lý do, gợi ý xả hàng, kiểm kho theo nhóm</li>
           <li>Màn hình bán hàng thông minh: khách quen hiện món hay mua và nợ, hỏi lại khi gõ nhầm số lượng/giá, gợi ý hàng bán chạy theo giờ</li>
@@ -120,8 +121,25 @@ require_once __DIR__ . '/inc_header.php';
 
         <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Cập nhật 20/10/2026</h3>
+        <h3 style="margin:0;">Cập nhật 21/10/2026</h3>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Chuyển dữ liệu dễ hơn, dùng như ứng dụng điện thoại</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Nhập hàng hóa từ KiotViet, Sapo hoặc Excel khác: tự nhận cột Nhóm hàng (3 cấp, tự tạo nhóm cha–con), Thương hiệu, Tồn kho, Tồn nhỏ nhất, Đang kinh doanh; hiểu số kiểu 1.200.000; xem trước rồi mới ghi; nhập lại cùng file chỉ cập nhật, không đè tồn kho đang có</li>
+        <li>Nhập khách hàng kèm nhóm khách hàng (tự tạo nhóm)</li>
+        <li>Cài QLBH-CLOUD như ứng dụng trên điện thoại hoặc máy tính (nút "Cài ứng dụng"); mất mạng hiện trang thông báo thay vì lỗi trình duyệt, không lưu trang đã đăng nhập vào máy</li>
+      </ul>
+      <p style="font-weight:600; margin:12px 0 4px;">Thông minh hơn</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Tự đặt định mức tồn tối thiểu cho hàng bán đều (đủ bán 7 ngày) chỉ bằng một nút; gợi ý giá bán theo biên lãi trung bình của cửa hàng ngay trên form sản phẩm</li>
+        <li>Phiếu nhập hàng hiện giá nhập gần đây của từng nhà cung cấp và cảnh báo khi nhà cung cấp đang chọn đắt hơn nơi khác</li>
+        <li>Trang chủ so nhịp bán hôm nay với cùng giờ các tuần trước; cảnh báo hàng bị trả nhiều</li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Cập nhật 20/10/2026</strong></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Hỗ trợ người dùng thông minh hơn</p>
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Kiểm tra dữ liệu: tự tìm giá bán thấp hơn giá vốn, thiếu giá vốn/giá bán, sản phẩm trùng, tồn kho âm, khách trùng số điện thoại — mỗi dòng bấm vào là đến đúng chỗ cần sửa</li>
@@ -130,7 +148,8 @@ require_once __DIR__ . '/inc_header.php';
         <li>Cảnh báo bán dưới giá vốn theo từng nhân viên; dự báo doanh thu cả tháng theo tốc độ hiện tại ngay trong bản tin Trang chủ</li>
         <li>Trợ lý hỏi đáp hiểu thêm: "doanh thu cuối tháng dự kiến", "kiểm tra dữ liệu"</li>
       </ul>
-    </div>
+      </div>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
       <summary><strong>Cập nhật 19/10/2026</strong></summary>
