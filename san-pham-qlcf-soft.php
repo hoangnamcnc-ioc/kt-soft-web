@@ -120,16 +120,18 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlcf, #9a3412); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 0.4.0 <span style="font-size:12px;font-weight:700;color:var(--qlcf);background:var(--qlcf-bg);padding:2px 8px;border-radius:10px;vertical-align:middle;">Mới nhất</span></h3>
-        <span class="muted" style="font-size:13px;">20/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 0.4.1 <span style="font-size:12px;font-weight:700;color:var(--qlcf);background:var(--qlcf-bg);padding:2px 8px;border-radius:10px;vertical-align:middle;">Mới nhất</span></h3>
+        <span class="muted" style="font-size:13px;">21/10/2026</span>
       </div>
-      <p style="font-weight:600; margin:8px 0 4px;">Khách gọi món dễ hơn và trợ lý hỗ trợ người dùng</p>
+      <p style="font-weight:600; margin:8px 0 4px;">Khách gọi món dễ hơn, chăm sóc khách quen và trợ lý hỗ trợ</p>
       <ul class="feature-list" style="--card-accent: var(--qlcf);">
         <li>Mã QR tự nối WiFi: nhập WiFi dành cho khách một lần, thẻ bàn in 2 bước — quét ① để tự nối WiFi (khỏi gõ mật khẩu), quét ② để xem thực đơn và gọi món</li>
-        <li>Trợ lý thiết lập trên Tổng quan: chỉ ra chỗ còn thiếu (món chưa có công thức, nguyên liệu chưa có giá vốn, chưa kiểm kê, quên đóng ca...) kèm thanh tiến độ và liên kết để sửa</li>
+        <li>Chăm sóc khách quen: lời nhắn soạn sẵn (chép dán vào Zalo) cho khách sắp sinh nhật và khách lâu không ghé; tạo voucher sinh nhật dùng 1 lần kèm lời chúc</li>
+        <li>Trợ lý thiết lập trên Tổng quan: chỉ ra chỗ còn thiếu (món chưa có công thức, nguyên liệu chưa có giá vốn, chưa kiểm kê, quên đóng ca...) và nhắc sao lưu ra ngoài máy (USB / Google Drive) khi chưa chọn hoặc quá vài ngày chưa cập nhật</li>
         <li>Soạn nháp ghi chú bàn giao tự động khi đóng ca: sắp hết hàng, lô cận date, bàn chưa thanh toán, yêu cầu của khách chưa xử lý</li>
         <li>Giá bán gợi ý cho món biên lãi còn mỏng (để đạt biên khoảng 60%)</li>
         <li>Chọn khách quen ngay khi mở bàn: tem pha chế có cảnh báo dị ứng; file Excel nhập nguyên liệu có cột tỷ lệ thành phẩm</li>
+        <li>Bộ cài hiển thị đầy đủ nhà phát hành và phiên bản (KT-SOFT), bỏ các tệp chạy ẩn dễ bị phần mềm diệt virus nghi ngờ nhầm</li>
       </ul>
     </div>
 
