@@ -21,6 +21,15 @@
         </ul>
       </div>
       <div>
+        <h4>Giải pháp theo ngành</h4>
+        <ul>
+          <li><a href="phan-mem-quan-ly-tap-hoa.php">Tạp hóa, siêu thị mini</a></li>
+          <li><a href="phan-mem-quan-ly-quan-ca-phe.php">Quán cà phê, trà sữa</a></li>
+          <li><a href="phan-mem-ban-hang-nhieu-chi-nhanh.php">Chuỗi nhiều chi nhánh</a></li>
+          <li><a href="phan-mem-ke-toan-ho-kinh-doanh.php">Kế toán, hộ kinh doanh</a></li>
+        </ul>
+      </div>
+      <div>
         <h4>Truy cập</h4>
         <ul>
           <li><a href="https://app.kt-soft.vn" target="_blank" rel="noopener">app.kt-soft.vn ↗</a></li>
