@@ -118,18 +118,33 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.9.4</h3>
-        <span class="muted" style="font-size:13px;">21/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 1.9.5</h3>
+        <span class="muted" style="font-size:13px;">26/10/2026</span>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Hỗ trợ sử dụng thông minh hơn</p>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
-        <li><span><b>Chép bản tin sáng</b> chỉ một lần bấm để dán vào Zalo gửi cho chủ quán hoặc nhân viên (doanh thu, lãi, mục tiêu, việc nên làm)</span></li>
-        <li><span><b>Tăng cường bảo mật</b>: chống nhúng trang vào khung lạ, chống đoán kiểu tệp, ẩn thông tin máy chủ</span></li>
+        <li><span><b>Kiểm tra phiếu nhập trước khi lưu</b>: hỏi lại khi số lượng hoặc đơn giá lệch bất thường so với các lần nhập trước (gõ thừa hoặc thiếu số 0, đơn giá 0đ...)</span></li>
+        <li><span><b>Cảnh báo bán dưới giá vốn</b> ở máy bán hàng (thu ngân không nhìn thấy giá vốn, chỉ được báo để cân nhắc)</span></li>
+        <li><span><b>Hình thức thanh toán quen dùng</b> của khách quen, chọn nhanh chỉ một lần bấm</span></li>
+        <li><span><b>Dự báo hàng có thể hết trước giờ đóng cửa</b> trong mục "Việc cần làm"</span></li>
+        <li><span><b>Dọn danh mục</b>: gợi ý ngừng kinh doanh hàng đã hết tồn, lâu không bán và không nhập, ngừng hàng loạt chỉ một lần bấm</span></li>
+        <li><span><b>Email báo cáo cuối ngày</b> kèm mục "Điểm cần xem" (ca chưa đóng, lệch két, hàng hết hạn, hàng nên nhập, nợ khách...)</span></li>
       </ul>
     </div>
 
     <details id="phien-ban-cu" style="margin:6px 0 22px;">
-      <summary style="cursor:pointer;font-weight:600;color:var(--qlbhsoft, #2563eb);">Xem các phiên bản cũ hơn (27)</summary>
+      <summary style="cursor:pointer;font-weight:600;color:var(--qlbhsoft, #2563eb);">Xem các phiên bản cũ hơn (28)</summary>
       <div style="margin-top:16px;">
+
+    <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.9.4</strong> <span class="muted" style="font-size:13px;">21/10/2026</span></summary>
+      <div class="changelog-body">
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><span><b>Chép bản tin sáng</b> chỉ một lần bấm để dán vào Zalo gửi cho chủ quán hoặc nhân viên (doanh thu, lãi, mục tiêu, việc nên làm)</span></li>
+        <li><span><b>Tăng cường bảo mật</b>: chống nhúng trang vào khung lạ, chống đoán kiểu tệp, ẩn thông tin máy chủ</span></li>
+      </ul>
+      </div>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
       <summary><strong>Phiên bản 1.9.3</strong> <span class="muted" style="font-size:13px;">20/10/2026</span></summary>
@@ -573,8 +588,8 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       </p>
     </div>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.9.4 mới nhất</a>
-      <p class="muted" style="font-size:12px;margin-top:10px;word-break:break-all;">Mã kiểm tra SHA-256 của bộ cài 1.9.4: <code>5eb7027cff91c0ae2751ba5afcba0c2b1c2a4d25a83870ee850c8938d64af9a4</code><br>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.9.5 mới nhất</a>
+      <p class="muted" style="font-size:12px;margin-top:10px;word-break:break-all;">Mã kiểm tra SHA-256 của bộ cài 1.9.5: <code>d72f0f58ee09a9c9eef32014025760c01efd80e1e1357f4a9799cf3f289d64f7</code><br>
       Nếu Windows Defender báo nhầm (phần mềm chưa ký số nên đôi khi bị đánh dấu "Trojan:Win32/Wacatac" do máy học đoán), bạn có thể đối chiếu mã trên để yên tâm file đúng của KT-SOFT.</p>
     </div>
   </div>
