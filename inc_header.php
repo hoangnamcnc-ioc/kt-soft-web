@@ -52,7 +52,7 @@ if ($currentPage === 'index.php') {
 if (!empty($ld)): ?>
 <script type="application/ld+json"><?= json_encode($ld, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG) ?></script>
 <?php endif; ?>
-<link rel="stylesheet" href="assets/style.css?v=12">
+<link rel="stylesheet" href="assets/style.css?v=13">
 </head>
 <body>
 
@@ -74,7 +74,7 @@ if (!empty($ld)): ?>
       <a href="lien-he.php">Liên hệ</a>
       <a href="https://app.kt-soft.vn/dang-ky.php" class="btn btn-sm nav-cta-mobile" target="_blank" rel="noopener">Dùng thử QLBH-CLOUD</a>
     </nav>
-    <a href="https://app.kt-soft.vn/dang-ky.php" class="btn btn-sm cta-desktop" target="_blank" rel="noopener">Dùng thử QLBH-CLOUD</a>
+    <a href="https://app.kt-soft.vn/dang-ky.php" class="btn btn-sm cta-desktop" target="_blank" rel="noopener">Dùng thử miễn phí</a>
     <button type="button" class="nav-toggle" onclick="document.getElementById('mainNav').classList.toggle('open');this.classList.toggle('open');" aria-label="Mở menu">
       <span></span><span></span><span></span>
     </button>
