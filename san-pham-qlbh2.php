@@ -119,10 +119,21 @@ require_once __DIR__ . '/inc_header.php';
       ngay trên app.kt-soft.vn, bạn không cần cài đặt hay làm gì thêm.
     </p>
 
-        <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
+    <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Cập nhật 21/10/2026</h3>
+        <h3 style="margin:0;">Cập nhật 26/10/2026</h3>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Tìm nhanh và trợ lý hiểu nhiều hơn</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Tìm nhanh bằng Ctrl+K: gõ vài ký tự để tìm sản phẩm, khách hàng, đơn hàng, nhà cung cấp (thu ngân không thấy nhà cung cấp)</li>
+        <li>Trợ lý trả lời thêm: so sánh tuần/tháng này với kỳ trước, doanh thu từng chi nhánh, nhân viên bán nhiều nhất, và tra cứu nhanh theo tên mặt hàng hoặc khách hàng</li>
+        <li>Màn hình bán hàng gợi ý "có phải bạn muốn tìm" khi gõ sai chính tả</li>
+        <li>Cảnh báo khách trùng số điện thoại khi thêm khách (nhận cả dạng +84); sổ quỹ gợi ý lý do thu chi</li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Cập nhật 21/10/2026</strong></summary>
       <p style="font-weight:600; margin:8px 0 4px;">Chuyển dữ liệu dễ hơn, dùng như ứng dụng điện thoại</p>
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Nhập hàng hóa từ KiotViet, Sapo hoặc Excel khác: tự nhận cột Nhóm hàng (3 cấp, tự tạo nhóm cha–con), Thương hiệu, Tồn kho, Tồn nhỏ nhất, Đang kinh doanh; hiểu số kiểu 1.200.000; xem trước rồi mới ghi; nhập lại cùng file chỉ cập nhật, không đè tồn kho đang có</li>
@@ -135,7 +146,7 @@ require_once __DIR__ . '/inc_header.php';
         <li>Phiếu nhập hàng hiện giá nhập gần đây của từng nhà cung cấp và cảnh báo khi nhà cung cấp đang chọn đắt hơn nơi khác</li>
         <li>Trang chủ so nhịp bán hôm nay với cùng giờ các tuần trước; cảnh báo hàng bị trả nhiều</li>
       </ul>
-    </div>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
       <summary><strong>Cập nhật 20/10/2026</strong></summary>
