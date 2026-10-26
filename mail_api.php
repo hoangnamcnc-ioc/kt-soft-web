@@ -97,6 +97,17 @@ if ($loai === 'otp') {
         . '  Chi tiền mặt: ' . $tien($input['tien_chi'] ?? 0) . "\n"
         . '  Tiền mặt phải có trong két: ' . $tien($input['tien_mat_phai_co'] ?? 0) . "\n\n"
         . "Email tự động từ QLBH-SOFT, không cần trả lời.\n";
+    // Tuy chon: toi da 8 diem can xem do phan mem tinh (chi van ban thuan, cat do dai, bo ky tu dieu khien)
+    $luuY = [];
+    foreach (array_slice((array) ($input['luu_y'] ?? []), 0, 8) as $y) {
+        $y = trim(preg_replace('/[\x00-\x1F\x7F]+/u', ' ', (string) $y));
+        if ($y !== '') {
+            $luuY[] = mb_substr($y, 0, 160);
+        }
+    }
+    if ($luuY) {
+        $body = str_replace("Email tự động từ QLBH-SOFT, không cần trả lời.\n", "Điểm cần xem:\n  - " . implode("\n  - ", $luuY) . "\n\nEmail tự động từ QLBH-SOFT, không cần trả lời.\n", $body);
+    }
 } else {
     mail_api_loi(400, 'Loại email không hỗ trợ');
 }

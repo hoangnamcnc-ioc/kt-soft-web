@@ -21,6 +21,8 @@ foreach (DOWNLOAD_MAP as $key => $info) {
     $thongKeTai[$key] = [
         'ten' => $tenSanPhamTai[$key] ?? $info['ten'],
         'luot_tai' => doc_luot_tai($key),
+        'tai_7' => thong_ke_tai($key, 7),
+        'tai_30' => thong_ke_tai($key, 30),
         'danh_gia' => doc_danh_gia($key),
     ];
 }
@@ -179,12 +181,14 @@ require __DIR__ . '/includes/layout-head.php';
   <div class="card-header"><h3>💻 Tải về &amp; đánh giá phần mềm</h3></div>
   <div style="padding:20px;">
     <table class="data-table">
-      <thead><tr><th>Phần mềm</th><th style="text-align:right;">Lượt tải</th><th style="text-align:right;">Đánh giá</th></tr></thead>
+      <thead><tr><th>Phần mềm</th><th style="text-align:right;">Lượt tải (tổng)</th><th style="text-align:right;">7 ngày qua</th><th style="text-align:right;">30 ngày qua</th><th style="text-align:right;">Đánh giá</th></tr></thead>
       <tbody>
         <?php foreach ($thongKeTai as $tk): ?>
           <tr>
             <td><?= e($tk['ten']) ?></td>
             <td style="text-align:right;font-weight:700;color:#1d4ed8;">⬇️ <?= (int) $tk['luot_tai'] ?></td>
+            <td style="text-align:right;"><b><?= (int) $tk['tai_7']['that'] ?></b> <small style="color:#94a3b8;">thật · <?= (int) $tk['tai_7']['trung'] ?> trùng · <?= (int) $tk['tai_7']['bot'] ?> robot</small></td>
+            <td style="text-align:right;"><b><?= (int) $tk['tai_30']['that'] ?></b> <small style="color:#94a3b8;">thật · <?= (int) $tk['tai_30']['trung'] ?> trùng · <?= (int) $tk['tai_30']['bot'] ?> robot</small></td>
             <td style="text-align:right;color:#d97706;font-weight:700;">
               <?= $tk['danh_gia']['so_luot'] > 0
                     ? $tk['danh_gia']['trung_binh'] . '/5 ⭐ <span style="color:#64748b;font-weight:400;">(' . $tk['danh_gia']['so_luot'] . ')</span>'
