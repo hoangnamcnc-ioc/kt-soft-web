@@ -36,6 +36,7 @@ $ldApps = [
     'san-pham-qlbh2.php' => ['QLBH-CLOUD', 'BusinessApplication', 'Web'],
     'san-pham-qlbh-soft.php' => ['QLBH-SOFT', 'BusinessApplication', 'Windows'],
     'san-pham-qlcf-soft.php' => ['QLCF-SOFT', 'BusinessApplication', 'Windows'],
+    'san-pham-qlnh-soft.php' => ['QLNH-SOFT', 'BusinessApplication', 'Windows'],
     'san-pham-qlcv.php' => ['QLCV', 'BusinessApplication', 'Windows'],
     'san-pham-ke-toan.php' => ['KT-SOFT Kế toán', 'FinanceApplication', 'Windows'],
 ];
@@ -51,7 +52,7 @@ if ($currentPage === 'index.php') {
 if (!empty($ld)): ?>
 <script type="application/ld+json"><?= json_encode($ld, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG) ?></script>
 <?php endif; ?>
-<link rel="stylesheet" href="assets/style.css?v=9">
+<link rel="stylesheet" href="assets/style.css?v=10">
 </head>
 <body>
 
@@ -66,6 +67,7 @@ if (!empty($ld)): ?>
       <a href="san-pham-qlbh2.php">QLBH-CLOUD</a>
       <a href="san-pham-qlbh-soft.php">QLBH-SOFT</a>
       <a href="san-pham-qlcf-soft.php">QLCF-SOFT</a>
+      <a href="san-pham-qlnh-soft.php">QLNH-SOFT</a>
       <a href="san-pham-qlcv.php">QLCV</a>
       <a href="san-pham-ke-toan.php">Kế toán</a>
       <a href="bang-gia.php">Bảng giá</a>

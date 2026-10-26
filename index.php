@@ -20,6 +20,7 @@ require_once __DIR__ . '/inc_header.php';
       <a href="san-pham-qlbh2.php" class="pill-tab" style="--pill-accent:#93c5fd;"><span class="ico">🛒</span>QLBH-CLOUD</a>
       <a href="san-pham-qlbh-soft.php" class="pill-tab" style="--pill-accent:#6ee7b7;"><span class="ico">💻</span>QLBH-SOFT</a>
       <a href="san-pham-qlcf-soft.php" class="pill-tab" style="--pill-accent:#fdba74;"><span class="ico">☕</span>QLCF-SOFT</a>
+      <a href="san-pham-qlnh-soft.php" class="pill-tab" style="--pill-accent:#fda4af;"><span class="ico">🍽️</span>QLNH-SOFT</a>
       <a href="san-pham-qlcv.php" class="pill-tab" style="--pill-accent:#d8b4fe;"><span class="ico">📋</span>QLCV</a>
       <a href="san-pham-ke-toan.php" class="pill-tab" style="--pill-accent:#fcd34d;"><span class="ico">🧾</span>Kế toán</a>
     </div>
@@ -74,6 +75,18 @@ require_once __DIR__ . '/inc_header.php';
         </p>
         <div class="status"><b>Mới ra mắt</b> · bản 0.2.0 cho Windows</div>
         <a href="san-pham-qlcf-soft.php" class="card-link">Xem chi tiết →</a>
+      </div>
+
+      <div class="product-card" style="--card-accent: var(--qlnh); --card-bg: var(--qlnh-bg);">
+        <div class="icon-blob">🍽️</div>
+        <span class="tag">🍽️ Cài trên máy · Nhà hàng, quán ăn</span>
+        <h3>QLNH-SOFT — Quản lý nhà hàng</h3>
+        <p>
+          Sơ đồ bàn theo khu, phòng VIP, đặt bàn có tiền cọc, ra món theo lượt, màn hình bếp và bar,
+          kho nguyên liệu, khách quen — cho một nhà hàng hoặc cả chuỗi chi nhánh.
+        </p>
+        <div class="status"><b>Mới ra mắt</b> · bản 1.0.0 cho Windows</div>
+        <a href="san-pham-qlnh-soft.php" class="card-link">Xem chi tiết →</a>
       </div>
 
       <div class="product-card" style="--card-accent: var(--qlcv); --card-bg: var(--qlcv-bg);">
