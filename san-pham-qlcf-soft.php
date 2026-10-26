@@ -120,16 +120,31 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlcf, #9a3412); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 0.4.1 <span style="font-size:12px;font-weight:700;color:var(--qlcf);background:var(--qlcf-bg);padding:2px 8px;border-radius:10px;vertical-align:middle;">Mới nhất</span></h3>
-        <span class="muted" style="font-size:13px;">21/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 0.4.2 <span style="font-size:12px;font-weight:700;color:var(--qlcf);background:var(--qlcf-bg);padding:2px 8px;border-radius:10px;vertical-align:middle;">Mới nhất</span></h3>
+        <span class="muted" style="font-size:13px;">26/10/2026</span>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Hỗ trợ ngay lúc đang bán và nhắc việc thông minh hơn</p>
+      <ul class="feature-list" style="--card-accent: var(--qlcf);">
+        <li>POS báo số ly còn làm được theo tồn nguyên liệu ("Còn ~N ly", "Hết nguyên liệu") và cảnh báo khi chọn món sắp hết</li>
+        <li>Gợi ý bán kèm khi khách gọi món: các món khách thường gọi cùng, tính từ đơn 4 tuần gần nhất</li>
+        <li>Đóng ca: kết quả hiện trong khung riêng, kèm gợi ý nguyên nhân khi két lệch (trùng đúng một đơn, một khoản thu hoặc chi trong ca)</li>
+        <li>Khi nguyên liệu tăng giá nhập: nêu rõ món nào đã mỏng lãi và nên bán giá bao nhiêu để đạt biên khoảng 60%</li>
+        <li>Tổng quan báo giờ cao điểm hôm nay / ngày mai có thể thiếu người khi lịch làm việc chưa đủ ca</li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 0.4.1</strong> <span class="muted" style="font-size:13px;">21/10/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Chăm sóc khách quen, nhắc sao lưu và bộ cài đáng tin hơn</p>
       <ul class="feature-list" style="--card-accent: var(--qlcf);">
         <li>Chăm sóc khách quen: lời nhắn soạn sẵn (chép dán vào Zalo) cho khách sắp sinh nhật và khách lâu không ghé; tạo voucher sinh nhật dùng 1 lần kèm lời chúc</li>
         <li>Trợ lý thiết lập nhắc sao lưu ra ngoài máy (USB / Google Drive) khi chưa chọn nơi sao lưu hoặc quá vài ngày chưa có bản mới</li>
         <li>Bộ cài hiển thị đầy đủ nhà phát hành và phiên bản (KT-SOFT); bỏ các tệp chạy ẩn dễ bị phần mềm diệt virus nghi ngờ nhầm; "Dừng QLCF-SOFT" an toàn hơn, không đụng ứng dụng khác</li>
       </ul>
-    </div>
+    
+      </div>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
       <summary><strong>Phiên bản 0.4.0</strong> <span class="muted" style="font-size:13px;">20/10/2026</span></summary>
