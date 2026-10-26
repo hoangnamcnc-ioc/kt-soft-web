@@ -122,9 +122,21 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.2.14</h3>
-        <span class="muted" style="font-size:13px;">21/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 1.2.15</h3>
+        <span class="muted" style="font-size:13px;">26/10/2026</span>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Thông minh hơn khi theo dõi tiền và hàng</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Dự báo dòng tiền: ước tính tiền vào / ra các tuần tới từ công nợ và thói quen thanh toán</li>
+        <li>Cảnh báo hàng sắp hết theo tốc độ bán thực tế, không chỉ theo mức tồn tối thiểu</li>
+        <li>Cảnh báo bất thường khi nhập chứng từ (số tiền, giá lệch hẳn so với thường lệ)</li>
+        <li>Gợi ý số tiền thu / chi theo lịch sử của từng khách hàng, nhà cung cấp</li>
+        <li>Hỏi nhanh ngay trên màn hình Tổng quan</li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.2.14</strong> <span class="muted" style="font-size:13px;">21/10/2026</span></summary>
       <p style="font-weight:600; margin:8px 0 4px;">Tính năng mới</p>
       <ul class="feature-list" style="--card-accent: var(--ketoan);">
         <li>Trợ lý thông minh ngay trên màn hình Tổng quan: nhắc việc cần làm và truy cập nhanh các thao tác hay dùng</li>
@@ -133,7 +145,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
         <li>Hạn mức công nợ từng khách: cảnh báo khi lập hóa đơn bán làm vượt hạn mức</li>
         <li>Thu / trả tiền ngay khi lập hóa đơn bán hoặc nhập mua: tự lập phiếu thu / phiếu chi tương ứng</li>
       </ul>
-    </div>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <summary><strong>Phiên bản 1.2.13</strong> <span class="muted" style="font-size:13px;">15/10/2026</span></summary>
@@ -414,7 +426,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.14 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.15 mới nhất</a>
     </div>
   </div>
 </section>
