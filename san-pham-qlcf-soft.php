@@ -48,6 +48,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
         </form>
       <?php endif; ?>
     </div>
+    <figure class="shot hero-shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/cf-tong-quan.jpg" alt="Màn hình tổng quan doanh thu của QLCF-SOFT" width="1366" height="800" loading="lazy"><figcaption>Tổng quan doanh thu 7 ngày và cảnh báo nguyên liệu (dữ liệu mẫu)</figcaption></figure>
   </div>
 </section>
 
@@ -68,13 +69,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
           <li>Mã QR chuyển khoản (VietQR) đúng số tiền ngay trên màn hình bán hàng</li>
         </ul>
       </div>
-      <div class="mock" style="--card-bg: var(--qlcf-bg); --card-accent: var(--qlcf);">
-        <div class="mock-title">Đơn đang bán · Bàn 5</div>
-        <div class="mock-row"><span>Trà sữa trân châu (L, 50% đường, ít đá)</span><b>45.000đ × 1</b></div>
-        <div class="mock-row"><span>Cà phê sữa đá (M)</span><b>29.000đ × 2</b></div>
-        <div class="mock-row"><span>Tổng cộng</span><b>103.000đ</b></div>
-        <div class="mock-row"><span>Trạng thái</span><span class="badge">Đã in 3 tem</span></div>
-      </div>
+      <figure class="shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/cf-pos.jpg" alt="Màn hình bán hàng bấm ly của QLCF-SOFT" width="1366" height="800" loading="lazy"><figcaption>Chọn món, size, đường, đá, topping — tính tiền ngay</figcaption></figure>
     </div>
   </div>
 </section>
@@ -82,12 +77,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
 <section class="product-detail reverse">
   <div class="container">
     <div class="grid">
-      <div class="mock" style="--card-bg: var(--qlcf-bg); --card-accent: var(--qlcf);">
-        <div class="mock-title">Giá vốn & lợi nhuận theo món</div>
-        <div class="mock-row"><span>Trà sữa trân châu</span><b>Lãi 62%</b></div>
-        <div class="mock-row"><span>Cà phê sữa đá</span><b>Lãi 68%</b></div>
-        <div class="mock-row"><span>Sắp hết nguyên liệu</span><span class="badge">Sữa đặc · Trân châu</span></div>
-      </div>
+      <figure class="shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/cf-kho.jpg" alt="Kho nguyên liệu và công thức pha chế trong QLCF-SOFT" width="1366" height="800" loading="lazy"><figcaption>Kho nguyên liệu, cảnh báo sắp hết hàng</figcaption></figure>
       <div>
         <span class="tag" style="--card-accent: var(--qlcf); --card-bg: var(--qlcf-bg);">Kho, ca &amp; nhân sự</span>
         <h2>Biết quán lãi bao nhiêu trên từng ly, nguyên liệu nào sắp hết</h2>

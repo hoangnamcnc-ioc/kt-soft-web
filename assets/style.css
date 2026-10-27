@@ -344,3 +344,19 @@ details.changelog-item[open] { margin-bottom:12px !important; }
 .faq-item > summary::after { content:"+"; margin-left:auto; color:#64748b; font-weight:400; font-size:20px; }
 .faq-item[open] > summary::after { content:"−"; }
 .faq-item > p { margin:0 0 14px; color:#475569; line-height:1.6; }
+
+/* Anh chup man hinh phan mem that (du lieu mau) */
+.shot { margin: 0; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 18px 40px -18px rgba(15,23,42,.35); }
+.shot-bar { display: flex; gap: 6px; padding: 9px 12px; background: #f1f5f9; border-bottom: 1px solid var(--border); }
+.shot-bar i { width: 9px; height: 9px; border-radius: 50%; background: #cbd5e1; display: block; }
+.shot img { display: block; width: 100%; height: auto; }
+.shot figcaption { padding: 9px 14px; font-size: 12.5px; color: var(--muted); background: #fff; border-top: 1px solid var(--border); }
+.hero-shot { max-width: 980px; margin: 36px auto 0; border-bottom: none; border-radius: 12px 12px 0 0; box-shadow: 0 -10px 50px -10px rgba(0,0,0,.45); }
+.hero-shot img { max-height: 470px; object-fit: cover; object-position: top left; }
+.hero-shot figcaption { display: none; }
+.card-shot-link { display: block; margin: -4px -4px 14px; }
+.card-shot { display: block; width: 100%; height: 170px; object-fit: cover; object-position: top left; border-radius: 10px; border: 1px solid var(--border); box-shadow: 0 8px 20px -12px rgba(15,23,42,.35); }
+@media (max-width: 700px) { .hero-shot { margin-top: 24px; } .hero-shot img { max-height: 260px; } .card-shot { height: 140px; } }
+.card-shot-ph { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, var(--qlcv-bg), #ede9fe); color: var(--qlcv); }
+.card-shot-ph span { font-size: 38px; }
+.card-shot-ph b { font-size: 14px; letter-spacing: .02em; }

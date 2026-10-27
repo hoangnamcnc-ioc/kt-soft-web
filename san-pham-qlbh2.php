@@ -16,6 +16,7 @@ require_once __DIR__ . '/inc_header.php';
       <a href="https://app.kt-soft.vn/dang-ky.php" class="btn" target="_blank" rel="noopener">Dùng thử ngay →</a>
       <a href="lien-he.php" class="btn btn-ghost">Yêu cầu tư vấn</a>
     </div>
+    <figure class="shot hero-shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/cloud-phan-tich.jpg" alt="Màn hình phân tích kinh doanh của QLBH-CLOUD" width="1366" height="800" loading="lazy"><figcaption>Điểm sức khỏe cửa hàng và dự báo dòng tiền (dữ liệu mẫu)</figcaption></figure>
   </div>
 </section>
 
@@ -40,13 +41,7 @@ require_once __DIR__ . '/inc_header.php';
           <li>Màn hình bán hàng thông minh: khách quen hiện món hay mua và nợ, hỏi lại khi gõ nhầm số lượng/giá, gợi ý hàng bán chạy theo giờ</li>
         </ul>
       </div>
-      <div class="mock" style="--card-bg: var(--qlbh2-bg); --card-accent: var(--qlbh2);">
-        <div class="mock-title">Tổng quan · Chi nhánh Quận 1</div>
-        <div class="mock-row"><span>Doanh thu hôm nay</span><b>12.450.000đ</b></div>
-        <div class="mock-row"><span>Đơn hàng mới</span><b>18</b></div>
-        <div class="mock-row"><span>Chờ đóng gói</span><span class="badge">4 đơn</span></div>
-        <div class="mock-row"><span>Sản phẩm dưới định mức</span><span class="badge">3 SP</span></div>
-      </div>
+      <figure class="shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/cloud-pos.jpg" alt="Màn hình bán hàng tại quầy của QLBH-CLOUD" width="1366" height="800" loading="lazy"><figcaption>Bán hàng tại quầy: tìm hàng, quét mã vạch, thanh toán nhanh</figcaption></figure>
     </div>
   </div>
 </section>
@@ -54,12 +49,7 @@ require_once __DIR__ . '/inc_header.php';
 <section class="product-detail reverse">
   <div class="container">
     <div class="grid">
-      <div class="mock" style="--card-bg: var(--qlbh2-bg); --card-accent: var(--qlbh2);">
-        <div class="mock-title">Khách hàng thân thiết</div>
-        <div class="mock-row"><span>Nguyễn Thị Lan</span><span class="badge">Hạng Vàng</span></div>
-        <div class="mock-row"><span>Điểm tích lũy</span><b>1.240 điểm</b></div>
-        <div class="mock-row"><span>Công nợ hiện tại</span><b>350.000đ</b></div>
-      </div>
+      <figure class="shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/cloud-khach.jpg" alt="Danh sách khách hàng và công nợ trong QLBH-CLOUD" width="1366" height="800" loading="lazy"><figcaption>Khách hàng, công nợ và lịch sử mua hàng</figcaption></figure>
       <div>
         <span class="tag" style="--card-accent: var(--qlbh2); --card-bg: var(--qlbh2-bg);">Khách hàng &amp; Marketing</span>
         <h2>Giữ chân khách quen bằng chương trình tích điểm thật</h2>
@@ -101,12 +91,7 @@ require_once __DIR__ . '/inc_header.php';
           <a href="https://app.kt-soft.vn/dang-ky.php" class="btn" target="_blank" rel="noopener">Trải nghiệm QLBH-CLOUD →</a>
         </div>
       </div>
-      <div class="mock" style="--card-bg: var(--qlbh2-bg); --card-accent: var(--qlbh2);">
-        <div class="mock-title">Ước tính thuế hộ kinh doanh</div>
-        <div class="mock-row"><span>Doanh thu năm</span><b>1.500.000.000đ</b></div>
-        <div class="mock-row"><span>Thuế GTGT ước tính (1%)</span><b>15.000.000đ</b></div>
-        <div class="mock-row"><span>Thuế TNCN ước tính (0,5%)</span><b>2.500.000đ</b></div>
-      </div>
+      <figure class="shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/cloud-bao-cao.jpg" alt="Báo cáo doanh thu, lãi gộp, sản phẩm bán chạy trong QLBH-CLOUD" width="1366" height="800" loading="lazy"><figcaption>Báo cáo doanh thu, lãi gộp, hàng bán chạy</figcaption></figure>
     </div>
   </div>
 </section>

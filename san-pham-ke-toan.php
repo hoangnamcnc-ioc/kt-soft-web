@@ -47,6 +47,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
         </form>
       <?php endif; ?>
     </div>
+    <figure class="shot hero-shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/kt-tong-quan.jpg" alt="Màn hình tổng quan của KT-SOFT" width="1366" height="800" loading="lazy"><figcaption></figcaption></figure>
   </div>
 </section>
 
@@ -72,12 +73,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
           <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải về dùng miễn phí</a>
         </div>
       </div>
-      <div class="mock" style="--card-bg: var(--ketoan-bg); --card-accent: var(--ketoan);">
-        <div class="mock-title">Bảng kê hóa đơn đầu vào</div>
-        <div class="mock-row"><span>Kỳ kê khai</span><b>Tháng 7/2026</b></div>
-        <div class="mock-row"><span>Số hóa đơn đã ghi nhận</span><b>42 hóa đơn</b></div>
-        <div class="mock-row"><span>Trạng thái tờ khai</span><span class="badge">Sẵn sàng xuất</span></div>
-      </div>
+      <figure class="shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/kt-bao-cao-tc.jpg" alt="Báo cáo tài chính trong KT-SOFT" width="1366" height="800" loading="lazy"><figcaption>Bảng cân đối số phát sinh và báo cáo tài chính</figcaption></figure>
     </div>
   </div>
 </section>
@@ -85,12 +81,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 <section class="product-detail reverse">
   <div class="container">
     <div class="grid">
-      <div class="mock" style="--card-bg: var(--ketoan-bg); --card-accent: var(--ketoan);">
-        <div class="mock-title">Kiểm tra trước khi khóa sổ</div>
-        <div class="mock-row"><span>Khấu trừ thuế GTGT</span><span class="badge">Đã bù trừ</span></div>
-        <div class="mock-row"><span>Khấu hao TSCĐ tháng 7</span><span class="badge">Đã hạch toán</span></div>
-        <div class="mock-row"><span>Tạm tính thuế TNDN</span><b>16.000.000đ</b></div>
-      </div>
+      <figure class="shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/kt-cong-no.jpg" alt="Danh mục đối tượng công nợ trong KT-SOFT" width="1366" height="800" loading="lazy"><figcaption>Danh mục khách hàng, nhà cung cấp, hạn mức công nợ</figcaption></figure>
       <div>
         <span class="tag" style="--card-accent: var(--ketoan); --card-bg: var(--ketoan-bg);">Báo cáo tài chính</span>
         <h2>Bảng kiểm trước khi kết chuyển, không sợ bỏ sót</h2>

@@ -42,6 +42,7 @@ require_once __DIR__ . '/inc_header.php';
 
     <div class="product-grid">
       <div class="product-card" style="--card-accent: var(--qlbh2); --card-bg: var(--qlbh2-bg);">
+        <a href="san-pham-qlbh2.php" class="card-shot-link" tabindex="-1" aria-hidden="true"><img class="card-shot" src="assets/img/shots/cloud-phan-tich.jpg" alt="Màn hình QLBH-CLOUD" width="1366" height="800" loading="lazy"></a>
         <div class="icon-blob">🛒</div>
         <span class="tag">☁️ Cloud · Đa chi nhánh</span>
         <h3>QLBH-CLOUD — Quản lý bán hàng</h3>
@@ -54,6 +55,7 @@ require_once __DIR__ . '/inc_header.php';
       </div>
 
       <div class="product-card" style="--card-accent: var(--qlbhsoft); --card-bg: var(--qlbhsoft-bg);">
+        <a href="san-pham-qlbh-soft.php" class="card-shot-link" tabindex="-1" aria-hidden="true"><img class="card-shot" src="assets/img/shots/soft-pos.jpg" alt="Màn hình QLBH-SOFT" width="1366" height="800" loading="lazy"></a>
         <div class="icon-blob">💻</div>
         <span class="tag">💻 Cài trên máy · Offline</span>
         <h3>QLBH-SOFT — Bán hàng tạp hóa</h3>
@@ -66,6 +68,7 @@ require_once __DIR__ . '/inc_header.php';
       </div>
 
       <div class="product-card" style="--card-accent: var(--qlcf); --card-bg: var(--qlcf-bg);">
+        <a href="san-pham-qlcf-soft.php" class="card-shot-link" tabindex="-1" aria-hidden="true"><img class="card-shot" src="assets/img/shots/cf-pos.jpg" alt="Màn hình QLCF-SOFT" width="1366" height="800" loading="lazy"></a>
         <div class="icon-blob">☕</div>
         <span class="tag">☕ Cài trên máy · Quán cà phê, trà sữa</span>
         <h3>QLCF-SOFT — Quản lý quán cà phê</h3>
@@ -78,6 +81,7 @@ require_once __DIR__ . '/inc_header.php';
       </div>
 
       <div class="product-card" style="--card-accent: var(--qlnh); --card-bg: var(--qlnh-bg);">
+        <a href="san-pham-qlnh-soft.php" class="card-shot-link" tabindex="-1" aria-hidden="true"><img class="card-shot" src="assets/img/shots/nh-so-do-ban.jpg" alt="Màn hình QLNH-SOFT" width="1366" height="800" loading="lazy"></a>
         <div class="icon-blob">🍽️</div>
         <span class="tag">🍽️ Cài trên máy · Nhà hàng, quán ăn</span>
         <h3>QLNH-SOFT — Quản lý nhà hàng</h3>
@@ -90,6 +94,7 @@ require_once __DIR__ . '/inc_header.php';
       </div>
 
       <div class="product-card" style="--card-accent: var(--qlcv); --card-bg: var(--qlcv-bg);">
+        <a href="san-pham-qlcv.php" class="card-shot-link" tabindex="-1" aria-hidden="true"><div class="card-shot card-shot-ph"><span>📋</span><b>Giao việc · Tiến độ · KPI</b></div></a>
         <div class="icon-blob">📋</div>
         <span class="tag">📋 Nội bộ · Phân quyền theo phòng ban</span>
         <h3>QLCV — Quản lý công việc</h3>
@@ -102,6 +107,7 @@ require_once __DIR__ . '/inc_header.php';
       </div>
 
       <div class="product-card" style="--card-accent: var(--ketoan); --card-bg: var(--ketoan-bg);">
+        <a href="san-pham-ke-toan.php" class="card-shot-link" tabindex="-1" aria-hidden="true"><img class="card-shot" src="assets/img/shots/kt-tong-quan.jpg" alt="Màn hình KT-SOFT" width="1366" height="800" loading="lazy"></a>
         <div class="icon-blob">🧾</div>
         <span class="tag">🧾 Desktop · Thông tư 133/2016/TT-BTC</span>
         <h3>KT-SOFT — Phần mềm kế toán</h3>

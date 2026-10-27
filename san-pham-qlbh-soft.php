@@ -47,6 +47,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
         </form>
       <?php endif; ?>
     </div>
+    <figure class="shot hero-shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/soft-pos.jpg" alt="Màn hình bán hàng của QLBH-SOFT" width="1366" height="800" loading="lazy"><figcaption></figcaption></figure>
   </div>
 </section>
 
@@ -67,13 +68,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
           <li>Ghi nợ và thu nợ cho khách quen</li>
         </ul>
       </div>
-      <div class="mock" style="--card-bg: var(--qlbhsoft-bg); --card-accent: var(--qlbhsoft);">
-        <div class="mock-title">Bán hàng tại quầy</div>
-        <div class="mock-row"><span>Mì Hảo Hảo tôm chua cay</span><b>3.500đ × 2</b></div>
-        <div class="mock-row"><span>Nước suối Lavie 500ml</span><b>5.000đ × 1</b></div>
-        <div class="mock-row"><span>Tổng cộng</span><b>12.000đ</b></div>
-        <div class="mock-row"><span>Trạng thái</span><span class="badge">Đã thanh toán</span></div>
-      </div>
+      <figure class="shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/soft-pos.jpg" alt="Màn hình bán hàng của QLBH-SOFT" width="1366" height="800" loading="lazy"><figcaption>Bán hàng bằng mã vạch, gợi ý bán kèm và quà tặng</figcaption></figure>
     </div>
   </div>
 </section>
@@ -81,12 +76,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 <section class="product-detail reverse">
   <div class="container">
     <div class="grid">
-      <div class="mock" style="--card-bg: var(--qlbhsoft-bg); --card-accent: var(--qlbhsoft);">
-        <div class="mock-title">Ước tính thuế hộ kinh doanh</div>
-        <div class="mock-row"><span>Doanh thu năm</span><b>820.000.000đ</b></div>
-        <div class="mock-row"><span>Ngưỡng miễn thuế</span><b>1.000.000.000đ</b></div>
-        <div class="mock-row"><span>Trạng thái</span><span class="badge">Dưới ngưỡng — miễn thuế</span></div>
-      </div>
+      <figure class="shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/soft-so-do.jpg" alt="Sơ đồ chức năng của QLBH-SOFT" width="1366" height="800" loading="lazy"><figcaption>Sơ đồ chức năng: thiết lập, kho, bán hàng, báo cáo</figcaption></figure>
       <div>
         <span class="tag" style="--card-accent: var(--qlbhsoft); --card-bg: var(--qlbhsoft-bg);">Sổ sách &amp; Thuế</span>
         <h2>Biết ngay mình có phải nộp thuế hay không</h2>

@@ -48,6 +48,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlnh-soft']);
         </form>
       <?php endif; ?>
     </div>
+    <figure class="shot hero-shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/nh-tong-quan.jpg" alt="Màn hình tổng quan của QLNH-SOFT" width="1366" height="800" loading="lazy"><figcaption>Tổng quan, việc cần làm và dự báo hôm nay (dữ liệu mẫu)</figcaption></figure>
   </div>
 </section>
 
@@ -69,13 +70,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlnh-soft']);
           <li>Màn hình bếp và quầy bar theo lượt; xoá món đã gửi bếp thì bếp nhận thông báo "DỪNG LÀM"</li>
         </ul>
       </div>
-      <div class="mock" style="--card-bg: var(--qlnh-bg); --card-accent: var(--qlnh);">
-        <div class="mock-title">Phòng VIP 2 · đang phục vụ</div>
-        <div class="mock-row"><span>Set lẩu hải sản (6 người)</span><b>1.890.000đ</b></div>
-        <div class="mock-row"><span>Phí phòng + phục vụ 10%</span><b>350.000đ</b></div>
-        <div class="mock-row"><span>Tiền cọc đã trừ</span><b>-500.000đ</b></div>
-        <div class="mock-row"><span>Trạng thái</span><span class="badge">Chờ gọi món chính</span></div>
-      </div>
+      <figure class="shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/nh-so-do-ban.jpg" alt="Sơ đồ bàn và đặt bàn của QLNH-SOFT" width="1366" height="800" loading="lazy"><figcaption>Sơ đồ bàn theo khu, đặt bàn có tiền cọc</figcaption></figure>
     </div>
   </div>
 </section>
@@ -83,12 +78,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlnh-soft']);
 <section class="product-detail reverse">
   <div class="container">
     <div class="grid">
-      <div class="mock" style="--card-bg: var(--qlnh-bg); --card-accent: var(--qlnh);">
-        <div class="mock-title">Việc cần làm hôm nay</div>
-        <div class="mock-row"><span>Nguyên liệu gần hết hạn</span><span class="badge">Tôm sú · Sò điệp</span></div>
-        <div class="mock-row"><span>Dự báo cuối tuần</span><b>~120 khách</b></div>
-        <div class="mock-row"><span>Khách quen lâu chưa ghé</span><b>8 người</b></div>
-      </div>
+      <figure class="shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/nh-bep.jpg" alt="Màn hình bếp và bar của QLNH-SOFT" width="1366" height="800" loading="lazy"><figcaption>Màn hình bếp theo lượt món, báo bàn chờ lâu</figcaption></figure>
       <div>
         <span class="tag" style="--card-accent: var(--qlnh); --card-bg: var(--qlnh-bg);">Kho, khách quen &amp; thông minh</span>
         <h2>Kiểm soát thất thoát, nhớ khẩu vị khách, biết trước để chuẩn bị</h2>
