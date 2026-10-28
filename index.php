@@ -76,7 +76,7 @@ require_once __DIR__ . '/inc_header.php';
           Bán hàng bấm ly theo size/đường/đá/topping, in tem ly, kho nguyên liệu và công thức pha chế
           tự trừ kho, chốt ca, chấm công — dùng cho một quán hoặc cả chuỗi chi nhánh.
         </p>
-        <div class="status"><b>Mới ra mắt</b> · bản 0.2.0 cho Windows</div>
+        <div class="status"><b>Mới ra mắt</b> · bản 0.4.2 cho Windows</div>
         <a href="san-pham-qlcf-soft.php" class="card-link">Xem chi tiết →</a>
       </div>
 
