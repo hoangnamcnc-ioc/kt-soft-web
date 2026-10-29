@@ -113,9 +113,30 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.2.15</h3>
-        <span class="muted" style="font-size:13px;">26/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 1.2.17</h3>
+        <span class="muted" style="font-size:13px;">29/10/2026</span>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Thêm nhanh danh mục ngay khi nhập chứng từ</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Chưa có khách hàng, nhà cung cấp hoặc hàng hóa trong danh mục? Thêm ngay tại màn hình đang nhập, mục vừa tạo được chọn luôn</li>
+        <li>Có thêm nút ở: đơn mua hàng, báo giá / đơn bán, phiếu thu / chi tiền mặt và ngân hàng, chứng từ kế toán tổng hợp, nhập kho, nhập kho nội bộ, tạo công trình</li>
+        <li>Khi thêm đối tượng, tên, mã số thuế và địa chỉ là bắt buộc (có nút Tra cứu MST để điền tự động); khách cá nhân không có mã số thuế thì tích "Cá nhân, không có MST", địa chỉ vẫn bắt buộc</li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.2.16</strong> <span class="muted" style="font-size:13px;">28/10/2026</span></summary>
+      <p style="font-weight:600; margin:8px 0 4px;">Cập nhật ngưỡng miễn thuế hộ kinh doanh</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Công cụ tính thuế hộ kinh doanh dùng ngưỡng doanh thu 1 tỷ đồng/năm (trước đây 200 triệu): doanh thu từ 1 tỷ trở xuống được miễn thuế GTGT và TNCN</li>
+        <li>Căn cứ: Luật 09/2026/QH16, Nghị định 68/2026/NĐ-CP đã được Nghị định 141/2026/NĐ-CP sửa đổi</li>
+        <li>Thuế TNCN theo phương án tính tỷ lệ phần trăm được tính trên phần doanh thu vượt 1 tỷ</li>
+        <li>Có lời nhắc đối chiếu mức trừ 500 triệu ở Điều 5 Nghị định 68 (cá nhân nhiều ngành nghề, địa điểm hoặc hợp đồng thuê)</li>
+      </ul>
+    </details>
+
+    <details class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.2.15</strong> <span class="muted" style="font-size:13px;">26/10/2026</span></summary>
       <p style="font-weight:600; margin:8px 0 4px;">Thông minh hơn khi theo dõi tiền và hàng</p>
       <ul class="feature-list" style="--card-accent: var(--ketoan);">
         <li>Dự báo dòng tiền: ước tính tiền vào / ra các tuần tới từ công nợ và thói quen thanh toán</li>
@@ -124,7 +145,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
         <li>Gợi ý số tiền thu / chi theo lịch sử của từng khách hàng, nhà cung cấp</li>
         <li>Hỏi nhanh ngay trên màn hình Tổng quan</li>
       </ul>
-    </div>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <summary><strong>Phiên bản 1.2.14</strong> <span class="muted" style="font-size:13px;">21/10/2026</span></summary>
@@ -417,7 +438,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.15 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.17 mới nhất</a>
     </div>
   </div>
 </section>
