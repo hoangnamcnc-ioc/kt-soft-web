@@ -108,9 +108,21 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.9.5</h3>
-        <span class="muted" style="font-size:13px;">26/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 1.9.6</h3>
+        <span class="muted" style="font-size:13px;">29/10/2026</span>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Nhập nhanh danh mục ngay trên phiếu, thông tin đối tác đầy đủ hơn</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><span><b>Thêm nhanh nhà cung cấp và khách hàng</b> ngay trên phiếu nhập hàng, trả hàng nhập, mua dịch vụ và đơn online khi chưa có trong danh mục, tạo xong tự chọn vào phiếu</span></li>
+        <li><span><b>Tạo hàng mới khi nhập hàng</b> chọn được danh mục (tạo luôn danh mục mới nếu chưa có) và tự gắn nhà cung cấp của phiếu</span></li>
+        <li><span><b>Nhà cung cấp bắt buộc có tên, mã số thuế và địa chỉ</b> để hóa đơn đầu vào đầy đủ thông tin</span></li>
+        <li><span><b>Khách hàng doanh nghiệp bắt buộc có mã số thuế và địa chỉ</b>, khách lẻ vẫn chỉ cần tên; tích ô "Khách hàng là doanh nghiệp" khi tạo ở máy bán hàng hoặc trang quản lý</span></li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.9.5</strong> <span class="muted" style="font-size:13px;">26/10/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Hỗ trợ sử dụng thông minh hơn</p>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li><span><b>Kiểm tra phiếu nhập trước khi lưu</b>: hỏi lại khi số lượng hoặc đơn giá lệch bất thường so với các lần nhập trước (gõ thừa hoặc thiếu số 0, đơn giá 0đ...)</span></li>
@@ -120,7 +132,8 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
         <li><span><b>Dọn danh mục</b>: gợi ý ngừng kinh doanh hàng đã hết tồn, lâu không bán và không nhập, ngừng hàng loạt chỉ một lần bấm</span></li>
         <li><span><b>Email báo cáo cuối ngày</b> kèm mục "Điểm cần xem" (ca chưa đóng, lệch két, hàng hết hạn, hàng nên nhập, nợ khách...)</span></li>
       </ul>
-    </div>
+      </div>
+    </details>
 
     <details id="phien-ban-cu" style="margin:6px 0 22px;">
       <summary style="cursor:pointer;font-weight:600;color:var(--qlbhsoft, #2563eb);">Xem các phiên bản cũ hơn (28)</summary>
@@ -578,8 +591,8 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       </p>
     </div>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.9.5 mới nhất</a>
-      <p class="muted" style="font-size:12px;margin-top:10px;word-break:break-all;">Mã kiểm tra SHA-256 của bộ cài 1.9.5: <code>d72f0f58ee09a9c9eef32014025760c01efd80e1e1357f4a9799cf3f289d64f7</code><br>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.9.6 mới nhất</a>
+      <p class="muted" style="font-size:12px;margin-top:10px;word-break:break-all;">Mã kiểm tra SHA-256 của bộ cài 1.9.6: <code>363e693b3ce906f60ed7567ff40fc48b8d9b79957f7eaa25062b85f624a7188d</code><br>
       Nếu Windows Defender báo nhầm (phần mềm chưa ký số nên đôi khi bị đánh dấu "Trojan:Win32/Wacatac" do máy học đoán), bạn có thể đối chiếu mã trên để yên tâm file đúng của KT-SOFT.</p>
     </div>
   </div>
