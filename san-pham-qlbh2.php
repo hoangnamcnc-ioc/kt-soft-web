@@ -106,8 +106,17 @@ require_once __DIR__ . '/inc_header.php';
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Cập nhật 26/10/2026</h3>
+        <h3 style="margin:0;">Cập nhật 29/10/2026</h3>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Lập phiếu nhập không phải rời màn hình</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Phiếu nhập hàng và phiếu đặt hàng nhập: thêm nhanh nhà cung cấp mới (nút "Thêm NCC") và hàng hóa mới (nút "Hàng mới") ngay trong phiếu, không mất phiếu đang lập</li>
+        <li>Nhà cung cấp bắt buộc có tên, mã số thuế (10 hoặc 13 số) và địa chỉ; trang chi tiết nhà cung cấp có mục sửa thông tin và nhắc nhà cung cấp cũ còn thiếu mã số thuế, địa chỉ</li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Cập nhật 26/10/2026</strong></summary>
       <p style="font-weight:600; margin:8px 0 4px;">Tìm nhanh và trợ lý hiểu nhiều hơn</p>
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Tìm nhanh bằng Ctrl+K: gõ vài ký tự để tìm sản phẩm, khách hàng, đơn hàng, nhà cung cấp (thu ngân không thấy nhà cung cấp)</li>
@@ -115,7 +124,7 @@ require_once __DIR__ . '/inc_header.php';
         <li>Màn hình bán hàng gợi ý "có phải bạn muốn tìm" khi gõ sai chính tả</li>
         <li>Cảnh báo khách trùng số điện thoại khi thêm khách (nhận cả dạng +84); sổ quỹ gợi ý lý do thu chi</li>
       </ul>
-    </div>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
       <summary><strong>Cập nhật 21/10/2026</strong></summary>
