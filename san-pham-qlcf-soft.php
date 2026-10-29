@@ -48,7 +48,6 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
         </form>
       <?php endif; ?>
     </div>
-    <figure class="shot hero-shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/cf-tong-quan.jpg" alt="Màn hình tổng quan doanh thu của QLCF-SOFT" width="1366" height="800" loading="lazy"><figcaption>Tổng quan doanh thu 7 ngày và cảnh báo nguyên liệu (dữ liệu mẫu)</figcaption></figure>
   </div>
 </section>
 
@@ -69,7 +68,13 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
           <li>Mã QR chuyển khoản (VietQR) đúng số tiền ngay trên màn hình bán hàng</li>
         </ul>
       </div>
-      <figure class="shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/cf-pos.jpg" alt="Màn hình bán hàng bấm ly của QLCF-SOFT" width="1366" height="800" loading="lazy"><figcaption>Chọn món, size, đường, đá, topping — tính tiền ngay</figcaption></figure>
+      <div class="mock" style="--card-bg: var(--qlcf-bg); --card-accent: var(--qlcf);">
+        <div class="mock-title">Đơn đang bán · Bàn 5</div>
+        <div class="mock-row"><span>Trà sữa trân châu (L, 50% đường, ít đá)</span><b>45.000đ × 1</b></div>
+        <div class="mock-row"><span>Cà phê sữa đá (M)</span><b>29.000đ × 2</b></div>
+        <div class="mock-row"><span>Tổng cộng</span><b>103.000đ</b></div>
+        <div class="mock-row"><span>Trạng thái</span><span class="badge">Đã in 3 tem</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -77,7 +82,12 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
 <section class="product-detail reverse">
   <div class="container">
     <div class="grid">
-      <figure class="shot"><div class="shot-bar"><i></i><i></i><i></i></div><img src="assets/img/shots/cf-kho.jpg" alt="Kho nguyên liệu và công thức pha chế trong QLCF-SOFT" width="1366" height="800" loading="lazy"><figcaption>Kho nguyên liệu, cảnh báo sắp hết hàng</figcaption></figure>
+      <div class="mock" style="--card-bg: var(--qlcf-bg); --card-accent: var(--qlcf);">
+        <div class="mock-title">Giá vốn & lợi nhuận theo món</div>
+        <div class="mock-row"><span>Trà sữa trân châu</span><b>Lãi 62%</b></div>
+        <div class="mock-row"><span>Cà phê sữa đá</span><b>Lãi 68%</b></div>
+        <div class="mock-row"><span>Sắp hết nguyên liệu</span><span class="badge">Sữa đặc · Trân châu</span></div>
+      </div>
       <div>
         <span class="tag" style="--card-accent: var(--qlcf); --card-bg: var(--qlcf-bg);">Kho, ca &amp; nhân sự</span>
         <h2>Biết quán lãi bao nhiêu trên từng ly, nguyên liệu nào sắp hết</h2>
@@ -110,9 +120,20 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlcf, #9a3412); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 0.4.2 <span style="font-size:12px;font-weight:700;color:var(--qlcf);background:var(--qlcf-bg);padding:2px 8px;border-radius:10px;vertical-align:middle;">Mới nhất</span></h3>
-        <span class="muted" style="font-size:13px;">26/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 0.4.3 <span style="font-size:12px;font-weight:700;color:var(--qlcf);background:var(--qlcf-bg);padding:2px 8px;border-radius:10px;vertical-align:middle;">Mới nhất</span></h3>
+        <span class="muted" style="font-size:13px;">29/10/2026</span>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Nhập liệu nhanh hơn, có phiếu xuất kho</p>
+      <ul class="feature-list" style="--card-accent: var(--qlcf);">
+        <li>Nhập nhanh ngay tại chỗ: thêm nhà cung cấp mới và nguyên liệu mới ngay trong phiếu nhập (kể cả nhập từ Excel), thêm nguyên liệu khi soạn công thức, tự đặt danh mục ở sổ quỹ, thêm nhanh món ở màn bán hàng</li>
+        <li>Phiếu xuất kho mới: xuất hủy, dùng nội bộ, trả hàng nhà cung cấp; trừ kho ngay, không cho xuất quá tồn, bắt buộc ghi lý do</li>
+        <li>Nhà cung cấp bắt buộc có tên, mã số thuế, địa chỉ; phiếu nhập bắt buộc chọn nhà cung cấp; nhà cung cấp cũ thiếu thông tin được nhắc bổ sung</li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 0.4.2</strong> <span class="muted" style="font-size:13px;">26/10/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Hỗ trợ ngay lúc đang bán và nhắc việc thông minh hơn</p>
       <ul class="feature-list" style="--card-accent: var(--qlcf);">
         <li>POS báo số ly còn làm được theo tồn nguyên liệu ("Còn ~N ly", "Hết nguyên liệu") và cảnh báo khi chọn món sắp hết</li>
@@ -121,7 +142,8 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
         <li>Khi nguyên liệu tăng giá nhập: nêu rõ món nào đã mỏng lãi và nên bán giá bao nhiêu để đạt biên khoảng 60%</li>
         <li>Tổng quan báo giờ cao điểm hôm nay / ngày mai có thể thiếu người khi lịch làm việc chưa đủ ca</li>
       </ul>
-    </div>
+      </div>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid #cbd5e1; padding-left:16px; margin-bottom:22px;">
       <summary><strong>Phiên bản 0.4.1</strong> <span class="muted" style="font-size:13px;">21/10/2026</span></summary>
