@@ -123,11 +123,14 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
         <h3 style="margin:0;">Phiên bản 0.4.3 <span style="font-size:12px;font-weight:700;color:var(--qlcf);background:var(--qlcf-bg);padding:2px 8px;border-radius:10px;vertical-align:middle;">Mới nhất</span></h3>
         <span class="muted" style="font-size:13px;">29/10/2026</span>
       </div>
-      <p style="font-weight:600; margin:8px 0 4px;">Nhập liệu nhanh hơn, có phiếu xuất kho</p>
+      <p style="font-weight:600; margin:8px 0 4px;">Nhập liệu nhanh hơn, có phiếu xuất kho, menu gọn hơn</p>
       <ul class="feature-list" style="--card-accent: var(--qlcf);">
         <li>Nhập nhanh ngay tại chỗ: thêm nhà cung cấp mới và nguyên liệu mới ngay trong phiếu nhập (kể cả nhập từ Excel), thêm nguyên liệu khi soạn công thức, tự đặt danh mục ở sổ quỹ, thêm nhanh món ở màn bán hàng</li>
         <li>Phiếu xuất kho mới: xuất hủy, dùng nội bộ, trả hàng nhà cung cấp; trừ kho ngay, không cho xuất quá tồn, bắt buộc ghi lý do</li>
         <li>Nhà cung cấp bắt buộc có tên, mã số thuế, địa chỉ; phiếu nhập bắt buộc chọn nhà cung cấp; nhà cung cấp cũ thiếu thông tin được nhắc bổ sung</li>
+        <li>Thêm món mới xong có liên kết mở thẳng màn soạn công thức; chỉnh kho tay bắt buộc ghi lý do (nhập hàng dùng phiếu nhập, hỏng / dùng nội bộ dùng phiếu xuất)</li>
+        <li>Trang Công nợ phải thu / phải trả gom khách còn nợ và nhà cung cấp quán còn nợ vào một chỗ</li>
+        <li>Menu gọn hơn: gom nhóm Nhân sự &amp; ca làm, Giá &amp; khuyến mãi, Trợ giúp; có dải tab chuyển nhanh giữa các trang cùng nhóm</li>
       </ul>
     </div>
 
