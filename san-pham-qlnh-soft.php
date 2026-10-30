@@ -110,16 +110,27 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlnh-soft']);
     </p>
     <div class="changelog-item" style="border-left:3px solid var(--qlnh, #be123c); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.0.1 <span style="font-size:12px;font-weight:700;color:var(--qlnh);background:var(--qlnh-bg);padding:2px 8px;border-radius:10px;vertical-align:middle;">Mới nhất</span></h3>
-        <span class="muted" style="font-size:13px;">29/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 1.1.0 <span style="font-size:12px;font-weight:700;color:var(--qlnh);background:var(--qlnh-bg);padding:2px 8px;border-radius:10px;vertical-align:middle;">Mới nhất</span></h3>
+        <span class="muted" style="font-size:13px;">30/10/2026</span>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Dùng liền mạch hơn, kho chặt chẽ hơn</p>
+      <ul class="feature-list" style="--card-accent: var(--qlnh);">
+        <li>Điều chỉnh kho phải ghi lý do, có nhật ký và theo lô</li>
+        <li>Thêm nhanh nguyên liệu ngay trong công thức, tạo nhanh khu vực; thực đơn nối thẳng với công thức, cảnh báo món chưa có công thức</li>
+        <li>Mở ca ngay tại chỗ; mở bàn nhận ra khách quen khi đặt bàn; gợi ý tiền khách đưa và thối tiền ở màn hình bán hàng</li>
+        <li>Các chức năng gộp thành cụm có thanh tab; cảnh báo bất thường ghi vào nhật ký</li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid var(--qlnh, #be123c); padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.0.1</strong> <span class="muted" style="font-size:13px;">· 29/10/2026</span></summary>
       <p style="font-weight:600; margin:8px 0 4px;">Lập phiếu nhanh hơn</p>
       <ul class="feature-list" style="--card-accent: var(--qlnh);">
         <li>Phiếu nhập hàng và đơn đặt hàng: thêm nhanh nhà cung cấp và nguyên liệu mới ngay trên phiếu; nhập Excel có nút tạo nguyên liệu chưa có trong kho</li>
         <li>Nhà cung cấp bắt buộc có tên, mã số thuế và địa chỉ</li>
         <li>Cài đè an toàn: phần mềm tự sao lưu rồi nâng cấp cấu trúc dữ liệu, không mất dữ liệu</li>
       </ul>
-    </div>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid var(--qlnh, #be123c); padding-left:16px; margin-bottom:22px;">
       <summary><strong>Phiên bản 1.0.0</strong> <span class="muted" style="font-size:13px;">· 26/10/2026</span></summary>
@@ -164,7 +175,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlnh-soft']);
       </p>
     </div>
     <div class="cta-row">
-      <a href="download.php?p=qlnh-soft" class="btn">⬇️ Tải bản 1.0.1 mới nhất</a>
+      <a href="download.php?p=qlnh-soft" class="btn">⬇️ Tải bản 1.1.0 mới nhất</a>
     </div>
   </div>
 </section>
