@@ -106,14 +106,24 @@ require_once __DIR__ . '/inc_header.php';
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Cập nhật 29/10/2026</h3>
+        <h3 style="margin:0;">Cập nhật 30/10/2026</h3>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Ít phải chuyển màn hình hơn</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbh2);">
+        <li>Thêm sản phẩm, thêm khách hàng, tạo chiến dịch: thêm nhanh danh mục, nhãn hiệu, nhóm khách hàng ngay tại ô chọn, không mất dữ liệu đang nhập</li>
+        <li>Nhập kho từ đặt hàng nhập: mở sẵn phiếu nhập đã điền nhà cung cấp và hàng hóa, chỉnh số lượng/giá thực nhận, thêm lô, hạn dùng và số tiền đã trả; đơn đặt hàng tự chuyển sang "Đã nhập"</li>
+        <li>Trang Công nợ: thu nợ khách và trả nợ nhà cung cấp ngay trên từng dòng, tự ghi sổ quỹ</li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Cập nhật 29/10/2026</strong></summary>
       <p style="font-weight:600; margin:8px 0 4px;">Lập phiếu nhập không phải rời màn hình</p>
       <ul class="feature-list" style="--card-accent: var(--qlbh2);">
         <li>Phiếu nhập hàng và phiếu đặt hàng nhập: thêm nhanh nhà cung cấp mới (nút "Thêm NCC") và hàng hóa mới (nút "Hàng mới") ngay trong phiếu, không mất phiếu đang lập</li>
         <li>Nhà cung cấp bắt buộc có tên, mã số thuế (10 hoặc 13 số) và địa chỉ; trang chi tiết nhà cung cấp có mục sửa thông tin và nhắc nhà cung cấp cũ còn thiếu mã số thuế, địa chỉ</li>
       </ul>
-    </div>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid var(--qlbh2); padding-left:16px; margin-bottom:22px;">
       <summary><strong>Cập nhật 26/10/2026</strong></summary>
