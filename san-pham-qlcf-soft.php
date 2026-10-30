@@ -262,7 +262,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlcf-soft']);
       </p>
     </div>
     <div class="cta-row">
-      <a href="download.php?p=qlcf-soft" class="btn">⬇️ Tải bản 0.2.0 mới nhất</a>
+      <a href="download.php?p=qlcf-soft" class="btn">⬇️ Tải bản 0.4.3 mới nhất</a>
     </div>
   </div>
 </section>
