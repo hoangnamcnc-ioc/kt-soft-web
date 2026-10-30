@@ -113,6 +113,7 @@ require_once __DIR__ . '/inc_header.php';
         <li>Thêm sản phẩm, thêm khách hàng, tạo chiến dịch: thêm nhanh danh mục, nhãn hiệu, nhóm khách hàng ngay tại ô chọn, không mất dữ liệu đang nhập</li>
         <li>Nhập kho từ đặt hàng nhập: mở sẵn phiếu nhập đã điền nhà cung cấp và hàng hóa, chỉnh số lượng/giá thực nhận, thêm lô, hạn dùng và số tiền đã trả; đơn đặt hàng tự chuyển sang "Đã nhập"</li>
         <li>Trang Công nợ: thu nợ khách và trả nợ nhà cung cấp ngay trên từng dòng, tự ghi sổ quỹ</li>
+        <li>Menu gọn hơn: các màn hình cùng nghiệp vụ (đơn hàng – trả hàng – vận chuyển, báo cáo – phân tích, kiểm soát số liệu, kho – lô hạn – xuất hủy, khuyến mại – mã giảm giá – chiến dịch...) gộp thành một mục có thanh tab chuyển nhanh</li>
       </ul>
     </div>
 
