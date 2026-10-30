@@ -113,16 +113,26 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
 
     <div class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.2.17</h3>
-        <span class="muted" style="font-size:13px;">29/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 1.2.18</h3>
+        <span class="muted" style="font-size:13px;">30/10/2026</span>
       </div>
-      <p style="font-weight:600; margin:8px 0 4px;">Thêm nhanh danh mục ngay khi nhập chứng từ</p>
+      <p style="font-weight:600; margin:8px 0 4px;">Nhập liệu liền mạch hơn, gọn hơn</p>
       <ul class="feature-list" style="--card-accent: var(--ketoan);">
-        <li>Chưa có khách hàng, nhà cung cấp hoặc hàng hóa trong danh mục? Thêm ngay tại màn hình đang nhập, mục vừa tạo được chọn luôn</li>
-        <li>Có thêm nút ở: đơn mua hàng, báo giá / đơn bán, phiếu thu / chi tiền mặt và ngân hàng, chứng từ kế toán tổng hợp, nhập kho, nhập kho nội bộ, tạo công trình</li>
-        <li>Khi thêm đối tượng, tên, mã số thuế và địa chỉ là bắt buộc (có nút Tra cứu MST để điền tự động); khách cá nhân không có mã số thuế thì tích "Cá nhân, không có MST", địa chỉ vẫn bắt buộc</li>
+        <li>Khách hàng, nhà cung cấp, hàng hóa mới thêm ở bất kỳ đâu (menu Danh mục, nhập từ Excel) tự hiện trong các phiếu đang mở khi chuyển màn hình, không phải khởi động lại phần mềm</li>
+        <li>Thêm nhanh kho (ở phiếu nhập/xuất kho) và hợp đồng (ở phiếu nhập mua) ngay tại phiếu đang lập</li>
+        <li>Gộp chức năng trùng: phần hành "Nhập chứng từ" chỉ còn phiếu kế toán; phiếu thu, chi nằm ở "Kế toán tiền mặt, tiền gửi"; danh sách phiếu nhập/xuất kho nằm cạnh nghiệp vụ kho</li>
+        <li>Khóa sổ và cấu hình Hóa đơn điện tử Viettel chỉ dành cho quản trị viên</li>
       </ul>
     </div>
+
+    <details class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.2.17</strong> <span class="muted" style="font-size:13px;">29/10/2026</span></summary>
+      <p style="font-weight:600; margin:8px 0 4px;">Thêm nhanh danh mục ngay khi nhập chứng từ</p>
+      <ul class="feature-list" style="--card-accent: var(--ketoan);">
+        <li>Thêm nhanh khách hàng, nhà cung cấp, hàng hóa ngay tại đơn mua hàng, báo giá, phiếu thu/chi, nhập kho, tạo công trình</li>
+        <li>Khi thêm đối tượng, tên, mã số thuế và địa chỉ là bắt buộc; khách cá nhân không có mã số thuế thì tích "Cá nhân, không có MST"</li>
+      </ul>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid var(--ketoan, #d97706); padding-left:16px; margin-bottom:22px;">
       <summary><strong>Phiên bản 1.2.16</strong> <span class="muted" style="font-size:13px;">28/10/2026</span></summary>
@@ -438,7 +448,7 @@ $daDanhGia = !empty($_COOKIE['danhgia_ke-toan']);
       có thêm 1 bản sao lưu tay, phòng trường hợp máy tính gặp sự cố khi đang cài.
     </p>
     <div class="cta-row">
-      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.17 mới nhất</a>
+      <a href="download.php?p=ke-toan" class="btn" style="background:var(--ketoan);">⬇️ Tải bản 1.2.18 mới nhất</a>
     </div>
   </div>
 </section>
