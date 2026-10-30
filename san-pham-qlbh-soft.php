@@ -108,9 +108,23 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
 
     <div class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
       <div style="display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;">
-        <h3 style="margin:0;">Phiên bản 1.9.6</h3>
-        <span class="muted" style="font-size:13px;">29/10/2026</span>
+        <h3 style="margin:0;">Phiên bản 1.9.7</h3>
+        <span class="muted" style="font-size:13px;">30/10/2026</span>
       </div>
+      <p style="font-weight:600; margin:8px 0 4px;">Gọn hơn, ít thao tác hơn</p>
+      <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
+        <li><span><b>Nhập hàng theo thùng, lốc</b>: chọn đơn vị lớn, nhập số lượng và đơn giá theo thùng, hệ thống tự quy ra đơn vị cơ bản; khi tạo hàng mới có thể khai báo luôn đơn vị lớn</span></li>
+        <li><span><b>Thêm nhanh đối tác giao hàng và nhóm khách hàng</b> ngay trong phiếu vận đơn và form khách hàng, không phải ra danh mục</span></li>
+        <li><span><b>Giao hàng &amp; đơn chờ giao</b> gom về một chỗ: đặt hàng, đơn online, vận đơn, đối tác giao hàng; có nút tạo vận đơn ngay từ chi tiết đơn</span></li>
+        <li><span><b>Xuất kho</b> gộp xuất dùng nội bộ và xuất hủy thành một màn hình</span></li>
+        <li><span><b>Mở ca bán hàng tự chấm công vào, đóng ca tự chấm công ra</b></span></li>
+        <li><span><b>Soát cuối ngày</b> nằm ngay trong Báo cáo cuối ngày; menu Báo cáo xếp lại theo nhóm; danh sách mở/đóng cửa gọn thành một mục</span></li>
+      </ul>
+    </div>
+
+    <details class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
+      <summary><strong>Phiên bản 1.9.6</strong> <span class="muted" style="font-size:13px;">29/10/2026</span></summary>
+      <div class="changelog-body">
       <p style="font-weight:600; margin:8px 0 4px;">Nhập nhanh danh mục ngay trên phiếu, thông tin đối tác đầy đủ hơn</p>
       <ul class="feature-list" style="--card-accent: var(--qlbhsoft);">
         <li><span><b>Thêm nhanh nhà cung cấp và khách hàng</b> ngay trên phiếu nhập hàng, trả hàng nhập, mua dịch vụ và đơn online khi chưa có trong danh mục, tạo xong tự chọn vào phiếu</span></li>
@@ -118,7 +132,8 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
         <li><span><b>Nhà cung cấp bắt buộc có tên, mã số thuế và địa chỉ</b> để hóa đơn đầu vào đầy đủ thông tin</span></li>
         <li><span><b>Khách hàng doanh nghiệp bắt buộc có mã số thuế và địa chỉ</b>, khách lẻ vẫn chỉ cần tên; tích ô "Khách hàng là doanh nghiệp" khi tạo ở máy bán hàng hoặc trang quản lý</span></li>
       </ul>
-    </div>
+      </div>
+    </details>
 
     <details class="changelog-item" style="border-left:3px solid var(--qlbhsoft, #2563eb); padding-left:16px; margin-bottom:22px;">
       <summary><strong>Phiên bản 1.9.5</strong> <span class="muted" style="font-size:13px;">26/10/2026</span></summary>
@@ -591,8 +606,8 @@ $daDanhGia = !empty($_COOKIE['danhgia_qlbh-soft']);
       </p>
     </div>
     <div class="cta-row">
-      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.9.6 mới nhất</a>
-      <p class="muted" style="font-size:12px;margin-top:10px;word-break:break-all;">Mã kiểm tra SHA-256 của bộ cài 1.9.6: <code>363e693b3ce906f60ed7567ff40fc48b8d9b79957f7eaa25062b85f624a7188d</code><br>
+      <a href="download.php?p=qlbh-soft" class="btn">⬇️ Tải bản 1.9.7 mới nhất</a>
+      <p class="muted" style="font-size:12px;margin-top:10px;word-break:break-all;">Mã kiểm tra SHA-256 của bộ cài 1.9.7: <code>ca6fa6942fd324e6fb5df06a59cbd4114ca58f018c1fb5ec45cc945d9923103a</code><br>
       Nếu Windows Defender báo nhầm (phần mềm chưa ký số nên đôi khi bị đánh dấu "Trojan:Win32/Wacatac" do máy học đoán), bạn có thể đối chiếu mã trên để yên tâm file đúng của KT-SOFT.</p>
     </div>
   </div>
